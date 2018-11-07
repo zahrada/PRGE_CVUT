@@ -1,0 +1,42 @@
+# Komentar zacina znakem '#'. Soubor muze obsahovat libolne mnozstvi komentaru a prazdnych radek.
+# V uvodnim komentari je uvedeno oznaceni bodu, datum mereni a slozeni mericke cety.
+
+# Merene veliciny se udavaji v metrech, gradech, stupnich Celsia, torrech (mm Hg).
+
+# 1004 Vìtrov
+# 27.09.2018
+# Mericka ceta: Krouparová Lenka
+#               Prager Karel
+
+# Prvni radek souboru (s vyjimkou komentaru a prazdnych radku) obsahuje pouze cislo stanoviska.
+1001                           
+
+# Radky zacinajici pismenem 'O' obsahuji mereni centracni osnovy. Kazdy radek centracni osnovy
+# obsahuje 2 nebo 3 udaje: oznaceni ciloveho bodu, mereny smer, (vodorovna excentricita).
+# Smery jsou udavany v gradech.
+O 1002         0,0000            # orientacni osnova
+O 1003        19.0833            # orientacni osnova
+O 1001        65.0389  		     # orientacni osnova (posledni udaj: vod. delka)
+O CENTR       97.2151  4.270     # orientacni osnova (posledni udaj: vod. delka)
+O EXCIL      144.3946  4.280     # orientacni osnova 
+
+# Na radcich zacinajicich pismenem 'U' jsou uvedeny merene uhly. Kazdy uhel byl meren ve trech (kdyz to bylo mozne)
+# laboratornich jednotkach, na radek postupne uvedte hodnoty z jednotlivych laboratornich jednotek.
+# (leve rameno, prave rameno, 1. jednotka, 2. jednotka, ...)
+U 1002 1003   19.0830	19.0832	  19.0838
+U 1003 1001   45.9547	45.9556	  45.9553 
+U 1002 1001   65.0391	65.0394	  65.0394                 
+
+# Na radcich zacinajicich pismenem 'D' jsou udavany merene sikme delky (a hodnoty pro fyz. korekci).
+# Neplatna hodnota (nebyl meren tlak apod.) je nahrazena hodnotou 0.
+# Na bodì 1003 nemìli psychometr, bylo mìøeno klasickým teplomìrem bez možnosti mìøit vlhkou teplotu
+# C.b1  C.b2    hT[m]   hc[m]   t1[°C]   t2[°C]   p1[]  p2[]     h1[%]  h2[%]   d[m]
+# Dopolední mìøení
+D 1004	1002    1.54    1.48   13.5/9.5  12.0/8.5  699   716      	0	   0     5581.517
+D 1004  1003    1.54    1.39   13.5/9.5    20.3    699   709.6		0      0     2570.506		
+# Odpolední mìøení
+D 1004  1002	1.54	1.48   17.5/13.0 17.5/12.5 698.5 715		0	   0     5581.508
+D 1004	1003	1.54	1.39   17.5/13.0   25.0	   698.5 709		0	   0	 2570.501        
+
+
+

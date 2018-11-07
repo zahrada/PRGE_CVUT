@@ -1,0 +1,44 @@
+# Komentar zacina znakem '#'. Soubor muze obsahovat libolne mnozstvi komentaru a prazdnych radek.
+# V uvodnim komentari je uvedeno oznaceni bodu, datum mereni a slozeni mericke cety.
+
+# Merene veliciny se udavaji v metrech, gradech, stupnich Celsia, torrech (mm Hg).
+
+# 1005 Stan
+# 26.9.2018
+# Mericka ceta: Petra Millarova
+#               Petr Kudela
+#		Tomas Reindl
+#		Michael Kala
+
+# Prvni radek souboru (s vyjimkou komentaru a prazdnych radku) obsahuje pouze cislo stanoviska.
+1005                           
+
+# Radky zacinajici pismenem 'O' obsahuji mereni centracni osnovy. Kazdy radek centracni osnovy
+# obsahuje 2 nebo 3 udaje: oznaceni ciloveho bodu, mereny smer, (vodorovna excentricita).
+# Smery jsou udavany v gradech.
+# V pripade mereni gyroteodolitem centracni osnova obsahuje pouze smer na bod 1003 Bunker Hill 
+# a na centr.
+O 1003        184.0784           # orientacni osnova REINDL
+O CENTR       168.1466 4.088     # orientacni osnova REINDL
+O 1003        184.0818           # orientacni osnova KUDELA
+O CENTR       168.1410 4.088     # orientacni osnova KUDELA
+O 1003        184.0748           # orientacni osnova MILLAROVA
+O CENTR       168.1383 4.088     # orientacni osnova MILLAROVA
+O 1003        184.0744           # orientacni osnova KALA
+O CENTR       168.1310 4.088     # orientacni osnova KALA
+
+
+
+
+# Na radcich zacinajicich pismenem 'A' jsou uvedeny merene azimuty
+# (cislo ciloveho bodu, merena hodnota, jmeno merice)
+A 1005   60.0427  REINDL
+A 1003   75.9897  REINDL
+A 1005   60.0467  KALA
+A 1003   75.9900  KALA
+A 1005   60.0435  KUDELA
+A 1003   75.9842  KUDELA
+A 1005   60.0565  MILLAROVA
+A 1003   75.9931  MILLAROVA
+
+

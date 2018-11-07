@@ -1,0 +1,42 @@
+# Komentar zacina znakem '#'. Soubor muze obsahovat libolne mnozstvi komentaru a prazdnych radek.
+# V uvodnim komentari je uvedeno oznaceni bodu, datum mereni a slozeni mericke cety.
+
+# Merene veliciny se udavaji v metrech, gradech, stupnich Celsia, torrech (mm Hg).
+
+# 1001 Štvanice
+# 26.9.2018
+# Mericka ceta: Václav Marousek
+#               Stanislav Nejman
+
+# Prvni radek souboru (s vyjimkou komentaru a prazdnych radku) obsahuje pouze cislo stanoviska.
+1001                           
+
+# Radky zacinajici pismenem 'O' obsahuji mereni centracni osnovy. Kazdy radek centracni osnovy
+# obsahuje 2 nebo 3 udaje: oznaceni ciloveho bodu, mereny smer, (vodorovna excentricita).
+# Smery jsou udavany v gradech.
+O EXCIL        0.0000   4.806    # orientacni osnova (posledni udaj: vod. delka opravena o souctovou konstantu minihranolu)
+O CENTR       20.5617   6.867    # orientacni osnova (posledni udaj: vod. delka opravena o souctovou konstantu minihranolu) 
+O 1004        30.2735            # orientacni osnova 
+O 1003        53.2671            # orientacni osnova 
+O 1002        89.8642            # orientacni osnova 
+
+
+# Na radcich zacinajicich pismenem 'U' jsou uvedeny merene uhly. Kazdy uhel byl meren ve trech (kdyz to bylo mozne)
+# laboratornich jednotkach, na radek postupne uvedte hodnoty z jednotlivych laboratornich jednotek.
+# (leve rameno, prave rameno, 1. jednotka, 2. jednotka, ...)
+U 1004 1003   22.9911   22.9915   22.9919
+U 1003 1002   36.5960   36.5970   36.5970
+U 1004 1002   59.5894   59.5880   58.5886
+
+
+# Na radcich zacinajicich pismenem 'D' jsou udavany merene sikme delky (a hodnoty pro fyz. korekci).
+# Neplatna hodnota (nebyl meren tlak apod.) je nahrazena hodnotou 0.
+# C.b1  C.b2    hT[m]   hc[m]   t1[°C]   t2[°C]     p1[]   p2[]    h1[%]   h2[%]   d[m]
+D 1001  1002    1.475   1.578   11.9    12.1/7.6    0.0    720      0.0     53   5916.901
+D 1001  1003    1.475   1.505   11.9    12.1/8.9    0.0    715      0.0     66   4795.896
+D 1001  1004    1.475   1.580   11.9    9.0/6.0     0.0    699      0.0     64   6412.194
+D 1001  1002    1.475   1.578   12.1    12.2/7.6    0.0    720      0.0     53   5916.894
+D 1001  1003    1.475   1.505   12.1    12.1/8.9    0.0    715      0.0     66   4795.892
+D 1001  1004    1.475   1.580   12.1    10.0/7.0    0.0    701      0.0     66   6412.197
+
+

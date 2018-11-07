@@ -1,0 +1,16 @@
+===================================
+nepouzite skripty (pro nasi ulohu):
+-----------------------------------
+redukceDelekNaSpojniciDlouhe
+redukceDelekNaSpojniciKratke
+excentrickyCil
+jtsk2wgs
+wgs2jtsk
+bes2jtsk
+===================================
+hlavni skripty:
+-----------------------------------
+vypocet_redukce_delek
+vypocet_mereni_na_slunce
+vypocet_redukce_smeru
+vypocet_test (pouze na testovani funkci)

@@ -1,0 +1,31 @@
+# Komentar zacina znakem '#'. Soubor muze obsahovat libolne mnozstvi komentaru a prazdnych radek.
+# V uvodnim komentari je uvedeno oznaceni bodu, datum mereni a slozeni mericke cety.
+
+# Merene veliciny se udavaji v metrech, gradech, stupnich Celsia, torrech (mm Hg).
+
+# 1005 Stan
+# 27.9.2018
+# Mericka ceta: Zdenek Vyskocil
+#               Zdenek Lukes
+
+# Prvni radek souboru (s vyjimkou komentaru a prazdnych radku) obsahuje pouze cislo stanoviska.
+1005                           
+
+# Radky zacinajici pismenem 'O' obsahuji mereni centracni osnovy. Kazdy radek centracni osnovy
+# obsahuje 2 nebo 3 udaje: oznaceni ciloveho bodu, mereny smer, (vodorovna excentricita).
+# Smery jsou udavany v gradech.
+# V pripade mereni gyroteodolitem centracni osnova obsahuje pouze smer na bod 1003 Bunker Hill 
+# a na centr.
+O 1003       172.6099            # orientacni osnova Zahradnik
+O CENTR      155.2556  4.400     # orientacni osnova Zahradnik (posledni udaj: extentricita (vodorovna))
+O 1003       172.6086            # orientacni osnova Zemankova
+O CENTR      155.2494  4.400     # orientacni osnova Zemankova (posledni udaj: extentricita (vodorovna))
+O 1003       172.5981            # orientacni osnova Pecenova
+O CENTR      155.2364  4.400     # orientacni osnova Pecenova (posledni udaj: extentricita (vodorovna))
+
+# Na radcich zacinajicich pismenem 'A' jsou uvedeny merene azimuty
+# (cislo ciloveho bodu, merena hodnota, jmeno merice)
+A 1003   76.0287  Zahradnik
+A 1003   76.0358  Zemankova
+A 1003   76.0194  Pecenova
+

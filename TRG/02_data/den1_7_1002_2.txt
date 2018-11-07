@@ -1,0 +1,57 @@
+# Komentar zacina znakem '#'. Soubor muze obsahovat libolne mnozstvi komentaru a prazdnych radek.
+# V uvodnim komentari je uvedeno oznaceni bodu, datum mereni a slozeni mericke cety.
+
+# Merene veliciny se udavaji v metrech, gradech, stupnich Celsia, torrech (mm Hg).
+
+# 1002 Dvorsky vrch
+# 26.9.2018
+# Mericka ceta: Tereza Kulovana
+#               Marketa Pecenova
+
+# Prvni radek souboru (s vyjimkou komentaru a prazdnych radku) obsahuje pouze cislo stanoviska.
+1002                           
+
+# Radky zacinajici pismenem 'O' obsahuji mereni centracni osnovy. Kazdy radek centracni osnovy
+# obsahuje 2 nebo 3 udaje: oznaceni ciloveho bodu, mereny smer, (vodorovna excentricita).
+# Smery jsou udavany v gradech.
+O 1003        60.1813            # orientacni osnova
+O 1004        75.2950            # orientacni osnova
+O EXCIL       16.3576  4.737     # orientacni osnova (posledni udaj: vod. delka)
+O CENTR      127.2205  6.180     # orientacni osnova (posledni udaj: vod. delka)
+O 1001         0.0000            # orientacni osnova 
+
+# Na radcich zacinajicich pismenem 'U' jsou uvedeny merene uhly. Kazdy uhel byl meren ve trech (kdyz to bylo mozne)
+# laboratornich jednotkach, na radek postupne uvedte hodnoty z jednotlivych laboratornich jednotek.
+# (leve rameno, prave rameno, 1. jednotka, 2. jednotka, ...)
+U 1001 1003   60.1798   60.1792   60.1791
+U 1003 1004   15.1107   15.1095   15.1103 
+U 1001 1004   75.2893   75.2893   75.2893
+
+# Na radcich zacinajicich pismenem 'D' jsou udavany merene sikme delky (a hodnoty pro fyz. korekci).
+# Neplatna hodnota (nebyl meren tlak apod.) je nahrazena hodnotou 0.
+# C.b1  C.b2    hT[m]   hc[m]   t1[°C]   t2[°C]   p1[]  p2[]     h1[%]  h2[%]   d[m]
+D 1002  1004    1.600   1.550   10.0/6.5 13.1/8.5 720   700      60     54      5581.498 # merena = 5581.660 m
+D 1002  1001    1.600   1.448   10.0/6.5 0        720   0        60     0       5916.861 # merena = 5917.034 m
+D 1002  1003    1.600   1.505   10.0/6.5 12.4/8.1 720   715      60     55      3221.393 # merena = 3221.475 m
+# pri mereni delek nastaveno 34 ppm -> vypocet d[m] = merena[m] - 34*merena[km]/1000
+
+# Na radcich zacinajicich pismenem 'A' jsou udavany merene smery na Slunce a cil. V ramci jedne laboratorni
+# jednotky je na Slunce mereno ctyrikrat (L/P okraj Slunce, I./II. poloha dalekohledu). Prumer z kazde
+# dvojice mereni na L/P okraj tvori jednu skupinu, laboratorni jednotka se sklada celkem ze dvou skupin.
+# Na jeden radek uvedte:
+#  1. cislo bodu (cile), na ktery je urcovan azimut;
+#  2. mereny smer na Slunce (prumer z L/P okraje v 1.skupine laboratorni jednotky);
+#  3. prumerny cas mereni na Slunce pro 1.skupinu;
+#  4. mereny smer na Slunce (prumer z L/P okraje ve 2.skupine laboratorni jednotky);
+#  5. prumerny cas mereni na Slunce pro 2.skupinu;
+#  6. mereny smer na cil jako prumerny vysledek z mereni v I. a II. poloze
+#
+# Poznamka: vsechny uvedene smery jsou prevedeny na hodnoty odpovidajici I. poloze
+#
+# Poznamka: v pripade, ze bylo mozne provest mereni na Slunce podle zadani, mel by byt
+#           pocet radku roven "pocet_mericu * 2"
+#
+A 1003    234.1251 10:54:40.7    235.3157 10:58:29.7    60.3418
+A 1003    309.1586 14:35:58.7    309.8712 14:38:17.7    60.3429
+
+

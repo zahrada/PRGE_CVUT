@@ -1,0 +1,35 @@
+# Komentar zacina znakem '#'. Soubor muze obsahovat libolne mnozstvi komentaru a prazdnych radek.
+# V uvodnim komentari je uvedeno oznaceni bodu, datum mereni a slozeni mericke cety.
+
+# Merene veliciny se udavaji v metrech, gradech, stupnich Celsia, torrech (mm Hg).
+
+# 1005 Stan
+# 29.9.2018
+# Mericka ceta: Ondrej Hovorka
+#               Lenka Krouparova
+#               Radek Novotny
+#               Ladislava Satkova
+
+# Prvni radek souboru (s vyjimkou komentaru a prazdnych radku) obsahuje pouze cislo stanoviska.
+1005                           
+
+# Radky zacinajici pismenem 'O' obsahuji mereni centracni osnovy. Kazdy radek centracni osnovy
+# obsahuje 2 nebo 3 udaje: oznaceni ciloveho bodu, mereny smer, (vodorovna excentricita).
+# Smery jsou udavany v gradech.
+# V pripade mereni gyroteodolitem centracni osnova obsahuje pouze smer na bod 1003 Bunker Hill 
+# a na centr.
+O 1003        33.0465            # orientacni osnova
+O CENTR       49.0299  4.241     # orientacni osnova (posledni udaj: extentricita (vodorovna))
+
+# Na radcich zacinajicich pismenem 'A' jsou uvedeny merene azimuty
+# (cislo ciloveho bodu, merena hodnota, jmeno merice)
+A 1003   76.5370  Hovorka
+A 1003   76.5184  Krouparova
+A 1003   76.5187  Novotny R
+A 1003   76.4889  Satkova
+
+A CENTR   60.5447  Hovorka
+A CENTR   60.5318  Krouparova
+A CENTR   60.5352  Novotny R.
+A CENTR   60.5111  Satkova
+

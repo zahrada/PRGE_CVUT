@@ -1,0 +1,34 @@
+# Komentar zacina znakem '#'. Soubor muze obsahovat libolne mnozstvi komentaru a prazdnych radek.
+# V uvodnim komentari je uvedeno oznaceni bodu, datum mereni a slozeni mericke cety.
+
+# Merene veliciny se udavaji v metrech, gradech, stupnich Celsia, torrech (mm Hg).
+
+# 1005 Stan
+# 28.9.2018
+# Mericka ceta: Michal Janovsky
+#               Petra Pasovska
+#		Jana Skacelikova
+
+# Prvni radek souboru (s vyjimkou komentaru a prazdnych radku) obsahuje pouze cislo stanoviska.
+1005                           
+
+# Radky zacinajici pismenem 'O' obsahuji mereni centracni osnovy. Kazdy radek centracni osnovy
+# obsahuje 2 nebo 3 udaje: oznaceni ciloveho bodu, mereny smer, (vodorovna excentricita).
+# Smery jsou udavany v gradech.
+# V pripade mereni gyroteodolitem centracni osnova obsahuje pouze smer na bod 1003 Bunker Hill 
+# a na centr.
+O CENTR      162.2434  4.361     # Janovsky
+O 1003       179.6952            # 
+O CENTR      162.2387     # Skacelikova
+O 1003       179.6963      
+O CENTR      162.2477    # Pasovska
+O 1003       179.6958    
+
+# Na radcich zacinajicich pismenem 'A' jsou uvedeny merene azimuty
+# (cislo ciloveho bodu, merena hodnota, jmeno merice)
+A CENTR	 58.5418  Janovsky
+A 1003   75.9937  Janovsky
+A CENTR	 58.5310  Skacelikova
+A 1003   75.9885  Skacelikova
+A CENTR	 58.5259  Pasovska
+A 1003   75.9972  Pasovska

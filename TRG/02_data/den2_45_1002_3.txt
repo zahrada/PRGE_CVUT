@@ -1,0 +1,44 @@
+# Komentar zacina znakem '#'. Soubor muze obsahovat libolne mnozstvi komentaru a prazdnych radek.
+# V uvodnim komentari je uvedeno oznaceni bodu, datum mereni a slozeni mericke cety.
+
+# Merene veliciny se udavaji v metrech, gradech, stupnich Celsia, torrech (mm Hg).
+
+# 1002 Dvorsky vrch
+# 27.9.2018
+# Mericka ceta: Hovorka Ondrej
+#               Satkova Ladislava
+
+# Prvni radek souboru (s vyjimkou komentaru a prazdnych radku) obsahuje pouze cislo stanoviska.
+1002                           
+
+# Radky zacinajici pismenem 'O' obsahuji mereni centracni osnovy. Kazdy radek centracni osnovy
+# obsahuje 2 nebo 3 udaje: oznaceni ciloveho bodu, mereny smer, (vodorovna excentricita).
+# Smery jsou udavany v gradech.
+O EXCIL        0.0000  13.534    # orientacni osnova (posledni udaj: vod. delka)
+O 1001         9.4463            # orientacni osnova
+O CENTR       32.8682  6.703     # orientacni osnova (posledni udaj: vod. delka)
+O 1003        69.4816            # orientacni osnova 
+O 1004        84.6634            # orientacni osnova 
+
+# Na radcich zacinajicich pismenem 'U' jsou uvedeny merene uhly. Kazdy uhel byl meren ve trech (kdyz to bylo mozne)
+# laboratornich jednotkach, na radek postupne uvedte hodnoty z jednotlivych laboratornich jednotek.
+# (leve rameno, prave rameno, 1. jednotka, 2. jednotka, ...)
+U 1001 1003   60.0353   60.0338   60.0334
+U 1001 1004   75.2173   75.2170   75.2163 
+U 1003 1004   15.1814   15.1822   15.1817      
+
+# Na radcich zacinajicich pismenem 'D' jsou udavany merene sikme delky (a hodnoty pro fyz. korekci).
+# Neplatna hodnota (nebyl meren tlak apod.) je nahrazena hodnotou 0.
+# dopoledni mereni (10:30)
+# C.b1  C.b2    hT[m]   hc[m]   t1[°C]    t2[°C]    p1[]  p2[]     h1[%]  h2[%]   d[m]
+D 1002  1001    1.500   1.630   12.0/8.5  13.0/9.0  716   702         0     0     5916.902
+D 1002  1003    1.500   1.390   12.0/8.5  16.0      716   709.6       0     0     3221.421   
+D 1002  1004    1.500   1.520   12.0/8.5  10.0/7.5  716   699         0     0     5581.527
+# odpoledni mereni (14:00)
+# C.b1  C.b2    hT[m]   hc[m]   t1[°C]     t2[°C]     p1[]  p2[]   h1[%]  h2[%]   d[m]
+D 1002  1001    1.500   1.630   17.5/12.5  20.0/16.0  715   701       0      0    5916.868
+D 1002  1003    1.500   1.390   17.5/12.5  25         715   709       0      0    3221.405   
+D 1002  1004    1.500   1.520   17.5/12.5  17.5/13.0  715   699       0      0    5581.498
+
+
+

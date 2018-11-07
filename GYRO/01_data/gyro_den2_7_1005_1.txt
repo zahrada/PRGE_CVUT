@@ -1,0 +1,34 @@
+# Komentar zacina znakem '#'. Soubor muze obsahovat libolne mnozstvi komentaru a prazdnych radek.
+# V uvodnim komentari je uvedeno oznaceni bodu, datum mereni a slozeni mericke cety.
+
+# Merene veliciny se udavaji v metrech, gradech, stupnich Celsia, torrech (mm Hg).
+
+# 1005 Excentricke stan
+# 27.9.2018
+# Mericka ceta: Tereza Kulovana
+#               Vaclav Marousek
+#               Stanislav Nejman
+
+# Prvni radek souboru (s vyjimkou komentaru a prazdnych radku) obsahuje pouze cislo stanoviska.
+1005                           
+
+# Radky zacinajici pismenem 'O' obsahuji mereni centracni osnovy. Kazdy radek centracni osnovy
+# obsahuje 2 nebo 3 udaje: oznaceni ciloveho bodu, mereny smer, (vodorovna excentricita).
+# Smery jsou udavany v gradech.
+# V pripade mereni gyroteodolitem centracni osnova obsahuje pouze smer na bod 1003 Bunker Hill 
+# a na centr.
+O 1003        172.6414           # orientacni osnova (Marousek)
+O CENTR       155.2870  4.40     # orientacni osnova (Marousek, posledni udaj: extentricita (vodorovna))
+O 1003        172.6383           # orientacni osnova (Nejman)
+O CENTR       155.2833  4.40     # orientacni osnova (Nejman, posledni udaj: extentricita (vodorovna))
+O 1003        172.6349           # orientacni osnova (Kulovana)
+O CENTR       155.2531  4.40     # orientacni osnova (Kulovana, posledni udaj: extentricita (vodorovna))
+
+# Na radcich zacinajicich pismenem 'A' jsou uvedeny merene azimuty
+# (cislo ciloveho bodu, merena hodnota, jmeno merice)
+O 1003        76.0617  Marousek
+O CENTR       58.7074  Marousek
+O 1003        76.0127  Nejman
+O CENTR       58.6577  Nejman
+O 1003        76.0432  Kulovana
+O CENTR       58.6614  Kulovana

@@ -1,0 +1,29 @@
+# Komentar zacina znakem '#'. Soubor muze obsahovat libolne mnozstvi komentaru a prazdnych radek.
+# V uvodnim komentari je uvedeno oznaceni bodu, datum mereni a slozeni mericke cety.
+
+# Merene veliciny se udavaji v metrech, gradech, stupnich Celsia, torrech (mm Hg).
+
+# 1005 Stan
+# 28.9.2018
+# Mericka ceta: Markéta Kubelová
+#               Jan Seidl
+
+# Prvni radek souboru (s vyjimkou komentaru a prazdnych radku) obsahuje pouze cislo stanoviska.
+1005                           
+
+# Radky zacinajici pismenem 'O' obsahuji mereni centracni osnovy. Kazdy radek centracni osnovy
+# obsahuje 2 nebo 3 udaje: oznaceni ciloveho bodu, mereny smer, (vodorovna excentricita).
+# Smery jsou udavany v gradech.
+# V pripade mereni gyroteodolitem centracni osnova obsahuje pouze smer na bod 1003 Bunker Hill 
+# a na centr.
+O 1003       179.6951            # orientacni osnova (Seidl)
+O CENTR      162.2321  4.361     # orientacni osnova (posledni udaj: extentricita (vodorovna)) (Seidl)
+O 1003       179.6941            # orientacni osnova (Kubelová)
+O CENTR      162.2312  4.361     # orientacni osnova (posledni udaj: extentricita (vodorovna)) (Kubelová)
+
+# Na radcich zacinajicich pismenem 'A' jsou uvedeny merene azimuty
+# (cislo ciloveho bodu, merena hodnota, jmeno merice)
+A 1005   58.5259  Seidl # (uvedeno v gradech)
+A 1003   75.9888  Seidl # (uvedeno v gradech)
+A 1005   58.5185  Kubelová # (uvedeno v gradech)
+A 1003   75.9814  Kubelová # (uvedeno v gradech)

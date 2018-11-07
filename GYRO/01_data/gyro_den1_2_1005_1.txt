@@ -1,0 +1,49 @@
+# Komentar zacina znakem '#'. Soubor muze obsahovat libolne mnozstvi komentaru a prazdnych radek.
+# V uvodnim komentari je uvedeno oznaceni bodu, datum mereni a slozeni mericke cety.
+
+# Merene veliciny se udavaji v metrech, gradech, stupnich Celsia, torrech (mm Hg).
+
+# 1005 Stan
+# 26.9.2018
+# Mericka ceta: Petra Hejdukova
+#               Stepan Hodik
+#               Michal Novotny
+#               Veronika Vavrova
+
+# Prvni radek souboru (s vyjimkou komentaru a prazdnych radku) obsahuje pouze cislo stanoviska.
+1005                           
+
+# Radky zacinajici pismenem 'O' obsahuji mereni centracni osnovy. Kazdy radek centracni osnovy
+# obsahuje 2 nebo 3 udaje: oznaceni ciloveho bodu, mereny smer, (vodorovna excentricita).
+# Smery jsou udavany v gradech.
+# V pripade mereni gyroteodolitem centracni osnova obsahuje pouze smer na bod 1003 Bunker Hill 
+# a na centr.
+O 1003       184.0769            # orientacni osnova
+O CENTR      168.1352  4.088     # orientacni osnova (posledni udaj: extentricita (vodorovna)) Hejdukova
+O 1003       184.1500            # orientacni osnova
+O CENTR      168.1395  4.088     # orientacni osnova (posledni udaj: extentricita (vodorovna)) Hodik
+O 1003       184.0827            # orientacni osnova
+O CENTR      168.1352  4.088     # orientacni osnova (posledni udaj: extentricita (vodorovna)) Novotny
+O 1003       184.0753            # orientacni osnova
+O CENTR      168.1383  4.088     # orientacni osnova (posledni udaj: extentricita (vodorovna)) Vavrova
+
+# Na radcich zacinajicich pismenem 'A' jsou uvedeny merene azimuty
+# Azimuty jsou udavany v gradech.
+# (cislo ciloveho bodu, merena hodnota, jmeno merice)
+A 1003   75.9997  Hejdukova
+A 1005   60.0580  Hejdukova
+A 1003   76.0698  Hodik
+A 1005   60.0593  Hodik
+A 1003   76.0040  Novotny
+A 1005   60.0565  Novotny
+A 1003   75.9975  Vavrova
+A 1005   60.0605  Vavrova
+
+
+
+
+
+
+
+
+
