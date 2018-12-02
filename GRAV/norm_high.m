@@ -1,5 +1,6 @@
 clc
 clear
+format long
 
 %data gravimetr
 % cb g_mer hour min
@@ -9,7 +10,7 @@ clear
 
 % for plot must do proces_gravimetr for each one dataset
 % compute fayodove redukce
-high_first_niv = 655.708; % vyska pocatku nivelacniho poradu
+high_first_niv = 655.702756; % vyska pocatku nivelacniho poradu
 first_point = 980938.593; %mGal cb 3408,01 vyska pocatku gravimetrickeho mereni
 
 variable_gravimetr_usa=0.1175;
@@ -77,10 +78,46 @@ for i = 1: m-1
     % normalni ortometricka korekce
     norm_orto_korekce(i) = -0.0000254* (points_decimal(i,4)+(points_decimal(i+1,4)-points_decimal(i,4))/2 ) * ((points(i+1,4)-points(i,4))/2);
     %normalni prevyseni
-    high_norm(i) = (points_decimal(i+1,4)-points_decimal(i,4))+korekce_tih_anom(i)/1000+norm_orto_korekce(i)/1000
+    high_norm(i) = (points_decimal(i+1,4)-points_decimal(i,4))+korekce_tih_anom(i)/1000+norm_orto_korekce(i)/1000;
     %normalni vysky
 end
 high_point(1) = high_first_niv;
 high_point(2) = high_first_niv-high_norm(2); %!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11POZOR PORADI BODU 
 high_point(3) = high_point(2)-high_norm(1); %!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11POZOR PORADI BODU 
-high_point
+high_point;
+
+fprintf('===============================================================================================================\n')
+fprintf('                                               Gravimetr                                                       \n')
+fprintf('---------------------------------------------------------------------------------------------------------------\n')
+
+fprintf('Vyska_VPN        Normalni_tize   Merena_tize     Fayova_anomalie \n')
+for i = 1:m
+    fprintf('%5.6f\t\t %5.3f\t\t %5.3f\t\t %5.3f\t\t\n',points_decimal(i,4), gama(i), measure_g_ours(i,2), g_fayah(i) )
+end
+
+fprintf('Prevyseni_VPN    Kor_tih_anom    Norm_orto_kor   Norm_prevyseni  Norm_vyska \n')
+for i = 1:m-1
+    fprintf('%5.6f\t\t %5.5f\t\t %5.5f\t\t %5.6f\t\t %5.6f\t\t \n',points_decimal(i+1,4)-points_decimal(i,4),korekce_tih_anom(i),  norm_orto_korekce(i), high_norm(i), high_point(i+1) )
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
