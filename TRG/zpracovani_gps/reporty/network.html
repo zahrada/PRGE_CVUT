@@ -1,0 +1,987 @@
+﻿<html xmlns:source="http://www.leica-geosystems.com/LeicaXml/1.0" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:lfxml="http://www.leica-geosystems.com/SkiPro/3.0/Script">
+<head><link rel="stylesheet" type="text/css" href="network_files\network_Styles.css">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<script src="network_files\lfxmlAux.js"></script><script type="text/javascript">
+					<!--
+						
+						function WindowWidth( ) {
+							if( document.embeds.length > 0 ) {
+								return document.embeds[0].clientWidth;
+							}
+							else {
+								return 0;
+							}
+						}
+
+						function Refresh( ) {
+							if( window.Width != WindowWidth() ) {
+								window.Width = WindowWidth();
+								SetGraphicsHeight();
+							}
+						}
+
+						function InitResizing( ) {
+							if( document.embeds.length > 0 ) {
+								if( isSVGControlInstalled() ) {
+									if( !window.Width ) {
+										window.onresize = Refresh;
+										window.Width = WindowWidth();
+										SetGraphicsHeight();
+									}
+								}
+								else {
+									for( var i = 0; i < document.embeds.length; i++ ) {
+										var nodeMessage = document.createElement("a");
+										nodeMessage.setAttribute("href", "http://www.adobe.com/svg/viewer/install/main.html");
+										nodeMessage.setAttribute("target", "_blank");
+										var dataMessage = document.createTextNode("You need the Adobe SVG Viewer to view the graphics!");
+										nodeMessage.appendChild(dataMessage);
+										document.embeds[i].parentNode.replaceChild(nodeMessage, document.embeds[i]);
+									}
+								}
+							}
+						}
+
+						function SetGraphicsHeight( strObjectId ) {
+							for( var i = 0; i < document.embeds.length; i++ ) {
+								var svgObject = document.embeds[i];
+								if(		svgObject
+									 && svgObject.window.document.rootElement ) {
+
+									var strViewBox = svgObject.window.document.rootElement.getAttribute( "viewBox" );
+									var arrDimensions = strViewBox.split( " " );
+									if( arrDimensions.length == 4 ) {
+										svgObject.height = (arrDimensions[3] / arrDimensions[2]) * window.Width;
+									}
+								}
+							}
+						}
+
+					//-->
+					</script><script language="vbscript">
+					<!--
+					
+						Function isSVGControlInstalled()
+							on error resume next
+							isSVGControlInstalled = IsObject(CreateObject("Adobe.SVGCtl"))
+						end Function
+
+					'-->
+					</script></head><script>lfxmlBodyStart("onload=\"InitResizing();\"");</script><table width="100%">
+<tr>
+<td><img align="right" src="C:\Documents and Settings\All Users\Data aplikac&#237;\LEICA Geosystems\LGO\Report style sheets\Logo.gif"></td>
+</tr>
+<tr>
+<td class="mhd">
+<h1>Network Adjustment</h1>
+</td>
+</tr>
+<tr>
+<td class="FileCreated"><a target="_blank" href="http://www.move3.com">www.MOVE3.com</a></td>
+</tr>
+<tr>
+<td class="FileCreated">(c) 1993-2008 Grontmij</td>
+</tr>
+<tr>
+<td class="FileCreated">Licensed to Leica Geosystems AG</td>
+</tr>
+<tr>
+<td class="FileCreated"> </td>
+</tr>
+<tr>
+<td class="FileCreated">Created: 06/02/2011 20:06:57</td>
+</tr>
+</table><a name="00000"></a><h2 class="heading"><script>lfxmlInsertHr();</script><z a="*"></z>Project Information<script a="*">lfxmlInsertHr();</script></h2>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="30%">
+<col width="70%">
+</colgroup>
+<tr>
+<td class="body">Project name:</td>
+<td class="body">skupina_1-TRG</td>
+</tr>
+<tr>
+<td class="body">Date created:</td>
+<td class="body">06/02/2011 19:40:33</td>
+</tr>
+<tr>
+<td class="body">Time zone:</td>
+<td class="body">2h 00'</td>
+</tr>
+<tr>
+<td class="body">Coordinate system name:</td>
+<td class="body">WGS 1984</td>
+</tr>
+<tr>
+<td class="body">Application software:</td>
+<td class="body">LEICA Geo Office 7.0</td>
+</tr>
+<tr>
+<td class="body">Processing kernel:</td>
+<td class="body">MOVE3 4.0.1</td>
+</tr>
+</table><a name="00001"></a><h2 class="heading"><script>lfxmlInsertHr();</script><z a="*"></z>General Information<script a="*">lfxmlInsertHr();</script></h2>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="45%">
+<col width="20%">
+<col width="5%">
+<col width="30%">
+</colgroup>
+<tr>
+<th colspan="4">Adjustment</th>
+</tr>
+<tr>
+<td class="body">Type:</td>
+<td class="body" colspan="3">Minimally constrained</td>
+</tr>
+<tr>
+<td class="body">Dimension:</td>
+<td class="body" colspan="3">3D</td>
+</tr>
+<tr>
+<td class="body">Coordinate system:</td>
+<td class="body" colspan="3">WGS 1984</td>
+</tr>
+<tr>
+<td class="body">Height mode:</td>
+<td class="body" colspan="3">Ellipsoidal</td>
+</tr>
+<tr>
+<td class="body" colspan="3">
+<font size="0.5%"> </font>
+</td>
+</tr>
+<tr>
+<td class="body">Number of iterations:</td>
+<td class="body" colspan="3">0</td>
+</tr>
+<tr>
+<td class="body">Maximum coord correction in last iteration:</td>
+<td class="body">0.0000 m</td>
+<td class="body"><script>lfxmlInsertImage("Checked.gif","tolerance is met");</script></td>
+<td class="body">(tolerance is met)</td>
+</tr>
+<tr>
+<td class="body" colspan="4">
+<font size="0.5%"> </font>
+</td>
+</tr>
+<tr>
+<th colspan="4">Stations</th>
+</tr>
+<tr>
+<td class="body">Number of (partly) known stations:</td>
+<td class="body" colspan="3">1</td>
+</tr>
+<tr>
+<td class="body">Number of unknown stations:</td>
+<td class="body" colspan="3">6</td>
+</tr>
+<tr>
+<td class="body">Total:</td>
+<td class="body" colspan="3">7</td>
+</tr>
+<tr>
+<td class="body" colspan="4">
+<font size="0.5%"> </font>
+</td>
+</tr>
+<tr>
+<th colspan="4">Observations</th>
+</tr>
+<tr>
+<td class="body">GPS coordinate differences:</td>
+<td class="body" colspan="3">18 (6 baselines) (including 6 baselines as free observations)</td>
+</tr>
+<tr>
+<td class="body">Known coordinates:</td>
+<td class="body" colspan="3">3</td>
+</tr>
+<tr>
+<td class="body">Total:</td>
+<td class="body" colspan="3">21 (including 18 free observations)</td>
+</tr>
+<tr>
+<td class="body" colspan="4">
+<font size="0.5%"> </font>
+</td>
+</tr>
+<tr>
+<th colspan="4">Unknowns</th>
+</tr>
+<tr>
+<td class="body">Coordinates:</td>
+<td class="body" colspan="3">21</td>
+</tr>
+<tr>
+<td class="body">Total:</td>
+<td class="body" colspan="3">21</td>
+</tr>
+<tr>
+<td class="body" colspan="3">
+<font size="0.5%"> </font>
+</td>
+</tr>
+<tr>
+<td class="body">Degrees of freedom:</td>
+<td class="body" colspan="3">0</td>
+</tr>
+<tr>
+<td class="body" colspan="4">
+<font size="0.5%"> </font>
+</td>
+</tr>
+<tr>
+<th colspan="4">Testing</th>
+</tr>
+<tr>
+<td class="body">Alfa (multi dimensional):</td>
+<td class="body" colspan="3">1.0000</td>
+</tr>
+<tr>
+<td class="body">Alfa 0 (one dimensional):</td>
+<td class="body" colspan="3">5.0 %</td>
+</tr>
+<tr>
+<td class="body">Beta:</td>
+<td class="body" colspan="3">80.0 %</td>
+</tr>
+<tr>
+<td class="body">Sigma a-priori (GPS):</td>
+<td class="body" colspan="3">10.0</td>
+</tr>
+<tr>
+<td class="body" colspan="4">
+<font size="0.5%"> </font>
+</td>
+</tr>
+<tr>
+<td class="body">Critical value W-test:</td>
+<td class="body" colspan="3">1.96</td>
+</tr>
+<tr>
+<td class="body">Critical value T-test (2-dimensional):</td>
+<td class="body" colspan="3">2.42</td>
+</tr>
+<tr>
+<td class="body">Critical value T-test (3-dimensional):</td>
+<td class="body" colspan="3">1.89</td>
+</tr>
+<tr>
+<td class="body">Critical value F-test:</td>
+<td class="body" colspan="3">0.00</td>
+</tr>
+<tr>
+<td class="body">F-test:</td>
+<td class="body">0.00</td>
+<td class="body"><script>lfxmlInsertImage("Warning.gif","rejected");</script></td>
+<td class="body">(rejected)</td>
+</tr>
+<tr>
+<td class="body" colspan="4">
+<font size="0.5%"> </font>
+</td>
+</tr>
+<tr>
+<td class="body" colspan="4">Results based on a-posteriori variance factor</td>
+</tr>
+</table><a name="00002"></a><h2 class="heading"><script>lfxmlInsertHr();</script><z a="*"></z>Adjustment Results<script a="*">lfxmlInsertHr();</script></h2>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="15%">
+<col width="15%">
+<col width="20%">
+<col width="15%">
+<col width="20%">
+<col width="15%">
+</colgroup>
+<tr>
+<th colspan="6">Coordinates</th>
+</tr>
+<tr>
+<td colspan="6">
+<font size="0.5%"> </font>
+</td>
+</tr>
+<tr>
+<th colspan="2">Station</th>
+<th>Coordinate</th>
+<th>Corr</th>
+<th colspan="2">Sd</th>
+</tr>
+<tr>
+<td>1001</td>
+<td>Latitude</td>
+<td>50° 10' 05.28905" N</td>
+<td>0.0000 m</td>
+<td>0.0029 m</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>Longitude</td>
+<td>16° 54' 02.95656" E</td>
+<td>0.0000 m</td>
+<td>0.0021 m</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>Height</td>
+<td>879.2296 m</td>
+<td>0.0000 m</td>
+<td>0.0065 m</td>
+<td> </td>
+</tr>
+<tr>
+<td>1002</td>
+<td>Latitude</td>
+<td>50° 08' 41.01611" N</td>
+<td>0.0000 m</td>
+<td>0.0019 m</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>Longitude</td>
+<td>16° 58' 30.48866" E</td>
+<td>0.0000 m</td>
+<td>0.0016 m</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>Height</td>
+<td>746.1496 m</td>
+<td>0.0000 m</td>
+<td>0.0050 m</td>
+<td> </td>
+</tr>
+<tr>
+<td>1003</td>
+<td>Latitude</td>
+<td>50° 10' 23.73487" N</td>
+<td>0.0000 m</td>
+<td>0.0040 m</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>Longitude</td>
+<td>16° 58' 02.82949" E</td>
+<td>0.0000 m</td>
+<td>0.0019 m</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>Height</td>
+<td>776.1244 m</td>
+<td>0.0000 m</td>
+<td>0.0051 m</td>
+<td> </td>
+</tr>
+<tr>
+<td>1004</td>
+<td>Latitude</td>
+<td>50° 11' 41.08921" N</td>
+<td>0.0000 m</td>
+<td>0.0022 m</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>Longitude</td>
+<td>16° 58' 49.08782" E</td>
+<td>0.0000 m</td>
+<td>0.0017 m</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>Height</td>
+<td>958.3819 m</td>
+<td>0.0000 m</td>
+<td>0.0035 m</td>
+<td> </td>
+</tr>
+<tr>
+<td>1005</td>
+<td>Latitude</td>
+<td>50° 10' 04.98340" N</td>
+<td>0.0000 m</td>
+<td>0.0063 m</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>Longitude</td>
+<td>16° 56' 48.71289" E</td>
+<td>0.0000 m</td>
+<td>0.0039 m</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>Height</td>
+<td>602.0921 m</td>
+<td>0.0000 m</td>
+<td>0.0132 m</td>
+<td> </td>
+</tr>
+<tr>
+<td>CSUM</td>
+<td>Latitude</td>
+<td>49° 57' 53.16941" N</td>
+<td>0.0000 m</td>
+<td>-</td>
+<td>fixed</td>
+</tr>
+<tr>
+<td> </td>
+<td>Longitude</td>
+<td>16° 58' 51.44527" E</td>
+<td>0.0000 m</td>
+<td>-</td>
+<td>fixed</td>
+</tr>
+<tr>
+<td> </td>
+<td>Height</td>
+<td>378.3650 m</td>
+<td>0.0000 m</td>
+<td>-</td>
+<td>fixed</td>
+</tr>
+<tr>
+<td>STAM</td>
+<td>Latitude</td>
+<td>50° 09' 44.39907" N</td>
+<td>0.0000 m</td>
+<td>0.0009 m</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>Longitude</td>
+<td>16° 56' 51.94054" E</td>
+<td>0.0000 m</td>
+<td>0.0007 m</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>Height</td>
+<td>603.5355 m</td>
+<td>0.0000 m</td>
+<td>0.0018 m</td>
+<td> </td>
+</tr>
+</table><br><table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="10%">
+<col width="20%">
+<col width="10%">
+<col width="18%">
+<col width="18%">
+<col width="12%">
+<col width="12%">
+</colgroup>
+<tr>
+<th colspan="7">Observations and Residuals</th>
+</tr>
+<tr>
+<td colspan="7">
+<font size="0.5%"> </font>
+</td>
+</tr>
+<tr>
+<th> </th>
+<th>Station</th>
+<th>Target</th>
+<th>Adj obs</th>
+<th>Resid</th>
+<th>Resid (ENH)</th>
+<th>Sd</th>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.250000000000000" ObsFromPnt="CSUM" ObsToPnt="STAM">DX</a></td>
+<td>CSUM</td>
+<td>STAM</td>
+<td>-15285.7737 m</td>
+<td>0.0000 m</td>
+<td>0.0000 m</td>
+<td>0.0014 m</td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.250000000000000" ObsFromPnt="CSUM" ObsToPnt="STAM">DY</a></td>
+<td> </td>
+<td> </td>
+<td>-7148.1084 m</td>
+<td>0.0000 m</td>
+<td>0.0000 m</td>
+<td>0.0007 m</td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.250000000000000" ObsFromPnt="CSUM" ObsToPnt="STAM">DZ</a></td>
+<td> </td>
+<td> </td>
+<td>14280.3577 m</td>
+<td>0.0000 m</td>
+<td>0.0000 m</td>
+<td>0.0015 m</td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.698437500003000" ObsFromPnt="STAM" ObsToPnt="1005">DX</a></td>
+<td>STAM</td>
+<td>1005</td>
+<td>-449.4346 m</td>
+<td>0.0000 m</td>
+<td>0.0000 m</td>
+<td>0.0090 m</td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.698437500003000" ObsFromPnt="STAM" ObsToPnt="1005">DY</a></td>
+<td> </td>
+<td> </td>
+<td>-203.9284 m</td>
+<td>0.0000 m</td>
+<td>0.0000 m</td>
+<td>0.0051 m</td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.698437500003000" ObsFromPnt="STAM" ObsToPnt="1005">DZ</a></td>
+<td> </td>
+<td> </td>
+<td>406.3441 m</td>
+<td>0.0000 m</td>
+<td>0.0000 m</td>
+<td>0.0108 m</td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.641087962962000" ObsFromPnt="STAM" ObsToPnt="1004">DX</a></td>
+<td>STAM</td>
+<td>1004</td>
+<td>-3109.9200 m</td>
+<td>0.0000 m</td>
+<td>0.0000 m</td>
+<td>0.0021 m</td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.641087962962000" ObsFromPnt="STAM" ObsToPnt="1004">DY</a></td>
+<td> </td>
+<td> </td>
+<td>1481.7665 m</td>
+<td>0.0000 m</td>
+<td>0.0000 m</td>
+<td>0.0016 m</td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.641087962962000" ObsFromPnt="STAM" ObsToPnt="1004">DZ</a></td>
+<td> </td>
+<td> </td>
+<td>2581.7621 m</td>
+<td>0.0000 m</td>
+<td>0.0000 m</td>
+<td>0.0028 m</td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.519328703704000" ObsFromPnt="STAM" ObsToPnt="1003">DX</a></td>
+<td>STAM</td>
+<td>1003</td>
+<td>-1197.4781 m</td>
+<td>0.0000 m</td>
+<td>0.0000 m</td>
+<td>0.0043 m</td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.519328703704000" ObsFromPnt="STAM" ObsToPnt="1003">DY</a></td>
+<td> </td>
+<td> </td>
+<td>1105.8397 m</td>
+<td>0.0000 m</td>
+<td>0.0000 m</td>
+<td>0.0020 m</td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.519328703704000" ObsFromPnt="STAM" ObsToPnt="1003">DZ</a></td>
+<td> </td>
+<td> </td>
+<td>911.1284 m</td>
+<td>0.0000 m</td>
+<td>0.0000 m</td>
+<td>0.0044 m</td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.456134259257000" ObsFromPnt="STAM" ObsToPnt="1002">DX</a></td>
+<td>STAM</td>
+<td>1002</td>
+<td>954.9444 m</td>
+<td>0.0000 m</td>
+<td>0.0000 m</td>
+<td>0.0033 m</td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.456134259257000" ObsFromPnt="STAM" ObsToPnt="1002">DY</a></td>
+<td> </td>
+<td> </td>
+<td>2336.8158 m</td>
+<td>0.0000 m</td>
+<td>0.0000 m</td>
+<td>0.0018 m</td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.456134259257000" ObsFromPnt="STAM" ObsToPnt="1002">DZ</a></td>
+<td> </td>
+<td> </td>
+<td>-1145.4452 m</td>
+<td>0.0000 m</td>
+<td>0.0000 m</td>
+<td>0.0035 m</td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.311284722222000" ObsFromPnt="STAM" ObsToPnt="1001">DX</a></td>
+<td>STAM</td>
+<td>1001</td>
+<td>671.1686 m</td>
+<td>0.0000 m</td>
+<td>0.0000 m</td>
+<td>0.0048 m</td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.311284722222000" ObsFromPnt="STAM" ObsToPnt="1001">DY</a></td>
+<td> </td>
+<td> </td>
+<td>-3301.8592 m</td>
+<td>0.0000 m</td>
+<td>0.0000 m</td>
+<td>0.0025 m</td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.311284722222000" ObsFromPnt="STAM" ObsToPnt="1001">DZ</a></td>
+<td> </td>
+<td> </td>
+<td>625.2152 m</td>
+<td>0.0000 m</td>
+<td>0.0000 m</td>
+<td>0.0046 m</td>
+</tr>
+</table><br><table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="10%">
+<col width="20%">
+<col width="17%">
+<col width="18%">
+<col width="17%">
+<col width="18%">
+</colgroup>
+<tr>
+<th colspan="6">GPS Baseline Vector Residuals</th>
+</tr>
+<tr>
+<td colspan="6">
+<font size="0.5%"> </font>
+</td>
+</tr>
+<tr>
+<th> </th>
+<th>Station</th>
+<th>Target</th>
+<th>Adj vector [m]</th>
+<th>Resid [m]</th>
+<th>Resid [ppm]</th>
+</tr>
+<tr>
+<td>DV</td>
+<td>CSUM</td>
+<td>STAM</td>
+<td>22106.0839</td>
+<td>0.0000</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>DV</td>
+<td>STAM</td>
+<td>1005</td>
+<td>639.2916</td>
+<td>0.0000</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>DV</td>
+<td>STAM</td>
+<td>1004</td>
+<td>4304.9657</td>
+<td>0.0000</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>DV</td>
+<td>STAM</td>
+<td>1003</td>
+<td>1867.3484</td>
+<td>0.0000</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>DV</td>
+<td>STAM</td>
+<td>1002</td>
+<td>2772.1240</td>
+<td>0.0000</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>DV</td>
+<td>STAM</td>
+<td>1001</td>
+<td>3426.8988</td>
+<td>0.0000</td>
+<td>0.0</td>
+</tr>
+</table><br><table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="10%">
+<col width="20%">
+<col width="17%">
+<col width="18%">
+<col width="17%">
+<col width="18%">
+</colgroup>
+<tr>
+<th colspan="5">Absolute Error Ellipses (2D - 39.4% 1D - 68.3%)</th>
+</tr>
+<tr>
+<td colspan="5">
+<font size="0.5%"> </font>
+</td>
+</tr>
+<tr>
+<th>Station</th>
+<th>A [m]</th>
+<th>B [m]</th>
+<th>A/B</th>
+<th>Phi</th>
+<th>Sd Hgt [m]</th>
+</tr>
+<tr>
+<td>1001</td>
+<td>0.0029</td>
+<td>0.0021</td>
+<td>1.4</td>
+<td>2°</td>
+<td>0.0065</td>
+</tr>
+<tr>
+<td>1002</td>
+<td>0.0019</td>
+<td>0.0016</td>
+<td>1.2</td>
+<td>-7°</td>
+<td>0.0050</td>
+</tr>
+<tr>
+<td>1003</td>
+<td>0.0040</td>
+<td>0.0019</td>
+<td>2.1</td>
+<td>6°</td>
+<td>0.0051</td>
+</tr>
+<tr>
+<td>1004</td>
+<td>0.0022</td>
+<td>0.0016</td>
+<td>1.3</td>
+<td>-14°</td>
+<td>0.0035</td>
+</tr>
+<tr>
+<td>1005</td>
+<td>0.0063</td>
+<td>0.0039</td>
+<td>1.6</td>
+<td>-3°</td>
+<td>0.0132</td>
+</tr>
+<tr>
+<td>CSUM</td>
+<td>0.0000</td>
+<td>0.0000</td>
+<td>1.0</td>
+<td>90°</td>
+<td>0.0000</td>
+</tr>
+<tr>
+<td>STAM</td>
+<td>0.0010</td>
+<td>0.0007</td>
+<td>1.4</td>
+<td>4°</td>
+<td>0.0018</td>
+</tr>
+</table><br><a name="00003"></a><h2 class="heading"><script>lfxmlInsertHr();</script><z a="*"></z>Testing and Estimated Errors<script a="*">lfxmlInsertHr();</script></h2>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="5%">
+<col width="15%">
+<col width="15%">
+<col width="15%">
+<col width="10%">
+<col width="15%">
+<col width="7%">
+<col width="6%">
+<col width="6%">
+<col width="6%">
+</colgroup>
+<tr>
+<th colspan="10">Observation Tests</th>
+</tr>
+<tr>
+<td colspan="10">
+<font size="0.5%"> </font>
+</td>
+</tr>
+<tr>
+<th> </th>
+<th>Station</th>
+<th>Target</th>
+<th>MDB</th>
+<th>Red</th>
+<th>BNR</th>
+<th colspan="2">W-Test</th>
+<th colspan="2">T-Test</th>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.250000000000000" ObsFromPnt="CSUM" ObsToPnt="STAM">DX</a></td>
+<td>CSUM</td>
+<td>STAM</td>
+<td colspan="7"> </td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.250000000000000" ObsFromPnt="CSUM" ObsToPnt="STAM">DY</a></td>
+<td> </td>
+<td> </td>
+<td colspan="7"> </td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.250000000000000" ObsFromPnt="CSUM" ObsToPnt="STAM">DZ</a></td>
+<td> </td>
+<td> </td>
+<td colspan="7"> </td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.698437500003000" ObsFromPnt="STAM" ObsToPnt="1005">DX</a></td>
+<td>STAM</td>
+<td>1005</td>
+<td colspan="7"> </td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.698437500003000" ObsFromPnt="STAM" ObsToPnt="1005">DY</a></td>
+<td> </td>
+<td> </td>
+<td colspan="7"> </td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.698437500003000" ObsFromPnt="STAM" ObsToPnt="1005">DZ</a></td>
+<td> </td>
+<td> </td>
+<td colspan="7"> </td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.641087962962000" ObsFromPnt="STAM" ObsToPnt="1004">DX</a></td>
+<td>STAM</td>
+<td>1004</td>
+<td colspan="7"> </td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.641087962962000" ObsFromPnt="STAM" ObsToPnt="1004">DY</a></td>
+<td> </td>
+<td> </td>
+<td colspan="7"> </td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.641087962962000" ObsFromPnt="STAM" ObsToPnt="1004">DZ</a></td>
+<td> </td>
+<td> </td>
+<td colspan="7"> </td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.519328703704000" ObsFromPnt="STAM" ObsToPnt="1003">DX</a></td>
+<td>STAM</td>
+<td>1003</td>
+<td colspan="7"> </td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.519328703704000" ObsFromPnt="STAM" ObsToPnt="1003">DY</a></td>
+<td> </td>
+<td> </td>
+<td colspan="7"> </td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.519328703704000" ObsFromPnt="STAM" ObsToPnt="1003">DZ</a></td>
+<td> </td>
+<td> </td>
+<td colspan="7"> </td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.456134259257000" ObsFromPnt="STAM" ObsToPnt="1002">DX</a></td>
+<td>STAM</td>
+<td>1002</td>
+<td colspan="7"> </td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.456134259257000" ObsFromPnt="STAM" ObsToPnt="1002">DY</a></td>
+<td> </td>
+<td> </td>
+<td colspan="7"> </td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.456134259257000" ObsFromPnt="STAM" ObsToPnt="1002">DZ</a></td>
+<td> </td>
+<td> </td>
+<td colspan="7"> </td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.311284722222000" ObsFromPnt="STAM" ObsToPnt="1001">DX</a></td>
+<td>STAM</td>
+<td>1001</td>
+<td colspan="7"> </td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.311284722222000" ObsFromPnt="STAM" ObsToPnt="1001">DY</a></td>
+<td> </td>
+<td> </td>
+<td colspan="7"> </td>
+</tr>
+<tr>
+<td><a name="ObsRef" href="javascript:void(0)" style="color:#0000FF;" ObsType="6" ObsTimeStamp="55711.311284722222000" ObsFromPnt="STAM" ObsToPnt="1001">DZ</a></td>
+<td> </td>
+<td> </td>
+<td colspan="7"> </td>
+</tr>
+</table><br><br><table border="0" width="100%" cellspacing="0">
+<tr>
+<th>Redundancy:</th>
+</tr>
+<tr>
+<td align="center"><embed src="network_files\network_ResultsAdjustmentRedundancy.svg" width="100%" height="0" type="image/svg+xml"></embed></td>
+</tr>
+</table><br><table border="0" width="100%" cellspacing="0">
+<tr>
+<th>W-Test:</th>
+</tr>
+<tr>
+<td align="center"><embed src="network_files\network_ResultsAdjustmentWTest.svg" width="100%" height="0" type="image/svg+xml"></embed></td>
+</tr>
+</table><br><table border="0" width="100%" cellspacing="0">
+<tr>
+<th>T-Test (3-dimensional):</th>
+</tr>
+<tr>
+<td align="center"><embed src="network_files\network_ResultsAdjustmentTTest3D.svg" width="100%" height="0" type="image/svg+xml"></embed></td>
+</tr>
+</table><script>lfxmlBodyEnd();</script></html>
+</table><script>lfxmlBodyEnd();</script></html>

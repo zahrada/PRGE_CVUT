@@ -1,0 +1,58 @@
+# Komentar zacina znakem '#'. Soubor muze obsahovat libolne mnozstvi komentaru a prazdnych radek.
+# V uvodnim komentari je uvedeno oznaceni bodu, datum mereni a slozeni mericke cety
+
+# Merene veliciny se udavaji v metrech, gradech, stupnich Celsia, torrech (mm Hg)
+
+# 1004 Vetrov
+# 30.5.2011
+# Mericka ceta: Miroslav Soul
+#               Zuzana Bartonova
+#               Katerina Kafkova
+
+# Prvni radek souboru (s vyjimkou komentaru a prazdnych radku) obsahuje pouze cislo stanoviska.
+1004                           
+
+# Radky zacinajici pismenem 'O' obsahuji mereni centracni osnovy
+# Radka centracni osnovy obsahuje 2 nebo 3 udaje: oznaceni ciloveho bodu, mereny smer, (vodorovna excentricita) 
+# Smery jsou udavany v gradech.
+O 1002        47.8194   
+O 1003        66.9922   
+O EXCIL       84.5570 4.3375
+O 1001       112.9863 
+O CENTR      138.9063 7.7.994
+ 
+
+# Na radcich zacinajici pismenem 'U' jsou uvedeny merene uhly. Kazdy uhel byl meren ve trech (kdyz to bylo mozne)
+# laboratornich jednotkach, na radek postupne uvedte hodnoty z jednotlivych lab. jednotek
+# (leve rameno, prave rameno, 1. jednotka, 2. jednotka, ...)
+U 1002 1003   19.1715   19.1719   19.1711
+U 1003 1001   45.9959   45.9956   45.9957         
+U 1002 1001   65.1651   65.1653   65.1644   
+
+
+# Na radcich zacinajici pismenem 'D' jsou udavany merene sikme delky (a hodnoty pro fyz. korekci)
+# Neplatna hodnota (nebyl meren tlak apod.) je nahrazena hodnotou 0.
+# C.b1  C.b2    hT[m]   hc[m]   t1[°C]   t2[°C]   p1[]  p2[]     h1[%]  h2[%]   d[m]
+
+# merene delky nejdou nacentrovat
+
+# Na radcich zacinajici pismenem 'A' jsou udavany merene uhly na Slunce. V ramci jedne modifikovane
+# jednotky je na Slunce mereno ctyrikrat: v prvni poloze L/P okraj, v druhe poloze P/L okraj. Na jeden radek uvedte:
+#  1. cislo bodu, na ktery je urcovan azimut
+#  2. mereny uhel jako prumer z mereni na levy a pravy okraj v I. poloze
+#  3. prumerny cas mereni na Slunce v I. poloze
+#  4. mereny uhel jako prumer z mereni na pravy a levy okraj v II. poloze
+#  5. prumerny cas mereni na Slunce v II. poloze
+#
+# Poznamka: v pripade, ze bylo mozne provest mereni na Slunce podle zadani, mel by byt
+#           pocet radku roven "pocet_mericu * 2"
+#
+A 1003     60.0656 16:20:20.0     61.8157 16:27:20.0 
+A 1003     64.3831 16:37:55.0     65.8063 16:43:55.0 
+
+A 1003     67.5081 16:51:12.5     68.6633 16:56:15.0 
+A 1003     70.0297 17:02:15.0     70.8922 17:06:05.0 
+
+A 1003     71.6135 17:09:22.5     72.3104 17:12:27.5 
+A 1003     73.1471 17:16:17.5     73.9782 17:20:05.0 
+

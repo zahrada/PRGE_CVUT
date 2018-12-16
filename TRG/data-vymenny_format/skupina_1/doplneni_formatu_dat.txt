@@ -1,0 +1,8 @@
+Pøedzpracovaná mìøení z triangulace, trilaterace a urèování azimutu dejte k dispozici kolegùm ze skupiny a vyuèujícím v tomto 
+
+formátu. 
+ Výše uvedená data uložte do souboru, který pojmenujte: <cislo skupiny>_<cislo bodu>_<cislo verze>.txt, napø.: 
+1_1004_1.txt
+
+a uložte je do pøíslušného podadresáøe na FTP serveru. 
+Aktualizace: formát pro ukládání dat byl zmìnìn (2.6.2011 12:30). Do souboru se již neuvádí vypoètené azimuty, ale pouze mìøené úhly na Slunce. Dále se do souboru neuvádí prùmìrná hodnota mìøených úhlù mezi body sítì, ale výsledky jednotlivých laboratorních jednotek. Prosíme, abyste soubory na FTP server odevzdávali bez zbyteèného odkladu.

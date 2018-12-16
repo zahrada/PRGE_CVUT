@@ -1,0 +1,60 @@
+# Komentar zacina znakem '#'. Soubor muze obsahovat libolne mnozstvi komentaru a prazdnych radek.
+# V uvodnim komentari je uvedeno oznaceni bodu, datum mereni a slozeni mericke cety
+
+# 1002 Dvorsky vrch
+# 30.5.2011
+# Mericka ceta: Zuzana Doèkalová
+#               Jan Dolista
+#               Radka Junová
+
+# Prvni radek souboru (s vyjimkou komentaru a prazdnych radku) obsahuje pouze cislo stanoviska.
+1002                           
+
+# Radky zacinajici pismenem 'O' obsahuji mereni centracni osnovy
+# Radka centracni osnovy obsahuje 2 nebo 3 udaje: oznaceni ciloveho bodu, mereny smer, (vodorovna excentricita) 
+# Smery jsou udavany v gradech.
+O 1003       181.5142            # orientacni osnova
+O 1004       196.6045            # orientacni osnova  
+O EXCIL       44.0243  7.840     # orientacni osnova (posledni udaj: vod. delka)
+O CENTR      104.1015  6.740     # orientacni osnova (posledni udaj: vod. delka)
+O 1001       121.3249            # orientacni osnova 
+
+# Na radcich zacinajici pismenem 'U' jsou uvedeny merene uhly. Kazdy uhel byl meren ve trech (kdyz to bylo mozne)
+# laboratornich jednotkach, na radek postupne uvedte hodnoty z jednotlivych lab. jednotek
+# (leve rameno, prave rameno, 1. jednotka, 2. jednotka, ...)
+U 1001 1003   60.1896	  60.1897 	60.1890
+U 1003 1004   15.0909 	  15.0906	15.0904 
+U 1001 1004   75.2800 	  75.2804  	75.2806
+
+# Na radcich zacinajici pismenem 'D' jsou udavany merene sikme delky (a hodnoty pro fyz. korekci)
+# Neplatna hodnota (nebyl meren tlak apod.) je nahrazena hodnotou 0.
+# Délky nebyly mìøeny, pøevzato z jiné mìøické skupiny.
+
+# Na radcich zacinajici pismenem 'A' jsou udavany merene uhly na Slunce. V ramci jedne modifikovane
+# jednotky je na Slunce mereno ctyrikrat: v prvni poloze L/P okraj, v druhe poloze P/L okraj. Na jeden radek uvedte:
+#  1. cislo bodu, na ktery je urcovan azimut
+#  2. mereny uhel jako prumer z mereni na levy a pravy okraj v I. poloze
+#  3. prumerny cas mereni na Slunce v I. poloze
+#  4. mereny uhel jako prumer z mereni na pravy a levy okraj v II. poloze
+#  5. prumerny cas mereni na Slunce v II. poloze
+#
+# Poznamka: v pripade, ze bylo mozne provest mereni na Slunce podle zadani, mel by byt
+#           pocet radku roven "pocet_mericu * 2"
+
+# POZOR ZMENA!!!!!
+# -----------------
+# Mereni bylo provedeno podle predpisu CUZK, tzn. v poradi levy okraj-I.poloha, pravy okraj-II.poloha,
+# levy okraj-I.poloha, pravy okraj-II.poloha pricemz mezi merenim v I. a II. poloze neuplynulo vice nez 2minuty.
+# Vysledky jsou tedy uvadeny:
+#  1. cislo bodu, na ktery je urcovan azimut
+#  2. mereny uhel jako prumer z mereni na levy okraj v I.poloze a pravy okraj v II. poloze
+#  3. prumerny cas mereni na Slunce, viz bod 2
+#  4. mereny uhel jako prumer z mereni na levy okraj v I.poloze a pravy okraj v II. poloze
+#  5. prumerny cas mereni na Slunce, viz bod 4
+#
+A 1004     80.0663 16:37:31.15    80.5998 16:39:44.70 
+A 1004     81.5698 16:43:51.23    81.9816 16:45:35.97 
+A 1004     83.2802 16:51:10.93    83.6151 16:52:38.82 
+A 1004     85.0564 16:58:56.08    85.5346 17:01:01.97 
+A 1004     87.2204 17:08:34.32    87.6006 17:10:17.34 
+A 1004     88.6138 17:14:53.24    89.0357 17:16:47.81 

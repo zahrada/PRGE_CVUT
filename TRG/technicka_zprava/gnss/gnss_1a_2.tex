@@ -1,0 +1,186 @@
+%% Razítko pro identifikaci úlohy a studenta
+%% 16.3.2009 Petr Soukup
+
+\documentclass[a4paper,11pt]{article}
+\usepackage[czech]{babel}
+\usepackage{array}
+\usepackage[cp1250]{inputenc}
+\usepackage{cmap} % pro správné mapování znakù v pdf na Unicode
+\usepackage[T1]{fontenc} % totéž
+\usepackage{chngpage} % zmìna geometrie stránky v tìle dokumentu
+\usepackage{graphicx}  % práce s obrázky
+\usepackage{wrapfig}  % pro obtékání textu kolem obrázkù a tabulek
+\usepackage{hyperref}
+\usepackage{url}
+
+\newcommand{\skola}{ÈESKÉ VYSOKÉ UÈENÍ TECHNICKÉ V~PRAZE}
+\newcommand{\fakulta}{FAKULTA STAVEBNÍ}
+\newcommand{\obor}{OBOR GEODÉZIE A~KARTOGRAFIE}
+\newcommand{\katedra}{KATEDRA VYŠŠÍ GEODÉZIE}
+\newcommand{\predmet}{Výuka v~terénu z~vyšší geodézie}
+\newcommand{\nazevulohy}{Zpracování GNSS mìøení}
+\newcommand{\cisloulohy}{GNSS}
+\newcommand{\cislozadani}{}
+\newcommand{\skolnirok}{$2010/11$}
+\newcommand{\semestr}{2}
+\newcommand{\studijniskupina}{1a}
+\newcommand{\zpracovali}{zpracoval}
+\newcommand{\datumodevzdani}{24.\,6.\,2011}
+\newcommand{\jmeno}{Doèkalová Z., Dolista J.,}
+\newcommand{\jmenoo}{Dvoøáková Z., Junová R.,}
+\newcommand{\jmenooo}{Schwarzová M.}
+% \newcommand{\jmenoooo}{}
+% \newcommand{\prijmeni}{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% \changetext{textheight}{textwidth}{evensidemargin}{oddsidemargin}{columnsep}
+\changetext{5\baselineskip}{14em}{-7em}{-7em}{} % relativní zmìna rozmìrù stránky pro razítko
+
+\pagestyle{empty} % neèíslovat stránku
+
+~\vfill  % pro umístìní razítka na spodek stránky
+
+\begin{center}
+
+\begin{tabular}{|c|c|c|c|c|c|}
+
+\noalign{\hrule height 2pt}
+
+\multicolumn{6}{!{\vrule width 2pt}c!{\vrule width 2pt}}
+{\rule{0pt}{2em} \bfseries \LARGE \skola} \\ 
+\multicolumn{6}{!{\vrule width 2pt}c!{\vrule width 2pt}}
+{\bfseries \large \fakulta ~-- \obor} \\
+\multicolumn{6}{!{\vrule width 2pt}c!{\vrule width 2pt}}
+{\bfseries \large \katedra}\\
+
+\noalign{\hrule height 2pt}
+\multicolumn{6}{!{\vrule width 2pt}l!{\vrule width 2pt}}{\small název pøedmìtu}\\
+\multicolumn{1}{!{\vrule width 2pt}l}{} & \multicolumn{5}{c!{\vrule width 2pt}}{\Large \textbf{\predmet}}\\[3mm]
+
+\hline
+\multicolumn{1}{!{\vrule width 2pt}l|}{\small úloha} & 
+\multicolumn{5}{l!{\vrule width 2pt}}{\small název úlohy} \\
+
+\multicolumn{1}{!{\vrule width 2pt}c|}{\large \bf{\cisloulohy}} &
+\multicolumn{5}{c!{\vrule width 2pt}}{\Large \textbf{{\nazevulohy}}}\\[3mm]
+
+\hline
+\multicolumn{1}{!{\vrule width 2pt}l|}{\small školní­ rok} & 
+{\small \makebox[1.6cm][l]{semestr}} &
+{\small \makebox[1.6cm][l]{skupina}} &
+{\small \makebox[6cm][l]{\zpracovali}} & 
+{\small \makebox[1.8cm][l]{datum}} & 
+\multicolumn{1}{c!{\vrule width 2pt}}{\small klasifikace}\\[1mm]
+
+\multicolumn{1}{!{\vrule width 2pt}c|} {\rule{0pt}{1.1em} \large {\skolnirok}} &
+{\large {\semestr}} &
+{\large {\studijniskupina}} &
+\multicolumn{1}{c|}{{\large \jmeno}} &
+{\large \datumodevzdani} &
+\multicolumn{1}{c!{\vrule width 2pt}}{} \\ 
+
+\multicolumn{1}{!{\vrule width 2pt}c|} {\rule{0pt}{1.1em} } &
+{} &
+{} &
+\multicolumn{1}{c|}{{\large \jmenoo}} &
+{} &
+\multicolumn{1}{c!{\vrule width 2pt}}{} \\ 
+
+\multicolumn{1}{!{\vrule width 2pt}c|} {\rule{0pt}{1.1em} } &
+{} &
+{} &
+\multicolumn{1}{c|}{{\large \jmenooo}} &
+{} &
+\multicolumn{1}{c!{\vrule width 2pt}}{} \\ 
+
+% \multicolumn{1}{!{\vrule width 2pt}c|} {\rule{0pt}{1.1em} } &
+% {} &
+% {} &
+% \multicolumn{1}{c|}{{\large \jmenoooo}} &
+% {} &
+% \multicolumn{1}{c!{\vrule width 2pt}}{} \\ 
+
+\noalign{\hrule height 2pt}
+
+\end{tabular}
+\end{center}
+
+\clearpage
+
+\changetext{-5\baselineskip}{-14em}{7em}{7em}{}  % návrat rozmìrù stránky na pùvodní hodnoty
+\changetext{5cm}{3.5cm}{-2cm}{-1.7cm}{}
+\topmargin -2cm
+
+
+% \changetext{5\baselineskip}{-5em}{7em}{7em}{}  % návrat rozmìrù stránky na pùvodní hodnoty
+% \hoffset = 0pt
+% \voffset = 0 pt
+% \evensidemargin = 0pt
+% \oddsidemargin = 0pt
+% \topmargin = 0pt
+% \headheight = 0pt
+% \headsep = 0pt
+% \leftskip = 0pt
+% \rightskip = 0pt
+% \marginparwidth = 0pt
+% \marginparsep = 0pt
+% \footskip = 0pt
+
+\setcounter{page}{1} % další stránky èíslovat od jedné
+\pagestyle{plain} % dole uprostøed stránky
+
+\begin{center}
+   \huge \textbf{Zpracování GNSS mìøení}\normalsize
+\end{center}
+\vspace*{0.2cm}
+\paragraph{\textit{\large Zadání:\\ \normalsize}}
+\hspace{-1,4em}
+Cílem úlohy je urèit souøadnice bodù lokální trigonometrické sítì. Ta je dána body 1001-1005.
+
+% \paragraph{\textit{\large Vypracování:\normalsize}}
+\section{\large Mìøení \normalsize}
+\noindent 
+Na urèovaných bodech bylo mìøeno rychlou statickou metodou. Použita byla aparatura Topcon HiPer+. Kromì mìøení na urèovaných bodech bylo do zpracování zahrnuto mìøení z~referenèní stanice Staré Mìsto a stanice Šumperk sítì CZEPOS. Mìøená data ze všech bodù byla poskytnuta ve formátu RINEX (observaèní + navigaèní).
+
+\section{\large Zpracování mìøení \normalsize}
+\noindent
+Zpracování mìøení GPS bylo provedeno v~software Leica GeoOffice.\\
+
+\noindent
+Do øešení byly použity vektory mezi body sítì a referenèní stanicí ve Starém Mìstì a vektor mezi referenèní stanicí Staré Mìsto a stanicí Šumperk. Ostatní vektory byly z~øešení vylouèeny. Vektory mezi stanicí Šumperk a body profilu nebyly použity z~dùvodu jejich délky a krátkého observaèního èasu. Vektor mezi stanicí Staré Mìsto a Šumperk mohl být do øešení použit i~pøes jeho velkou délku, protože délka jejich spoleèné observace byla nìkolik hodin.\\ 
+
+\noindent
+Tímto zpùsobem byly urèeny elipsoidické souøadnice a výšky bodù sítì v~systému ETRS-89. Výpoèet každého z~vektorù je dokumentován v~samostatném reportu. Ty jsou pøílohou technické zprávy stejnì jako report o~následném vyrovnání sítì v~systému ETRS-89.\\
+
+\noindent
+Vyrovnané souøadnice ETRS-89 byly dále transformovány do systému JTSK shodnostní transformací pomocí lokálního transformaèního klíèe. Pro tvorbu tohoto klíèe byly použity trigonometrické body v~okolí sítì, které mají uvedeny souøadnice jak v~S-JTSK, tak v~systému ETRF-89. Seznamy tìchto bodù vèetnì souøadnic jsou souèástí software LGO. Po sestavení transformaèního klíèe ze sedmi vybraných bodù byly na tìchto bodech zkontrolovány odchylky. Vzhledem k~velkým odchylkám byl jeden bod vylouèen. Pro tvorbu transformaèního klíèe bylo tedy použito pouze šest identických bodù. Parametry transformaèního klíèe vèetnì souøadnic identických bodù a jejich odchylek jsou souèástí samostatného reportu, který je pøílohou technické zprávy.
+
+\paragraph{\textit{\large Závìr: \normalsize} \\}
+\hspace{-1,4em}
+Rychlou statickou metodou byly urèeny souøadnice pìti bodù lokální trigonometrické sítì v~systému ETRS-89. Shodnostní transformací pomocí šesti identických bodù byly tyto souøadnice transformovány do systému JTSK. Seznamy souøadnic vèetnì jejich polohové chyby jsou uvedeny v~pøíloze technické zprávy.
+
+\newpage
+
+\paragraph{\textit{\large Seznam pøíloh:\normalsize} \\}
+\begin{enumerate}
+ \item Seznamy souøadnic
+ \item Report STAM-1001
+ \item Report STAM-1002
+ \item Report STAM-1003
+ \item Report STAM-1004
+ \item Report STAM-1005
+ \item Report SUM-STAM
+ \item Report Vyrovnání sítì
+ \item Report Transformace
+\end{enumerate}
+
+\vfill
+\noindent V~Praze 20.06.2011 \hspace*{9.6cm} Zuzana Doèkalová\\
+\hspace*{12.95cm} Jan Dolista\\
+\hspace*{13cm} Zuzana Dvoøáková\\
+\hspace*{12.95cm} Radka Junová\\
+\hspace*{12.95cm} Maria Schwarzová\\
+
+\end{document}

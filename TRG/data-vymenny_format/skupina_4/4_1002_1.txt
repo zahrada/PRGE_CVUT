@@ -1,0 +1,32 @@
+# 1002 Dvorsky vrch
+# 2.6.2011
+# Mericka ceta: Tomas Hlavacek
+#               Zuzana Kratinohova
+#               Eva Mertova
+
+1002    
+                       
+# Mereni centracni osnovy (delky jiz opraveny o hranolovou konstantu)
+O 1001         0.0194           
+O 1003        60.1880            
+O 1004        75.2964          
+O EXCIL      136.8132  8.693    
+O CENTR      194.2428  5.400            
+
+U 1001 1003   60.1691   60.1693   60.1681
+U 1003 1004   15.1065   15.1068   15.1067 
+U 1001 1004   75.2751   75.2751   75.2753                  
+
+# Merení dopoledne - sikme delky jiz opravene o hranolovou konstantu (a hodnoty pro fyz. korekci)
+# C.b1  C.b2    hT[m]   hc[m]      t1[°C]   t2[°C]    p1[torr]  p2[torr]   h1[%]  h2[%]      d[m]
+D 1002  1001    1.438   1.500   15.0/13.0  14.5/12.5   712.4     713.0       80    80      5916.847
+D 1002  1003    1.438   1.550   15.0/13.0  16.5/14.0   712.4     709.5       80    86      3221.390
+D 1002  1004    1.438   1.460   15.0/13.0  14.0/12.5   712.4     694.0       80    85      5580.760
+
+# Mereni odpoledne - sikme delky jiz opravene o hranolovou konstantu (a hodnoty pro fyz. korekci)
+# C.b1  C.b2    hT[m]   hc[m]      t1[°C]   t2[°C]    p1[torr]  p2[torr]   h1[%]  h2[%]      d[m]
+D 1002  1001    1.438   1.500   18.0/15.0  15.0/12.5   712.5     701.5       73    75      5916.834
+D 1002  1003    1.438   1.550   18.0/15.0  17.0/14.5   712.5     710.0       73    76      3221.384
+D 1002  1004    1.438   1.460   18.0/15.0  15.5/13.5   712.5     694.0       73    81      5580.751
+
+# Na Slunce nebylo mereno kvuli nepriznivym atmosferickym podminkam.

@@ -1,0 +1,436 @@
+%% Razítko pro identifikaci úlohy a studenta
+%% 16.3.2009 Petr Soukup
+
+\documentclass[a4paper,11pt]{article}
+\usepackage[czech]{babel}
+\usepackage{array}
+\usepackage[cp1250]{inputenc}
+\usepackage{cmap} % pro správné mapování znakù v pdf na Unicode
+\usepackage[T1]{fontenc} % toté
+\usepackage{chngpage} % zmìna geometrie stránky v tìle dokumentu
+\usepackage{graphicx}  % práce s obrázky
+\usepackage{wrapfig}  % pro obtékání textu kolem obrázkù a tabulek
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{amsbsy}
+
+\newcommand{\skola}{ÈESKÉ VYSOKÉ UÈENÍ TECHNICKÉ V~PRAZE}
+\newcommand{\fakulta}{FAKULTA STAVEBNÍ}
+\newcommand{\obor}{OBOR GEODÉZIE A~KARTOGRAFIE}
+\newcommand{\katedra}{KATEDRA VYŠŠÍ GEODÉZIE}
+\newcommand{\predmet}{Vıuka v~terénu z~vyšší geodézie}
+\newcommand{\nazevulohy}{Triangulace a trilaterace na velké vzdálenosti}
+\newcommand{\cisloulohy}{TRG}
+\newcommand{\cislozadani}{}
+\newcommand{\skolnirok}{$2010/11$}
+\newcommand{\semestr}{2}
+\newcommand{\studijniskupina}{1a}
+\newcommand{\zpracovali}{zpracoval}
+\newcommand{\datumodevzdani}{24.\,6.\,2011}
+\newcommand{\jmeno}{Doèkalová Z., Dolista J.,}
+\newcommand{\jmenoo}{Dvoøáková Z., Junová R.,}
+\newcommand{\jmenooo}{Schwarzová M.}
+% \newcommand{\jmenoooo}{}
+% \newcommand{\prijmeni}{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% \changetext{textheight}{textwidth}{evensidemargin}{oddsidemargin}{columnsep}
+\changetext{5\baselineskip}{14em}{-7em}{-7em}{} % relativní zmìna rozmìrù stránky pro razítko
+
+\pagestyle{empty} % neèíslovat stránku
+
+~\vfill  % pro umístìní razítka na spodek stránky
+
+\begin{center}
+
+\begin{tabular}{|c|c|c|c|c|c|}
+
+\noalign{\hrule height 2pt}
+
+\multicolumn{6}{!{\vrule width 2pt}c!{\vrule width 2pt}}
+{\rule{0pt}{2em} \bfseries \LARGE \skola} \\ 
+\multicolumn{6}{!{\vrule width 2pt}c!{\vrule width 2pt}}
+{\bfseries \large \fakulta ~-- \obor} \\
+\multicolumn{6}{!{\vrule width 2pt}c!{\vrule width 2pt}}
+{\bfseries \large \katedra}\\
+
+\noalign{\hrule height 2pt}
+\multicolumn{6}{!{\vrule width 2pt}l!{\vrule width 2pt}}{\small název pøedmìtu}\\
+\multicolumn{1}{!{\vrule width 2pt}l}{} & \multicolumn{5}{c!{\vrule width 2pt}}{\Large \textbf{\predmet}}\\[3mm]
+
+\hline
+\multicolumn{1}{!{\vrule width 2pt}l|}{\small úloha} & 
+\multicolumn{5}{l!{\vrule width 2pt}}{\small název úlohy} \\
+
+\multicolumn{1}{!{\vrule width 2pt}c|}{\large \bf{\cisloulohy}} &
+\multicolumn{5}{c!{\vrule width 2pt}}{\Large \textbf{{\nazevulohy}}}\\[3mm]
+
+\hline
+\multicolumn{1}{!{\vrule width 2pt}l|}{\small školní­ rok} & 
+{\small \makebox[1.6cm][l]{semestr}} &
+{\small \makebox[1.6cm][l]{skupina}} &
+{\small \makebox[6cm][l]{\zpracovali}} & 
+{\small \makebox[1.8cm][l]{datum}} & 
+\multicolumn{1}{c!{\vrule width 2pt}}{\small klasifikace}\\[1mm]
+
+\multicolumn{1}{!{\vrule width 2pt}c|} {\rule{0pt}{1.1em} \large {\skolnirok}} &
+{\large {\semestr}} &
+{\large {\studijniskupina}} &
+\multicolumn{1}{c|}{{\large \jmeno}} &
+{\large \datumodevzdani} &
+\multicolumn{1}{c!{\vrule width 2pt}}{} \\ 
+
+\multicolumn{1}{!{\vrule width 2pt}c|} {\rule{0pt}{1.1em} } &
+{} &
+{} &
+\multicolumn{1}{c|}{{\large \jmenoo}} &
+{} &
+\multicolumn{1}{c!{\vrule width 2pt}}{} \\ 
+
+\multicolumn{1}{!{\vrule width 2pt}c|} {\rule{0pt}{1.1em} } &
+{} &
+{} &
+\multicolumn{1}{c|}{{\large \jmenooo}} &
+{} &
+\multicolumn{1}{c!{\vrule width 2pt}}{} \\ 
+
+% \multicolumn{1}{!{\vrule width 2pt}c|} {\rule{0pt}{1.1em} } &
+% {} &
+% {} &
+% \multicolumn{1}{c|}{{\large \jmenoooo}} &
+% {} &
+% \multicolumn{1}{c!{\vrule width 2pt}}{} \\ 
+
+\noalign{\hrule height 2pt}
+
+\end{tabular}
+\end{center}
+
+\clearpage
+
+\changetext{-5\baselineskip}{-14em}{7em}{7em}{}  % návrat rozmìrù stránky na pùvodní hodnoty
+\changetext{5cm}{3.5cm}{-2cm}{-1.7cm}{}
+\topmargin -2cm
+
+
+% \changetext{5\baselineskip}{-5em}{7em}{7em}{}  % návrat rozmìrù stránky na pùvodní hodnoty
+% \hoffset = 0pt
+% \voffset = 0 pt
+% \evensidemargin = 0pt
+% \oddsidemargin = 0pt
+% \topmargin = 0pt
+% \headheight = 0pt
+% \headsep = 0pt
+% \leftskip = 0pt
+% \rightskip = 0pt
+% \marginparwidth = 0pt
+% \marginparsep = 0pt
+% \footskip = 0pt
+
+\setcounter{page}{1} % další stránky èíslovat od jedné
+\pagestyle{plain} % dole uprostøed stránky
+
+\begin{center}
+   \huge \textbf{Triangulace a trilaterace na velké vzdálenosti}\normalsize
+\end{center}
+\vspace*{0.2cm}
+\paragraph{\textit{\large Zadání:\\ \normalsize}}
+\hspace{-1,4em}
+V~rámci této úlohy budou metodami klasické geodézie (triangulace, trilaterace, astronomické urèování azimutu) urèeny souøadnice ètveøice bodù v~systému JTSK v~okolí Starého Mìsta pod Snìníkem.\\
+
+\noindent
+Orientace sítì bude definována mìøenımi azimuty na bodech sítì. Vzhledem k~obtínosti urèení zemìpisnıch souøadnic bodù sítì astronomickımi metodami budou souøadnice jednoho bodu v~systému JTSK pøevzaty z~úlohy GNSS.\\
+
+\noindent
+Dalším vıstupem úlohy bude souètová konstanta gyroteodolitu.
+
+\paragraph{\textit{\large Vypracování:\normalsize}}
+\section{\large Mìøení \normalsize}
+\textit{Datum:} 30.5.2011 \\
+\textit{Povìtrnostní podmínky:} jasno, mírnı vítr\\
+\textit{Pomùcky (pro kadé stanovisko):} 1x totální stanice Leica TC1700 \\
+\hspace*{14,5em} ruèní GPS \\
+\hspace*{14,5em} odrazné hranoly \\
+\hspace*{14,5em} válec \\
+\hspace*{14,5em} 3x stativ \\
+\hspace*{14,5em} psychrometr, barometr \\
+\hspace*{14,5em} olovnice \\
+\\*
+\noindent
+Mìøení bylo provedeno souèasnì na ètyøech bodech sítì. Na kadém z~bodù byly mìøeny vodorovné úhly, šikmé délky a urèen azimut jedné ze stran mìøením na Slunce. Mìøení vodorovnıch úhlù a astronomické mìøení bylo provedeno z~excentrického stanoviska, proto byla na kadém bodì zamìøena centraèní osnova a to ve dvou skupinách. Jeliko mìøení v~rámci sítì byla provádìna na excentricky postavené cíle, byl zamìøen v~rámci centraèní osnovy rovnì tento cíl. Souèasnì byly zmìøeny délky excentricit mezi excentrickım stanoviskem a centrem a mezi excentrickım stanoviskem a excentrickım cílem. Délky excentricit byly mìøeny elektronickım dálkomìrem a to buï na minihranol nebo na hranol umístìnı na centru.\\
+
+\noindent
+Na kadém stanovisku byly mìøeny tøi vodorovné úhly mezi ostatními body sítì. Kadı z~úhlù byl mìøen ve tøech laboratorních jednotkách. Na bodì 1003 byl jako jedno z~ramen úhlù pøidán bod 1005 Tábor nebo strana 1003-1005 byla následnì usmìròována gyroteodolitem. \\
+
+\noindent
+Délky byly naší skupinou mìøeny rovnì z~excentrického stanoviska na centricky umístìné hranoly. Pøi mìøení byla ke kadé délce registrována suchá a mokrá teplota a tlak a to na obou koncích. Dále byla zaznamenávána vıška cíle. Takto mìøené délky však nebylo mono do vıpoètu pouít a proto byly pøevzaty délky od skupiny è.2, která je mìøila pøímo z~centrického stanoviska na centrickı cíl. \\
+
+\noindent
+Astronomické mìøení na Slunce bylo provedeno kadım èlenem skupiny a to ve dvou jednotkách. Mìøení bylo provedeno buï dle pøedpisu ÈÚZK nebo modifikovanım zpùsobem uvedenım v~zadání úlohy. Na vìtšinì stanovisek byla usmìrnìna jedna zvolená strana sítì všemi mìøièi, pouze na bodì 1001 byly usmìrnìny strany dvì (kadım mìøièem jiná).
+
+
+\section{\large Zpracování mìøení \normalsize}
+\subsection{Centraèní osnova}
+\noindent
+Kadou z~mìøickıch èet bylo nejprve zpracováno mìøení centraèní osnovy. Byly tedy vypoèteny prùmìry ze dvou skupin, mìøené délky byly opraveny o~souètovou konstantu podle pouitého hranolu a v~pøípadì šikmıch délek byly tyto redukovány na vodorovnou. Takto pøedzpracovaná data byla poskytnuta ostatním mìøickım èetám ve vımìnném formátu definovanım zadáním.\\
+
+\noindent
+V~centraèní osnovì na bodì 1003 byla zjištìna chyba, její pøíèinu se však nepodaøilo zjistit. Z~tohoto dùvodu byla veškerá mìøení na bodì 1003 pøevzata od skupiny è.2.
+
+\subsection{Azimuty}
+\noindent
+Nejprve byl vypoèten prùmìr z~mìøení na levı a pravı okraj Slunce a také prùmìr z~èasù tìchto mìøení. Vıpoètem prùmìru byl vodorovnı smìr vztaen ke støedu Slunce. Díky tomu mohla bıt dále pouita rektascenze a deklinace uvádìná v~astronomickıch tabulkách. Následnì byl jako rozdíl dvou smìrù vypoèten vodorovnı úhel $\omega$ mezi bodem sítì a støedem Slunce.\\
+
+\noindent
+Pokud bylo mìøeno postupem dle ÈÚZK, tedy levı okraj v~I.poloze, pravı okraj v~II.poloze, byla vıpoètem prùmìru vylouèena kolimaèní a úklonná chyba. Pokud bylo mìøeno postupem dle zadání, byly tyto chyby vylouèeny a následnım prùmìrováním azimutu (resp. smìrníku) v~rámci jednotky.\\
+
+\noindent
+Èasy mìøení byly urèeny pomocí ruèního pøístroje GPS. S~ním byly buï synchronizovány ruèní stopky, na kterıch pak byly odeèítány okamiky mìøení, nebo mìøic odeèítal pøímo v~celé sekundy pøístroje GPS. Takto urèené okamiky mìøení byly v~èase UTC+2hod. (tedy SELÈ). Pro interpolaci v~astronomickıch tabulkách bylo nutné pøevést tento èas na terestrickı a pro další vıpoèty pak na èas sluneèní. K~tomu bylo nutné vyhledat v~Bulletinu A~sluby IERS tzv. number of leap seconds, tedy rozdíl mezi èasem UTC a TAI, a DUT1, tedy rozdíl mezi UT1 a UTC:
+$$n=34.0\ s$$
+$$DUT1 = -0.27647\ s$$
+
+\noindent
+Pro interpolaci rektascenze a deklinace Slunce pro okamik mìøení byl pouit Besselùv interpolaèní polynom.\\
+
+\noindent
+Pro další vıpoèty bylo nutné zjistit také astronomické souøadnice místa pozorování. Ty byly s~dostateènou pøesností urèeny z~pøiblinıch souøadnic bodù sítì v~S-JTSK transformací v~programu Matkart. Souèasnì byla urèena i~hodnota meridiánové konvergence.\\
+
+\noindent
+Následnì byl urèen hodinovı úhel a z~nautického trojúhelníka pak azimut a zenitová vzdálenost Slunce v~okamiku pozorování. Z~tìchto hodnot byla urèena hodnota denní aberace o~kterou byl azimut opraven. Pøiètením vodorovného úhlu $\omega$ byl pak získán astronomickı azimut pøíslušné strany sítì. Pro získání smìrníku této strany byla odeètena hodnota meridiánové konvergence a pøiètena smìrová korekce $10''$. \\
+
+\noindent
+Na zavìr byl spoèten prùmìr ze všech jednotek náleících jedné stranì. Takto získané smìrníky jsou však stále excentrické, problém centrace bude popsán v~další kapitole.
+
+\subsection{Délky}
+\noindent
+Jeliko od skupiny è.2 byly pøevzaty délky mìøené centricky, bylo tøeba délky opravit pouze o~fyzikální a matematickou redukci. Fyzikální redukce byla vypoètena pro prùmìrnou hodnotu teploty, tlaku a vlhkosti mezi stanoviskem a cílem. Vıpoèty byly provedeny podle návodu v~zadání.\\
+
+\noindent
+V~rámci matematické redukce byla nejprve provedena oprava o~refrakci. Pouit byl refrakèní koeficient k=0,13.\\
+
+\noindent
+Redukce z~nadmoøské vıšky a ze zobrazení byla provedena v~jednom kroku postupem navrenım prof. Mervartem a ing. Lukešem. Postup spoèívá ve stanovení pomìru mezi pøímou prostorovou délkou a délkou v~rovinì Køovákova zobrazení, kterı platí jak pro délky mìøené, tak pro délky urèené z~pøiblinıch souøadnic. Vynásobením mìøené délky pomìrem stanovenım z~pøiblinıch souøadnic tedy dostaneme redukovanou délku do roviny Køovákova zobrazení.\\
+
+\noindent
+Pro stanovení pomìru byly pouity jako pøibliné souøadnice elipsoidické souøadnice $B,\ L,\ H_{el}$ urèené v~rámci úlohy GNSS.  Nejprve byly k~elipsoidickım vıškám bodù pøièteny vıšky pøístroje, resp. cíle. Transformací elipsoidickıch souøadnic byly získány pravoúhlé souøadnice v~systému ETRS-89, z~nich byla Pythagorovou vìtou spoètena délka pøímé prostorové spojnice obou bodù. Délka v~rovinì Køovákova zobrazení byla spoètena ze souøadnic urèenıch transformací ETRS-89~$\rightarrow$~S-JTSK danou metodikou ÈÚZK. Pravoúhlé souøadnice ETRS-89 byly Helmertovou transformací pøevedeny na Besselùv elipsoid, následnì byly pravoúhlé souøadnice pøevedeny na elipsoidické. Dále bylo aplikováno modifikované Køovákovo zobrazení vèetnì bikubické dotransformace. Takto byly získány souøadnice S-JTSK/05, které byly dále pøevedeny na souøadnice S-JTSK pomocí oprav interpolovanıch z~tabulky. 
+
+\subsection{Centrace úhlù (smìrníkù)}
+\noindent
+Centrace byla provedena iteraèním postupem. Zvláš byla urèována centraèní zmìna pro kadé z~ramen mìøeného úhlu.\\
+
+\noindent
+Pro kadé rameno byla zvolena místní soustava souøadnic, její poèátek leel na centrickém stanovisku (T1) a kladná osa +x smìøovala do centrického cíle (T2). Vzhledem k~velké vzdálenosti mezi obìma body mohla bıt v~první iteraci spojnice excentrického stanoviska (S1) s~excentrickım cílem (C2) povaována za totonou s~osou x a tedy její smìrník $\sigma_{S1,C2} = 0$. Pøiètením pøíslušného úhlu mìøeného v~rámci centraèní osnovy lze urèit smìrník mezi excentrickım stanoviskem (S1) a centrickım stanoviskem (T1). Jeho obrácením o~200 gon lze pak pøi známé hodnotì excentricity urèit rajonem souøadnice excentrického stanoviska (S1) v~místní soustavì. Opìtovnım pøiètením pøíslušného úhlu mìøeného v~centraèní osnovì lze urèit smìrník mezi excentrickım stanoviskem (S1) a excentrickım cílem (C1) na téme bodì. Souøadnice excentrického cíle (C1) se pøi známé excentricitì opìt urèí rajonem. Obdobnı postup byl aplikován na bodì 2 a byly tak urèeny souøadnice S2, C2. Ze souøadnic v~místní soustavì mohl bıt novì spoèten smìrník $\sigma_{S1,C2}$, kterı byl ji rùznı od 0. Následnì byl celı postup opakován a to do té doby, dokud zmìna smìrníku nebyla menší ne 0,00001 gon. Centraèní zmìna $\delta^1$ smìru ramene je pak rovna pøímo hodnotì smìrníku $\sigma_{S1,C2}$.\\
+
+\noindent
+Pro centraci úhlu mìøeného v~laboratorní jednotce pak platí:
+$$\omega = \omega' + \delta^1_l - \delta^1_p$$
+kde $\omega'$ je mìøenı úhel\\
+\hspace*{1,5em} $\delta^1_l$ je centraèní zmìna levého ramene\\
+\hspace*{1,5em} $\delta^1_p$ je centraèní zmìna pravého ramene\\
+
+\noindent
+Pro centraci smìrníku platí:
+$$\sigma = \sigma' - \delta^1$$
+
+\newpage
+
+\subsection{Oprava mìøenıch smìrù na spojnici v~rovinì Køovákova zobrazení}
+\noindent
+Hodnota opravy $\delta^2$ byla spoètena z~pøiblinıch souøadnic bodù sítì podle vzorcù uvedenıch v~zadání.\\
+
+\noindent
+Stejnì jako pro centraèní zmìnu platí i~pro pøevod úhlu:
+$$\omega = \omega' + \delta^2_l - \delta^2_p$$
+kde $\omega'$ je mìøenı úhel\\
+\hspace*{1,5em} $\delta^2_l$ je oprava levého ramene\\
+\hspace*{1,5em} $\delta^2_p$ je oprava pravého ramene\\
+
+\noindent
+Shodnì platí pro opravu smìrníku:
+$$\sigma = \sigma' - \delta^2$$
+
+\section{\large Vyrovnání sítì \normalsize}
+
+\subsection{Stanovení vah}
+\subsubsection{Délky}
+\noindent
+Smìrodatná odchylka všech mìøenıch délek byla povaována za stejnou a stanovena byla vıbìrovou smìrodatnou odchylkou.\\
+
+\noindent
+Délka mezi kadımi dvìma body byla mìøena celkem ètyøikrát, jednou dopoledne, jednou odpoledne a to vdy protismìrnì. Pro kadou délku jsou tedy tøi nadbyteèná mìøení a je moné spoèítat opravy od prùmìru a následnì vıbìrovou smìrodatnou odchylku. Vzhledem k~malému poètu mìøení je stanovena vıbìrová smìrodatná odchylka pro všechny délky spoleènì. Jsou mìøeny délky celkem ètyø stran, poèet nadbyteènıch mìøení je tedy 12.
+$$\sigma_d = \sqrt{ \frac{\sum v \cdot v}{n'}}$$
+
+\subsubsection{Smìrníky}
+\noindent
+Smìrodatná odchylka smìrníkù urèenıch astronomicky byla opìt povaována za stejnou a byla stanovena vıbìrovou smìrodatnou odchylkou.\\
+
+\noindent
+Vzhledem k~rùznım postupùm mìøení mohla bıt vıbìrová smìrodatná odchylka stanovena a pro smìrník urèenı v~jedné jednotce. Kadı z~mìøièù zamìøil dvì tyto jednotky, jedna z~nich je tedy nadbyteèná. Pro dvojici jednotek, mìøenıch jedním mìøièem, byly vypoèteny opravy od prùmìru. Vıbìrová smìrodatná odchylka byla následnì stanovena opìt pro všechny jednotky spoleènì. Celkem mìøilo v~síti jedenáct mìøièù a mìlo by tedy bıt k~dispozici 11 nadbyteènıch jednotek, které lze pouít k~vıpoètu vıbìrové smìrodatné odchylky. Na bodì 1001 musela bıt však jedna jednotka vylouèena. K~dispozici je tedy pouze 10 nadbyteènıch. 
+$$\sigma_{\sigma} = \sqrt{ \frac{\sum v \cdot v}{n'}}$$
+
+\noindent
+Takto urèená smìrodatná odchylka charakterizuje prùmìr ze dvou jednotek. Na vìtšinì bodù však byla tøemi mìøièi usmìrnìna stejná strana a lze tedy vypoèítat prùmìr z~šesti jednotek. Jeho smìrodatná odchylka je pak podle zákona hromadìní støedních chyb $\sqrt{3}$ krát menší. \\
+
+\noindent
+Na bodì 1001 byl kadı ze smìrníkù mìøen pouze ve dvou laboratorních jednotkách. U~smìrníku 1001-1003 se však jedno z~mìøení ukázalo jako odlehlé. Jeliko ale bylo na bodì mìøeno dle metodiky ÈÚZK, mohla bıt vylouèena pouze polovina laboratorní jednotky a zbylá tøi mìøení (1,5 laboratorní jednotky) mohla bıt dále pouita. Bylo však nutné dle zákona hromadìní støedních chyb stanovit smìrodatnou odchylku takto urèeného smìrníku.
+
+\subsubsection{Úhly}
+\noindent
+Smìrodatná odchylka úhlù byla urèena samostatnım vyrovnáním. Vyrovnání bylo provedeno pouze úhlovì pøièem rozmìr a orientace byly síti dány fixováním dvou bodù na souøadnice GNSS pomocí pseudomìøení. Pseudomìøení byly nastaveny vysoké váhy a tedy v~rámci vyrovnání jim nebyly pøiøazeny ádné opravy. Aposteriorní smìrodatná odchylka vyrovnání, která je z~oprav poèítána, pak charakterizuje prakticky pouze úhlová mìøení. Jeliko byla apriorní smìrodatná odchylka mìøeného úhlu zvolena 1, je aposteriorní smìrodatná odchylka úhlu rovna pøímo aposteriorní smìrodatné odchylce vyrovnání. Takto urèená smìrodatná odchylka úhlu byla dále pouita jako apriorní hodnota pro spoleèné vyrovnání úhlù, smìrníkù a délek.\\
+
+\noindent
+Dùvodem, proè tento postup nebyl pouit i~pro délky a smìrníky namísto vıbìrové smìrodatné odchylky, byl malı poèet mìøení.
+
+\subsection{Vlastní vyrovnání}
+\noindent
+Vlastní vyrovnání bylo provedeno skriptem v~programu Octave nebo program GNU Gama neumí pracovat se smìrníkem z~astronomickıch mìøení. Pouito bylo vyrovnání zprostøedkujících metodou nejmenších ètvercù. Váhy jednotlivıch mìøení byly pøiøazovány na základì jejich smìrodatnıch odchylek. V~rámci vyrovnání byla sí fixována na souøadnice bodu 1003 pøevzaté z~mìøení GNSS. To bylo provedeno pomocí pseudomìøení, kterému byly pøiøazeny vysoké váhy (tedy velmi malé smìrodatné odchylky fixovanım souøadnicím). V~prùbìhu vyrovnání byla kontrolována linearizace dvojím vıpoètem oprav. Pokud rozdíl oprav pøesáhl hodnotu $10^{-7}$, byl vıpoèet opakován pøièem vısledky pøedchozího vyrovnání byly povaovány za nové pøibliné souøadnice. 
+
+\section{\large Urèení konstanty gyroteodolitu \normalsize}
+\noindent
+V~rámci sítì byla strana 1005-1003 usmìrnìna pomocí gyroteodolitu. Mìøení bylo provedeno na excentrickém stanovisku bodu 1005 a cíleno bylo na excentrickı cíl bodu 1003. Zároveò byla zamìøena centraèní osnova. Z~mìøení byl vypoèten smìrník 1005ex-1003ex. K~vıpoètu byla pouita konstanta gyroteodolitu $\Delta' = 90^\circ 27' 42''$. Vypoètenı smìrník byl následnì nacentrován stejnım postupem jako smìrníky urèené astronomicky.\\
+
+\noindent
+Smìrník strany 1005-1003 urèenı gyroteodolitem je $\sigma = 282,94965$ gon. Smìrník této strany byl rovnì vypoèten ze souøadnic urèenıch GNSS: $\sigma = 282,67079$ gon. Rozdíl mezi obìma smìrníky $\Delta \sigma = -0,27885$ gon je zpùsoben pouitou konstantou gyroteodolitu, která není pøesnì známa. Pouitou hodnotu je tedy nutné opravit. Novì urèená konstanta gyroteodolitu je:
+$$\Delta = \Delta' + \Delta \sigma = 90^\circ 12' 38''$$
+
+\newpage
+
+\paragraph{\textit{\large Závìr: \normalsize} \\}
+\hspace{-1,4em}
+Souøadnice bodù trigonometrické sítì byly urèeny jak z~terestrickıch mìøení, tak metodou GNSS. Postup zpracování mìøení GNSS je pøedmìtem samostatné technické zprávy. Vısledky z~obou metod a jejich porovnání je shrnuto v~následující tabulce.
+\begin{figure}[!h]
+ \centering
+ \includegraphics[width=15.5cm]{souradnice_terestricke_GNSS.pdf}
+\end{figure}\\
+Z~porovnání smìrodatnıch polohovıch odchylek na jednotlivıch bodech vyplıvá, e metoda GNSS dosahuje lepších vısledkù.\\
+
+\noindent
+Dále bylo zkoumáno vzájemné stoèení obou sítí a zmìna jejich mìøítka. Stoèení bylo urèeno z~porovnání smìrníkù jednotlivıch stran, zmìna mìøítka pak porovnáním jejich délek.
+\begin{figure}[!h]
+ \centering
+ \includegraphics[width=14.5cm]{orientace_rozmer_terestricke_GNSS.pdf}
+\end{figure}\\
+Z~porovnání vyplıvá, e obì sítì jsou vùèi sobì stoèeny pøiblinì o~0,0007 gon. Z~porovnání rozmìru je zøejmé, e sí urèená terestricky je menší, pøièem mìøítkovı koeficient je pøiblinì -10~mm/km.
+
+\vfill
+\noindent V~Praze 20.06.2011 \hspace*{9.6cm} Zuzana Doèkalová\\
+\hspace*{12.95cm} Jan Dolista\\
+\hspace*{13cm} Zuzana Dvoøáková\\
+\hspace*{12.95cm} Radka Junová\\
+\hspace*{12.95cm} Maria Schwarzová\\
+
+\newpage
+
+\paragraph{\textit{\large Seznam pøíloh:\normalsize} \\}
+\begin{enumerate}
+ \item Náèrt sítì
+ \item Schéma centraèních osnov na bodech sítì
+ \item Zápisníky
+ \item Pøedzpracovaná data ve vımìnném formátu
+ \item Urèení azimutù jednotlivıch stran
+ \item Redukce délek
+ \item Redukce úhlù a smìrníkù
+ \item Vıbìrové smìrodatné odchylky délek a smìrníkù
+ \item Protokol o~úhlovém vyrovnání
+ \item Vstupní data pro celkové vyrovnání
+ \item Protokol o~celkovém vyrovnání
+\end{enumerate}
+
+\vspace*{1cm}
+
+\noindent
+Poznámka: Veškeré vıpoèty byly provedeny v~programu Octave. Vıstupy byly vygenerovány do tabulek a protokolù, které jsou vıše uvedenımi pøílohami. Zdrojové kódy pøílohou nejsou a v~pøípadì potøeby budou poskytnuty v~digitální podobì.
+
+\newpage
+\section*{\large Pøíloha 1 - Náèrt sítì \normalsize}
+\vspace*{4cm}
+\begin{figure}[!h]
+ \centering
+ \includegraphics [scale=1]{nacrt_site.pdf}
+\end{figure}
+
+\newpage
+\section*{\large Pøíloha 2 - Schéma centraèních osnov na bodech sítì \normalsize}
+\vspace*{2cm}
+\begin{figure}[!h]
+ \centering
+ \includegraphics[width=16cm]{nacrt_TRG.pdf}
+\end{figure}
+
+\newpage
+\section*{\large Pøíloha 4 - Pøedzpracovaná data ve vımìnném formátu \normalsize}
+
+\hspace*{25cm}
+\newpage
+\hspace*{25cm}
+\newpage
+\hspace*{25cm}
+
+\newpage
+\section*{\large Pøíloha 5 - Urèení azimutù jednotlivıch stran \normalsize}
+\begin{figure}[!h]
+%  \centering
+ \includegraphics[width=15cm]{slunce_1.pdf}
+\end{figure}
+
+\begin{figure}[!h]
+%  \centering
+ \includegraphics[width=16cm]{slunce_2.pdf}
+\end{figure}
+
+\newpage
+\section*{\large Pøíloha 6 - Redukce délek \normalsize}
+\begin{figure}[!h]
+%  \centering
+ \includegraphics[width=16cm]{fyzikalni_redukce.pdf}
+\end{figure}
+
+\begin{figure}[!h]
+%  \centering
+ \includegraphics[width=12cm]{matematicka_redukce.pdf}
+\end{figure}
+
+\newpage
+\section*{\large Pøíloha 7 - Redukce úhlù a smìrníkù \normalsize}
+\begin{figure}[!h]
+%  \centering
+ \includegraphics[width=16cm]{redukce_uhlu.pdf}
+\end{figure}
+
+\begin{figure}[!h]
+%  \centering
+ \includegraphics[width=12cm]{redukce_smerniku.pdf}
+\end{figure}
+
+\newpage
+\section*{\large Pøíloha 8 - Vıbìrové smìrodatné odchylky délek a smìrníkù \normalsize}
+\begin{figure}[!h]
+%  \centering
+ \includegraphics[width=8cm]{vyberovka_delky.pdf}
+\end{figure}
+
+\noindent
+$\pmb{\sigma_d = 0,0255\ m}$\\
+
+\begin{figure}[!h]
+%  \centering
+ \includegraphics[width=8cm]{vyberovka_smernik.pdf}
+\end{figure}
+
+\noindent
+$\pmb{\sigma_{\sigma} = 0,0040\ gon}$\\
+
+\newpage
+\section*{\large Pøíloha 9 - Protokol o~úhlovém vyrovnání \normalsize}
+
+\newpage
+\section*{\large Pøíloha 10 - Vstupní data pro celkové vyrovnání \normalsize}
+
+\newpage
+\section*{\large Pøíloha 11 - Protokol o~celkovém vyrovnání \normalsize}
+
+
+
+\end{document}

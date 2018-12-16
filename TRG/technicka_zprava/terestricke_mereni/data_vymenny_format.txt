@@ -1,0 +1,209 @@
+============================================================================================
+|                                        Bod 1001                                          |
+============================================================================================
+# 1001 Stvanice
+# 30.5.2011
+# Mericka ceta: Maria Schwarzova
+#               Zuzana Dvorakova
+
+1001
+
+# centracni osnova (posledni udaj: vod. delka)
+O EXCIL        205.6006  5.862          
+O CENTR        232.6174  3.744          
+O 1004         302.6270                 
+O 1003         325.5594                 
+O 1002         362.1348                  
+
+# leve rameno, prave rameno, 1. jednotka, 2. jednotka, 3. jednotka
+U 1004 1003 22.9333 22.9336 22.9335
+U 1003 1002 36.5745 36.5742 36.5737
+U 1004 1002 59.5085 59.5081 59.5081
+
+# Na radcich zacinajici pismenem 'D' jsou udavany merene sikme delky (a hodnoty pro fyz. korekci)
+# Neplatna hodnota (nebyl meren tlak apod.) je nahrazena hodnotou 0.
+# C.b1  C.b2    hT[m]   hc[m]   t1[°C]     t2[°C]     p1[torr]  p2[torr]   h1[%]  h2[%]   d[m]
+D 1001  1003    1.638   1.497   19.4/16.4  24.2/19.5  694   	701        74     66      4795.855
+D 1001  1002    1.638   1.510   19.5/16.0  23.0/18.5  694   	705        70     65      5916.797
+D 1001  1003    1.638   1.498   21.2/16.5  24.3/19.3  694   	701        64     66      4795.843
+D 1001  1002    1.638   1.510   21.9/16.8  24.3/19.0  694   	705        64     66      5916.790
+# D 1001  1004  nelze merit (prilis dlouha vzdalenost)
+
+# merene uhly na Slunce - !!! pozor zmena postupu mereni !!!
+#  1. cislo bodu, na ktery je urcovan azimut
+#  2. mereny uhel jako prumer z mereni na levy okraj v I.poloze a pravy okraj v II.poloze
+#  3. prumerny cas mereni na Slunce, viz bod 2
+#  4. mereny uhel jako prumer z mereni na levy okraj v I.poloze a pravy okraj v II. poloze
+#  5. prumerny cas mereni na Slunce, viz bod 4
+
+# mereni 1 modifikovane jednotky na bod 1003
+A 1003    201.2848 16:51:34    200.9019 16:53:14
+A 1003    199.2462 17:00:25    198.9424 17:01:46
+
+# mereni 1 modifikovane jednotky na bod 1002
+A 1002    234.6121 17:05:52    234.7593 17:07:04
+A 1002    233.7286 17:09:50    233.4502 17:11:04
+
+============================================================================================
+|                                        Bod 1002                                          |
+============================================================================================
+# 1002 Dvorsky vrch
+# 30.5.2011
+# Mericka ceta: Zuzana Doèkalová
+#               Jan Dolista
+#               Radka Junová
+
+# Prvni radek souboru (s vyjimkou komentaru a prazdnych radku) obsahuje pouze cislo stanoviska.
+1002                           
+
+# Radky zacinajici pismenem 'O' obsahuji mereni centracni osnovy
+# Radka centracni osnovy obsahuje 2 nebo 3 udaje: oznaceni ciloveho bodu, mereny smer, (vodorovna excentricita) 
+# Smery jsou udavany v gradech.
+O 1003       181.5142            # orientacni osnova
+O 1004       196.6045            # orientacni osnova  
+O EXCIL      244.0243  7.858     # orientacni osnova (posledni udaj: vod. delka)
+O CENTR      304.1015  6.768     # orientacni osnova (posledni udaj: vod. delka)
+O 1001       121.3249            # orientacni osnova 
+
+# Na radcich zacinajici pismenem 'U' jsou uvedeny merene uhly. Kazdy uhel byl meren ve trech (kdyz to bylo mozne)
+# laboratornich jednotkach, na radek postupne uvedte hodnoty z jednotlivych lab. jednotek
+# (leve rameno, prave rameno, 1. jednotka, 2. jednotka, ...)
+U 1001 1003   60.1896	  60.1897 	60.1890
+U 1003 1004   15.0909 	  15.0906	15.0904 
+U 1001 1004   75.2800 	  75.2804  	75.2806
+
+# Na radcich zacinajici pismenem 'D' jsou udavany merene sikme delky (a hodnoty pro fyz. korekci)
+# Neplatna hodnota (nebyl meren tlak apod.) je nahrazena hodnotou 0.
+# dopoledne
+# C.b1  C.b2    hT[m]   hc[m]    t1[°C]      t2[°C]   p1[]  p2[]     h1[%]  h2[%]   d[m]
+D 1002  1001    1.535   1.610   17.5/21.0  14.5/17.5  705   694      71      72    5916.799
+D 1002  1003    1.535   1.497   18.5/23.0  19.5/24.2  705   701.5    65      70    3221.358
+D 1002  1004    1.535   1.480   17.5/21.0  16.0/19.0  705   916      71      74    5580.719
+
+# Na radcich zacinajici pismenem 'D' jsou udavany merene sikme delky (a hodnoty pro fyz. korekci)
+# Neplatna hodnota (nebyl meren tlak apod.) je nahrazena hodnotou 0.
+# odpoledne
+# C.b1  C.b2    hT[m]   hc[m]    t1[°C]     t2[°C]    p1[]  p2[]     h1[%]  h2[%]   d[m]
+D 1002  1001    1.535   1.610   18.5/24.0  17.0/20.0  705   694      70      74    5916.787
+D 1002  1003    1.535   1.500   19.0/24.3  19.2/24.3  705   701.1    65      65    3221.354
+D 1002  1004    1.535   1.480   18.5/24.0  16.0/21.5  705   916      70      65    5580.707
+
+# Na radcich zacinajici pismenem 'A' jsou udavany merene uhly na Slunce. V ramci jedne modifikovane
+# jednotky je na Slunce mereno ctyrikrat: v prvni poloze L/P okraj, v druhe poloze P/L okraj. Na jeden radek uvedte:
+#  1. cislo bodu, na ktery je urcovan azimut
+#  2. mereny uhel jako prumer z mereni na levy a pravy okraj v I. poloze
+#  3. prumerny cas mereni na Slunce v I. poloze
+#  4. mereny uhel jako prumer z mereni na pravy a levy okraj v II. poloze
+#  5. prumerny cas mereni na Slunce v II. poloze
+#
+# Poznamka: v pripade, ze bylo mozne provest mereni na Slunce podle zadani, mel by byt
+#           pocet radku roven "pocet_mericu * 2"
+
+# POZOR ZMENA!!!!!
+# -----------------
+# Mereni bylo provedeno podle predpisu CUZK, tzn. v poradi levy okraj-I.poloha, pravy okraj-II.poloha,
+# levy okraj-I.poloha, pravy okraj-II.poloha pricemz mezi merenim v I. a II. poloze neuplynulo vice nez 2minuty.
+# Vysledky jsou tedy uvadeny:
+#  1. cislo bodu, na ktery je urcovan azimut
+#  2. mereny uhel jako prumer z mereni na levy okraj v I.poloze a pravy okraj v II. poloze
+#  3. prumerny cas mereni na Slunce, viz bod 2
+#  4. mereny uhel jako prumer z mereni na levy okraj v I.poloze a pravy okraj v II. poloze
+#  5. prumerny cas mereni na Slunce, viz bod 4
+#
+A 1004     116.5343 16:37:31.15    116.0008 16:39:44.70 
+A 1004     115.0320 16:43:51.23    114.6202 16:45:35.97 
+A 1004     113.3210 16:51:10.93    112.9861 16:52:38.82 
+A 1004     111.5447 16:58:56.08    111.0665 17:01:01.97 
+A 1004     109.3831 17:08:34.32    109.0029 17:10:17.34 
+A 1004     107.9886 17:14:53.24    107.5667 17:16:47.81 
+
+============================================================================================
+|                                        Bod 1003                                          |
+============================================================================================
+# 1003 Bunker Hill
+# 31.5.2011
+# Mericka ceta: Jakub Sadilek 
+#               Jaroslav Luc
+#               Pavla Bruhova
+
+1003 
+
+O 1001   76.0928 
+O CENTR 192.4378 3.634
+O 1004  207.0441 
+O EXCIL 210.5086 5.638
+O 1002  372.6451  
+
+U 1002 1001 103.4470 103.4471 103.4468
+U 1001 1004 130.9518 130.9520 130.9511
+U 1002 1004 234.3985 234.3984 234.3981
+U 1005 1001  16.2639  16.2638  16.2638
+
+D 1003 1002 1.533 1.51 16/20    17/20.5   701.5 705 66 70 3221.349 
+D 1003 1002 1.535 1.51 18/24.2  19/24.5   701.2 705 62 69 3221.342
+D 1003 1001 1.533 1.61 16/20    14.5/17.5 701.5 694 66 72 4795.834
+D 1003 1001 1.535 1.61 18/24.2  16.5/21.2 701.2 694 62 63 4795.817
+
+A 1004 254.7146 15:59:13.5  255.3021 16:01:27.5
+A 1004 256.0884 16:04:20    257.6213 16:10:12.5
+A 1004 258.8098 16:14:47.5  259.1863 16:16:19
+A 1004 259.9265 16:19:11    260.2451 16:20:27.5
+A 1004 261.6412 16:26:02.5  261.9639 16:27:22.5
+A 1004 262.6311 16:30:05    262.9659 16:31:27.5
+
+============================================================================================
+|                                        Bod 1004                                          |
+============================================================================================
+# 1004 Vetrov
+# 30.5.2011
+# Mericka ceta: Miroslav Soul
+#               Zuzana Bartonova
+#               Katerina Kafkova
+
+# Prvni radek souboru (s vyjimkou komentaru a prazdnych radku) obsahuje pouze cislo stanoviska.
+1004                           
+
+# Radky zacinajici pismenem 'O' obsahuji mereni centracni osnovy
+# Radka centracni osnovy obsahuje 2 nebo 3 udaje: oznaceni ciloveho bodu, mereny smer, (vodorovna excentricita) 
+# Smery jsou udavany v gradech.
+O 1002        47.8194   
+O 1003        66.9922   
+O EXCIL       84.5570 4.3375
+O 1001       112.9863 
+O CENTR      138.9063 7.7.994
+ 
+
+# Na radcich zacinajici pismenem 'U' jsou uvedeny merene uhly. Kazdy uhel byl meren ve trech (kdyz to bylo mozne)
+# laboratornich jednotkach, na radek postupne uvedte hodnoty z jednotlivych lab. jednotek
+# (leve rameno, prave rameno, 1. jednotka, 2. jednotka, ...)
+U 1002 1003   19.1715   19.1719   19.1711
+U 1003 1001   45.9959   45.9956   45.9957         
+U 1002 1001   65.1651   65.1653   65.1644   
+
+
+# Na radcich zacinajici pismenem 'D' jsou udavany merene sikme delky (a hodnoty pro fyz. korekci)
+# Neplatna hodnota (nebyl meren tlak apod.) je nahrazena hodnotou 0.
+# C.b1  C.b2    hT[m]   hc[m]   t1[°C]   t2[°C]   p1[]  p2[]     h1[%]  h2[%]   d[m]
+D 1004  1002    1.509   1.510   16/19    17.5/22  916       940       78     74      5580.681
+D 1004  1002    1.509   1.510   16/21    18.5/24  915       940       70     68      5580.673
+
+# Na radcich zacinajici pismenem 'A' jsou udavany merene uhly na Slunce. V ramci jedne modifikovane
+# jednotky je na Slunce mereno ctyrikrat: v prvni poloze L/P okraj, v druhe poloze P/L okraj. Na jeden radek uvedte:
+#  1. cislo bodu, na ktery je urcovan azimut
+#  2. mereny uhel jako prumer z mereni na levy a pravy okraj v I. poloze
+#  3. prumerny cas mereni na Slunce v I. poloze
+#  4. mereny uhel jako prumer z mereni na pravy a levy okraj v II. poloze
+#  5. prumerny cas mereni na Slunce v II. poloze
+#
+# Poznamka: v pripade, ze bylo mozne provest mereni na Slunce podle zadani, mel by byt
+#           pocet radku roven "pocet_mericu * 2"
+#
+A 1003     60.0656 16:20:20.0     61.8157 16:27:20.0 
+A 1003     64.3831 16:37:55.0     65.8063 16:43:55.0 
+
+A 1003     67.5081 16:51:12.5     68.6633 16:56:15.0 
+A 1003     70.0297 17:02:15.0     70.8922 17:06:05.0 
+
+A 1003     71.6135 17:09:22.5     72.3104 17:12:27.5 
+A 1003     73.1471 17:16:17.5     73.9782 17:20:05.0
+

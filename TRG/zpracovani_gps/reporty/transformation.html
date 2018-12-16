@@ -1,0 +1,390 @@
+﻿<html xmlns:source="http://www.leica-geosystems.com/LeicaXml/1.0" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:lfxml="http://www.leica-geosystems.com/SkiPro/3.0/Script">
+<head><link rel="stylesheet" type="text/css" href="transformation_files\transformation_Styles.css">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<script src="transformation_files\lfxmlAux.js"></script><script type="text/javascript">
+					<!--
+						
+						function WindowWidth( ) {
+							if( document.embeds.length > 0 ) {
+								return document.embeds[0].clientWidth;
+							}
+							else {
+								return 0;
+							}
+						}
+
+						function Refresh( ) {
+							if( window.Width != WindowWidth() ) {
+								window.Width = WindowWidth();
+								SetGraphicsHeight();
+							}
+						}
+
+						function InitResizing( ) {
+							if( document.embeds.length > 0 ) {
+								if( isSVGControlInstalled() ) {
+									if( !window.Width ) {
+										window.onresize = Refresh;
+										window.Width = WindowWidth();
+										SetGraphicsHeight();
+									}
+								}
+								else {
+									for( var i = 0; i < document.embeds.length; i++ ) {
+										var nodeMessage = document.createElement("a");
+										nodeMessage.setAttribute("href", "http://www.adobe.com/svg/viewer/install/main.html");
+										nodeMessage.setAttribute("target", "_blank");
+										var dataMessage = document.createTextNode("You need the Adobe SVG Viewer to view the graphics!");
+										nodeMessage.appendChild(dataMessage);
+										document.embeds[i].parentNode.replaceChild(nodeMessage, document.embeds[i]);
+									}
+								}
+							}
+						}
+
+						function SetGraphicsHeight( strObjectId ) {
+							for( var i = 0; i < document.embeds.length; i++ ) {
+								var svgObject = document.embeds[i];
+								if(		svgObject
+									 && svgObject.window.document.rootElement ) {
+
+									var strViewBox = svgObject.window.document.rootElement.getAttribute( "viewBox" );
+									var arrDimensions = strViewBox.split( " " );
+									if( arrDimensions.length == 4 ) {
+										svgObject.height = (arrDimensions[3] / arrDimensions[2]) * window.Width;
+									}
+								}
+							}
+						}
+
+					//-->
+					</script><script language="vbscript">
+					<!--
+					
+						Function isSVGControlInstalled()
+							on error resume next
+							isSVGControlInstalled = IsObject(CreateObject("Adobe.SVGCtl"))
+						end Function
+
+					'-->
+					</script></head><script>lfxmlBodyStart("onload=\"InitResizing();\"");</script><table width="100%">
+<tr>
+<td><img align="right" src="C:\Documents and Settings\All Users\Data aplikac&#237;\LEICA Geosystems\LGO\Report style sheets\Logo.gif"></td>
+</tr>
+<tr>
+<td class="mhd">
+<h1>Classical 3D - Transformation Report</h1>
+</td>
+</tr>
+<tr>
+<td class="FileCreated">Processed: 06/02/2011 23:05:59</td>
+</tr>
+</table><a name="00000"></a><h2 class="heading"><script>lfxmlInsertHr();</script><z a="*"></z>Project Information<script a="*">lfxmlInsertHr();</script></h2>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="30%">
+<col width="35%">
+<col width="35%">
+</colgroup>
+<tr>
+<th> </th>
+<th>System A</th>
+<th>System B</th>
+</tr>
+<tr>
+<td class="body">Project name:</td>
+<td class="body">TB_ETRS89</td>
+<td class="body">TB_JTSK</td>
+</tr>
+</table><a name="00001"></a><h2 class="heading"><script>lfxmlInsertHr();</script><z a="*"></z>Coordinate System Information System B<script a="*">lfxmlInsertHr();</script></h2>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="30%">
+<col width="70%">
+</colgroup>
+<tr>
+<td class="body">Coordinate system name:</td>
+<td class="body">JTSK_vychozi</td>
+</tr>
+<tr>
+<td class="body">Created:</td>
+<td class="body">-</td>
+</tr>
+<tr>
+<td class="body">Transformation name:</td>
+<td class="body">-</td>
+</tr>
+<tr>
+<td class="body">Transformation type:</td>
+<td class="body">-</td>
+</tr>
+<tr>
+<td class="body">Height mode:</td>
+<td class="body">-</td>
+</tr>
+<tr>
+<td class="body">Residuals:</td>
+<td class="body">-</td>
+</tr>
+<tr>
+<td class="body">Local Ellipsoid:</td>
+<td class="body">Bessel</td>
+</tr>
+<tr>
+<td class="body">Projection:</td>
+<td class="body">Czech and Slovak</td>
+</tr>
+<tr>
+<td class="body">Geoid model:</td>
+<td class="body">-</td>
+</tr>
+<tr>
+<td class="body">CSCS model:</td>
+<td class="body">-</td>
+</tr>
+</table><a name="00002"></a><h2 class="heading"><script>lfxmlInsertHr();</script><z a="*"></z>Transformation details<script a="*">lfxmlInsertHr();</script></h2>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="30%">
+<col width="70%">
+</colgroup>
+<tr>
+<td class="body">Height mode:</td>
+<td class="body">Orthometric</td>
+</tr>
+</table><br><table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="30%">
+<col width="23%">
+<col width="47%">
+</colgroup>
+<tr bgcolor="#dfdfdf"><th colspan="3">3D-Helmert transformation</th>
+</tr>
+<tr>
+<td>Number of common points:</td>
+<td>6</td>
+<td> </td>
+</tr>
+<tr>
+<td>Sigma a priori:</td>
+<td>1.0000</td>
+<td> </td>
+</tr>
+<tr>
+<td>Sigma a posteriori:</td>
+<td>0.0567</td>
+<td> </td>
+</tr>
+<tr>
+<td>Transformation model:</td>
+<td>Bursa-Wolf</td>
+<td> </td>
+</tr>
+</table><br><table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="30%">
+<col width="23%">
+<col width="23%">
+<col width="24%">
+</colgroup>
+<tr>
+<th>No.</th>
+<th>Parameter</th>
+<th>Value</th>
+<th>rms</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Shift dX</td>
+<td>-693.2967 m</td>
+<td>63.6210 m</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Shift dY</td>
+<td>24.9924 m</td>
+<td>61.1505 m</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Shift dZ</td>
+<td>-421.9136 m</td>
+<td>42.4109 m</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Rotation about X</td>
+<td>3.46936 "</td>
+<td>1.55841 "</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Rotation about Y</td>
+<td>-1.96711 "</td>
+<td>2.38938 "</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Rotation about Z</td>
+<td>9.40766 "</td>
+<td>1.86648 "</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Scale</td>
+<td>0.0000 ppm</td>
+<td>0.0000 ppm</td>
+</tr>
+</table>
+<h2 class="heading">Residuals</h2>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="15%">
+<col width="15%">
+<col width="19%">
+<col width="17%">
+<col width="17%">
+<col width="17%">
+</colgroup>
+<tr>
+<th colspan="6">Cartesian:</th>
+</tr>
+<tr>
+<th colspan="6"> </th>
+</tr>
+<tr>
+<th>System A</th>
+<th>System B</th>
+<th>Point type</th>
+<th>dX [m]</th>
+<th>dY [m]</th>
+<th>dZ [m]</th>
+</tr>
+<tr>
+<td>25060010</td>
+<td>25060010</td>
+<td>Position + height</td>
+<td>-0.0519 m</td>
+<td>-0.0711 m</td>
+<td>-0.0522 m</td>
+</tr>
+<tr>
+<td>25060070</td>
+<td>25060070</td>
+<td>Position + height</td>
+<td>0.0083 m</td>
+<td>-0.0312 m</td>
+<td>0.0210 m</td>
+</tr>
+<tr>
+<td>25060270</td>
+<td>25060270</td>
+<td>Position + height</td>
+<td>0.0277 m</td>
+<td>0.0254 m</td>
+<td>-0.0179 m</td>
+</tr>
+<tr>
+<td>25062020</td>
+<td>25062020</td>
+<td>Position + height</td>
+<td>0.0242 m</td>
+<td>0.0464 m</td>
+<td>0.0722 m</td>
+</tr>
+<tr>
+<td>25062110</td>
+<td>25062110</td>
+<td>Position + height</td>
+<td>-0.0631 m</td>
+<td>0.0119 m</td>
+<td>-0.0794 m</td>
+</tr>
+<tr>
+<td>25062270</td>
+<td>25062270</td>
+<td>Position + height</td>
+<td>0.0547 m</td>
+<td>0.0185 m</td>
+<td>0.0562 m</td>
+</tr>
+</table><br><table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="15%">
+<col width="15%">
+<col width="19%">
+<col width="17%">
+<col width="17%">
+<col width="17%">
+</colgroup>
+<tr>
+<th colspan="6">Grid:</th>
+</tr>
+<tr>
+<th colspan="6"> </th>
+</tr>
+<tr>
+<th>System A</th>
+<th>System B</th>
+<th>Point type</th>
+<th>dE [m]</th>
+<th>dN [m]</th>
+<th>dHgt [m]</th>
+</tr>
+<tr>
+<td>25060010</td>
+<td>25060010</td>
+<td>Position + height</td>
+<td>0.0506 m</td>
+<td>-0.0260 m</td>
+<td>-</td>
+</tr>
+<tr>
+<td>25060070</td>
+<td>25060070</td>
+<td>Position + height</td>
+<td>0.0306 m</td>
+<td>-0.0176 m</td>
+<td>-</td>
+</tr>
+<tr>
+<td>25060270</td>
+<td>25060270</td>
+<td>Position + height</td>
+<td>-0.0123 m</td>
+<td>0.0390 m</td>
+<td>-</td>
+</tr>
+<tr>
+<td>25062020</td>
+<td>25062020</td>
+<td>Position + height</td>
+<td>-0.0390 m</td>
+<td>-0.0141 m</td>
+<td>-</td>
+</tr>
+<tr>
+<td>25062110</td>
+<td>25062110</td>
+<td>Position + height</td>
+<td>-0.0289 m</td>
+<td>0.0102 m</td>
+<td>-</td>
+</tr>
+<tr>
+<td>25062270</td>
+<td>25062270</td>
+<td>Position + height</td>
+<td>-0.0010 m</td>
+<td>0.0085 m</td>
+<td>-</td>
+</tr>
+</table><br><table border="0" width="100%" cellspacing="0">
+<tr>
+<th>Graphical overview:</th>
+</tr>
+<tr>
+<td align="center"><embed src="transformation_files\transformation_DatumMapTransformationResiduals.svg" width="100%" height="0" type="image/svg+xml"></embed></td>
+</tr>
+</table><script>lfxmlBodyEnd();</script></html>
+</table><script>lfxmlBodyEnd();</script></html>

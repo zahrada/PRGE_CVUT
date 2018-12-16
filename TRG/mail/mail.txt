@@ -1,0 +1,14 @@
+Dobry den,
+
+stale mame problemy s centraci vodorovnych uhlu z vyuky v terenu. Zdrojovy kod pro vypocet jsme cely prepsali a nove strukturovali. V priloze posilame nekolik variant vysledku, ke kterym pripojujeme komentar:
+
+V prvnim pripade jsme vypocet provedli s merenimi pouze nasi skupiny (skupina c. 1). Z vysledku vychazi, ze jsou-li v reseni zahrnuty body 1001,1002,1004 jsou rozdily mezi centrovanymi uhly a uhly ze souradnic urcenych GPS v radu gradovych vterin. Pokud se v uhlu vyskytuje bod 1003 jako jeden z cilu, pak rozdily dosahuji radove poloviny gradove minuty. Pokud je bod 1003 jako stanovisko jsou odchylky 1-2 gradove minuty. Z vysledku tedy usuzujeme, ze chyba je v centracni osnove na bode 1003, nebot excentricita cile se projevi mene nez excentricita stanoviska, coz koresponduje s vysledky.
+
+Ve druhem pripade jsme mereni na bode 1003 prevzali od skupiny c. 3. Dosazene vysledky se znacne zlepsily. U vetsiny uhlu dosahuji rozdily pouze nekolik gradovych vterin. Jen kombinace: stanovisko - bod 1003 a cil - bod 1002 vykazuje znacnou chybu. V zavislosti na tom,  zda je bod 1002 pravym nebo levym ramenem vychazi rozdil +/- 6 gradovych minut.
+Vyzkouseli jsme take prevzit mereni na bode 1003 od skupiny c. 4. V tomto pripade pro kombinaci: stanovisko - bod 1003 a cil - bod 1002 se vyskytuje stejna "systematicka" chyba 6 gradovych minut. Pri prevzeti mereni na bode 1003 od skupiny c. 2 jsme meli problem s centracni osnovou, ve ktere chybi bod 1005. Tuto variantu jsme tedy nepouzili.
+
+Ve tretim pripade pak uvadime vysledky dosazene pouzitim vsech mereni od skupiny c. 3. Rozdily vychazi v radu gradovych vterin, maximalne do pul minuty. Z toho usuzujeme, ze chyba neni ve zdrojovem kodu, ale ve vstupnich datech.
+
+Prosime tedy o radu jak dale postupovat. V pripade potreby Vam zasleme dalsi data, nebo prijdeme osobne na konzultaci, pokud se nebude stavkovat.
+
+S pozdravem slupina c. 1

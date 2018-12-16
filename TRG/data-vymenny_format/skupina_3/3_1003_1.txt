@@ -1,0 +1,56 @@
+# Komentar zacina znakem '#'. Soubor muze obsahovat libolne mnozstvi komentaru a prazdnych radek.
+# V uvodnim komentari je uvedeno oznaceni bodu, datum mereni a slozeni mericke cety
+
+# Merene veliciny se udavaji v metrech, gradech, stupnich Celsia, torrech (mm Hg)
+
+# 1003 Bunker Hill
+# 1.6.2011
+# Mericka ceta: Jindriska Stefkova
+#               Tereza Cechova
+#		Filip Dvoracek
+
+# Prvni radek souboru (s vyjimkou komentaru a prazdnych radku) obsahuje pouze cislo stanoviska.
+1003                           
+
+# Radky zacinajici pismenem 'O' obsahuji mereni centracni osnovy
+# Radka centracni osnovy obsahuje 2 nebo 3 udaje: oznaceni ciloveho bodu, mereny smer, (vodorovna excentricita) 
+# Smery jsou udavany v gradech.
+O 1005         21.2615            # orientacni osnova
+O 1001         37.5302            # orientacni osnova
+O CENTR       154.9670  3.470     # orientacni osnova (posledni udaj: vod. delka)
+O 1004        168.4852            # orientacni osnova 
+O EXCIL       173.1026  5.477     # orientacni osnova (posledni udaj: vod. delka)
+O 1002        334.0192            # orientacni osnova 
+
+# Na radcich zacinajici pismenem 'U' jsou uvedeny merene uhly. Kazdy uhel byl meren ve trech (kdyz to bylo mozne)
+# laboratornich jednotkach, na radek postupne uvedte hodnoty z jednotlivych lab. jednotek
+# (leve rameno, prave rameno, 1. jednotka, 2. jednotka, ...)
+U 1004 1002   165.5354  165.5347  165.5353
+U 1002 1005    87.2421   87.2420   87.2420
+U 1005 1001    16.2692   16.2685   16.2684
+U 1001 1004   130.9534  130.9542  130.9537	
+
+# Na radcich zacinajici pismenem 'D' jsou udavany merene sikme delky (a hodnoty pro fyz. korekci)
+# Neplatna hodnota (nebyl meren tlak apod.) je nahrazena hodnotou 0.
+# C.b1  C.b2    hT[m]   hc[m]   t1[°C]   t2[°C]     p1[]  p2[]     h1[%]  h2[%]   d[m]
+D 1003  1001    1.642   1.388   18/22    17/20      703   695      68     66      4795.797
+D 1003  1002    1.642   1.605   18/22.3  20.5/18.3  703   702      66     89      3221.330
+
+# C.b1  C.b2    hT[m]   hc[m]   t1[°C]   t2[°C]     p1[]  p2[]     h1[%]  h2[%]   d[m]
+D 1003  1001    1.642   1.388   16/20    16/18      704   696      66     82      4795.814
+D 1003  1002    1.642   1.605   16/20    16/17      704   708      66     90      3221.337
+# Na radcich zacinajici pismenem 'A' jsou udavany merene uhly na Slunce. V ramci jedne modifikovane
+# jednotky je na Slunce mereno ctyrikrat: v prvni poloze L/P okraj, v druhe poloze P/L okraj. Na jeden radek uvedte:
+#  1. cislo bodu, na ktery je urcovan azimut
+#  2. mereny uhel jako prumer z mereni na levy a pravy okraj v I. poloze
+#  3. prumerny cas mereni na Slunce v I. poloze
+#  4. mereny uhel jako prumer z mereni na pravy a levy okraj v II. poloze
+#  5. prumerny cas mereni na Slunce v II. poloze
+#
+# Poznamka: v pripade, ze bylo mozne provest mereni na Slunce podle zadani, mel by byt
+#           pocet radku roven "pocet_mericu * 2"
+#
+A 1004    305.1900 09:21:06.1    304.1061 09:21:10.3 
+A 1004    303.1332 09:21:14.2    302.3171 09:21:17.2 
+A 1004    300.7649 09:21:22.9    299.9864 09:21:25.7 
+A 1004    298.9864 09:21:29.3    298.1937 09:21:32.2 

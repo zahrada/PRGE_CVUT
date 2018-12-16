@@ -1,0 +1,26 @@
+# 1002 Dvorsky vrch
+# 1.6.2011
+# Mericka ceta: Michal Novotny
+#               Jan Varys
+# Azimut z dùvodu špatné viditelnosti nebyl zmìøen ani jednou, po domluvì s vyuèujícím budou pro vyrovnání použity pouze zbývající azimuty
+
+1002                           
+
+O 1001        95.3269            # orientacni osnova
+O 1003       155.4864            # orientacni osnova
+O 1004       170.5965            # orientacni osnova
+O EXCIL      227.7522  8.518     # orientacni osnova (posledni udaj: vod. delka)
+O CENTR      287.0163  4.954     # orientacni osnova (posledni udaj: vod. delka)
+
+U 1001 1003   60.1602   60.1594   60.1593
+U 1003 1004   15.1092   15.1086   15.1085 
+U 1001 1004   75.2683   75.2687   75.2684                
+
+# C.b1  C.b2    hT[m]   hc[m]     t1[°C]     t2[°C]   p1[]  p2[]     h1[%]  h2[%]     d[m]
+D 1002  1001    1.640   1.388   17.2/19.2  17.0/19.5  707   696      82    87      5916.768
+D 1002  1003    1.640   1.607   17.2/19.2  17.0/21.0  707   704      82    66      3221.346
+D 1002  1004    1.640   1.550   17.5/19.5  15.5/17.5  707   688      83    82      5580.684
+D 1002  1001    1.640   1.388   15.5/17.0  16.5/18.0  708   696      86    86      5916.774
+D 1002  1003    1.640   1.607   15.5/17.0  15.0/17.0  708   704      86    81      3221.346
+D 1002  1004    1.640   1.550   15.5/17.0  18.0/20.5  708   689      86    79      5580.690
+

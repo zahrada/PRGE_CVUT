@@ -1,0 +1,38 @@
+# 1001 Stvanice
+# 31.5.2011
+# Mericka ceta: Jakub Kozak
+#		Koci Ondrej
+#               Stolbenkova Petra
+
+
+# Radka centracni osnovy obsahuje 2 nebo 3 udaje: oznaceni ciloveho bodu, mereny smer, (vodorovna excentricita) 
+# Smery jsou udavany v gradech.
+O 1004        19.5950            # orientacni osnova
+O 1003        42.5302            # orientacni osnova
+O 1002        79.1025            # orientacni osnova
+O EXCIL      322.6240  5.570     # orientacni osnova (posledni udaj: vod. delka)
+O CENTR      351.8836  3.474     # orientacni osnova (posledni udaj: vod. delka)
+ 
+
+# (leve rameno, prave rameno, uhel v gradech)
+U 1004 1003   22.9340  22.9338  22.9345
+U 1003 1002   36.5719  36.5716  36.5718
+U 1004 1002   59.5069  59.5069  59.5070
+
+# Na radcich zacinajici pismenem 'D' jsou udavany merene sikme delky (a hodnoty pro fyz. korekci)
+# Neplatna hodnota (nebyl meren tlak apod.) je nahrazena hodnotou 0.
+# C.b1  C.b2    hT[m]   hc[m]   t1[°C]     t2[°C]     p1[torr]  p2[torr]   h1[%]  h2[%]   d[m]
+D 1001  1003    1.638   1.497   19.4/16.4  24.2/19.5  694   	701        74     66      4795.855
+D 1001  1002    1.638   1.510   19.5/16.0  23.0/18.5  694   	705        70     65      5916.797
+D 1001  1003    1.638   1.498   21.2/16.5  24.3/19.3  694   	701        64     66      4795.843
+D 1001  1002    1.638   1.510   21.9/16.8  24.3/19.0  694   	705        64     66      5916.790
+# D 1001  1004  nelze merit (prilis dlouha vzdalenost)
+
+
+# Prvni na radce je cislo ciloveho bodu, nasleduje hodnota azimutu (v gradech)
+A	1004	166.4984	16:18:08	366.8544	16:19:30
+A	1004	168.5049	16:26:08	368.8322	16:27:25
+A	1004	173.5888	16:47:18	373.9290	16:48:46
+A	1004	175.3806	16:55:05	375.6020	16:56:03
+A	1004	176.9708	17:02:05	377.1838	17:03:00
+A	1004	178.6851	17:09:45	378.9277	17:10:48

@@ -1,0 +1,38 @@
+# 1001 Stvanice
+# 30.5.2011
+# Mericka ceta: Maria Schwarzova
+#               Zuzana Dvorakova
+
+1001
+
+# centracni osnova (posledni udaj: vod. delka)
+O EXCIL        205.6006  5.845          
+O CENTR        232.6174  3.727          
+O 1004         302.6270                 
+O 1003         325.5594                 
+O 1002         362.1348                  
+
+# leve rameno, prave rameno, 1. jednotka, 2. jednotka, 3. jednotka
+U 1004 1003 22.9333 22.9336 22.9335
+U 1003 1002 36.5745 36.5742 36.5737
+U 1004 1002 59.5085 59.5081 59.5081
+
+# delky nebyly mereny, byly prevzate z jine skupiny
+D
+
+# merene uhly na Slunce - !!! pozor zmena postupu mereni !!!
+#  1. cislo bodu, na ktery je urcovan azimut
+#  2. mereny uhel jako prumer z mereni na levy okraj v I.poloze a pravy okraj v II.poloze
+#  3. prumerny cas mereni na Slunce, viz bod 2
+#  4. mereny uhel jako prumer z mereni na levy okraj v I.poloze a pravy okraj v II. poloze
+#  5. prumerny cas mereni na Slunce, viz bod 4
+
+# mereni 1 modifikovane jednotky na bod 1003
+A 1003    201.2848 16:51:34    200.9019 16:53:14
+A 1003    199.2462 17:00:25    198.9424 17:01:46
+
+# mereni 1 modifikovane jednotky na bod 1002
+A 1002    234.6121 17:05:52    234.7593 17:07:04
+A 1002    233.7286 17:09:50    234.7593 17:07:04
+
+

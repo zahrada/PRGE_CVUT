@@ -1,0 +1,17 @@
+Dobry den,
+
+stale nemame doresena data pro vypocet ulohy TRG. Chybu v centracni osnove na bode 1003 se nam nedari dohledat. Prozatim stale pracujeme s prevzatymi daty od skupiny c.2, se kterymi nam vypocet vychazi. Data od teto skupiny nam jako jedina nevykazuji systematickou chybu na bode 1002, ktera by naznacovala posun excentrickeho cile. Prozatim mame vypocet vcelku automatizovany a neni problem vstupni data menit. Radi bychom si vsak ujasnili, ktera data pouzit pred tim nez zacneme kompletovat vysledky do technicke zpravy. Vzhledem k terminu odevzdani pristi patek se tento okamzik nezadrzitelne blizi.
+
+Dale bychom meli nekolik dotazu k vyrovnani site. Existuje nejaka moznost jak do programu Gama zadat primo smernik urceny z mereni na Slunce? Zatim jedina moznost, kterou jsme nasli, je zadani souradnicovych rozdilu (vektoru). V tom pripade je nutne prevest smernik na souradnicove rozdily pomoci merene delky (dX = s*cos(sigma) dY = s*sin(sigma)). Pri pouziti tohoto postupu je vsak nutne pro vyrovnani urcit smerodatnou odchylku souradnicovych rozdilu dle zakona prenaseni chyb. Problem nastane v okamziku, kdy je merenim na Slunce usmernena strana, kde nebyla merena delka (napr. 1001 - 1004). Ma se v tomto pripade pouzit delka urcena ze souradnic GPS?
+
+Dale bychom pro vyrovnani potrebovali vedet smerodatne odchylky merenych hodnot. Existuji nejake apriorni hodnoty (napr. stanovene pouzitymi metodami) nebo mame pouzit vyberove sm. ochylky? Pokud mame pouzit vyberove sm. odchylky, maji se stanovit pro kazdy uhel zvlast? Je-li kazdy uhel meren ve trech laboratornich jednotkach, lze stanovit opravy kazde jednotky od prumeru a urcit pak aplikaci zakona hromadeni chyb sm. odchylku prumeru ze tri mereni. Dalsi moznosti je povazovat sm. odchylku uhlu v lab. jednotce za konstantni pro vsechny uhly a provest sumaci vsech oprav. Timto postupem ziskame daleko vetsi soubor mereni, coz je pro vyberovou sm. odchylku zajiste vyhodu. Hodnota vsak nebude zohlednovat presnost jendotlivych mericu, ktera bude nepochybne odlisna. Treti moznosti je pouziti Ferrerova vzorce a stanoveni sm. odchylky uhlu z uzaveru v trojuhelnicich.
+
+Obdobne lze pristupovat k sm. odchylkam delek. Kazda delka je merena ctyrikrat (dopoledne, odpoledne a jeste protismerne). Lze tedy stanovit vyberovou sm. odchylku ze ctyr mereni nebo jednotnou pro vsechny delky z velkeho souboru oprav.
+
+Drobna komplikace je i u vypoctu vyberove sm. odchylky smerniku urceneho merenim na Slunce. Nekteri z nas totiz merili dle postupu CUZK (nebot jsme necetli zadani ulohy, kde byl stanoven postup jiny), ktery na cviceni pozadovala Ing. Kuklikova. Pri mereni timto postupem je soucasne stanoven prumer ke stredu Slunce a odstraneny osove chyby. V ramci jedne jednotky jsou tedy ziskany dva azimuty pri mereneni ve dvou jednotkach tedy ctyri. Pri mereni dle postupu uvedeneho v zadani jsou osove chyby odstraneny az prumerem ze dvou mereni v ramci jednotky a tedy smernik je urcen pouze dvakrat. Pro mereni postupem CUZK lze stanovit vyberovou sm. odchylku kazdeho smerniku (ze ctyr mereni). U postupu dle zadani by byla vyberova sm. odchylka stanovena z jednoho nadbytecneho mereni, coz nema prilis vypovidajici hodnotu.
+
+Samozrejme by pro nas bylo nejpohodlnejsi pokud by jste nam sdelil apriorni hodnoty sm. odchylek merenych velicin stanovene dlouhodobym pouzivanim danych metod.
+
+Predem dekujeme za odpovedi.
+
+S pozdravem skupina c.1

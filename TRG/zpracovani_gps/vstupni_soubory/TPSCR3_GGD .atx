@@ -1,0 +1,20 @@
+     1.4            M                                       ANTEX VERSION / SYST
+A                                                           PCV TYPE / REFANT   
+                                                            END OF HEADER 
+                                                            START OF ANTENNA                                                                  START OF ANTENNA    
+TPSCR3_GGD      CONE                                        TYPE / SERIAL NO    
+FIELD               NGS/TUM                  3    20-APR-05 METH / BY / # / DATE
+     0.0                                                    DAZI                
+     0.0  80.0   5.0                                        ZEN1 / ZEN2 / DZEN  
+     2                                                      # OF FREQUENCIES    
+IGS05_1627                                                  SINEX CODE          
+CONVERTED FROM RELATIVE NGS ANTENNA CALIBRATIONS            COMMENT             
+   G01                                                      START OF FREQUENCY  
+      0.80     -0.36     61.54                              NORTH / EAST / UP   
+   NOAZI    0.00    0.96    0.98    0.43   -0.68   -2.09   -3.45   -4.69   -5.47   -5.90   -5.74   -5.06   -3.87   -2.14    0.10    2.97    6.39
+   G01                                                      END OF FREQUENCY    
+   G02                                                      START OF FREQUENCY  
+      0.30     -0.02     94.76                              NORTH / EAST / UP   
+   NOAZI    0.00   -0.93   -1.52   -1.80   -1.92   -2.12   -2.33   -2.51   -2.85   -3.13   -3.35   -3.23   -2.88   -2.25   -1.23    0.19    2.36
+   G02                                                      END OF FREQUENCY    
+                                                            END OF ANTENNA      

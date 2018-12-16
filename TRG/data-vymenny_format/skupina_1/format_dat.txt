@@ -1,0 +1,40 @@
+# Komentar zacina znakem '#'. Soubor muze obsahovat libolne mnozstvi komentaru a prazdnych radek.
+# V uvodnim komentari je uvedeno oznaceni bodu, datum mereni a slozeni mericke cety
+
+# 1002 Dvorsky vrch
+# 21.5.2010
+# Mericka ceta: Zdenek Vyskocil
+#               Zdenek Lukes
+
+# Prvni radek souboru (s vyjimkou komentaru a prazdnych radku) obsahuje pouze cislo stanoviska.
+1002                           
+
+# Radky zacinajici pismenem 'O' obsahuji mereni centracni osnovy
+# Radka centracni osnovy obsahuje 2 nebo 3 udaje: oznaceni ciloveho bodu, mereny smer, (vodorovna excentricita) 
+# Smery jsou udavany v gradech.
+O 1003        54.2676            # orientacni osnova
+O 1004        69.4589            # orientacni osnova
+O EXCIL      151.2157  6.870     # orientacni osnova (posledni udaj: vod. delka)
+O CENTR      228.5993  5.954     # orientacni osnova (posledni udaj: vod. delka)
+O 1001       394.1258            # orientacni osnova 
+
+# Na radcich zacinajici pismenem 'U' jsou uvedeny merene uhly 
+# (leve rameno, prave rameno, uhel v gradech)
+U 1001 1003   60.1422
+U 1003 1004   15.1903 
+U 1001 1004   75.3325 
+
+# Na radcich zacinajici pismenem 'D' jsou udavany merene sikme delky (a hodnoty pro fyz. korekci)
+# Neplatna hodnota (nebyl meren tlak apod.) je nahrazena hodnotou 0.
+# C.b1  C.b2    hT[m]   hc[m]   t1[°C]   t2[°C]   p1[]  p2[]     h1[%]  h2[%]   d[m]
+D 1002  1004    1.445   1.410   7.5/7.5  6.5/7.5  697   679      100    87      5580.760
+D 1002  1001    1.445   1.309   7.5/7.5  6.9/7.5  697   0        100    92      5908.232
+D 1002  1003    1.445   1.610   7.5/7.5  7.0/7.0  698   694      100    100     3221.394
+
+# Na radcich zacinajici pismenem 'A' jsou udavany merene azimuty.
+# Udavejte hodnoty urcene z jedne lab. jednotky (nikoli prumer vsech hodnot).
+# Prvni na radce je cislo ciloveho bodu, nasleduje hodnota azimutu (v gradech)
+A 1003 234.1234
+A 1003 234.1230
+A 1003 234.1230
+

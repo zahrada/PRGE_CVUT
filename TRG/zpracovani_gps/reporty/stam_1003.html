@@ -1,0 +1,2581 @@
+﻿<html xmlns:source="http://www.leica-geosystems.com/LeicaXml/1.0" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:lfxml="http://www.leica-geosystems.com/SkiPro/3.0/Script">
+<head><link rel="stylesheet" type="text/css" href="stam_1003_files\stam_1003_Styles.css">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<style type="text/css">
+	.AntCorr { font size : 65%;}
+ </style><script src="stam_1003_files\lfxmlAux.js"></script><script type="text/javascript">
+	<!--
+		
+		function WindowWidth( ) {
+			if( document.embeds.length > 0 ) {
+				return document.embeds[0].clientWidth;
+			}
+			else {
+				return 0;
+			}
+		}
+
+		function Refresh( ) {
+			if( window.Width != WindowWidth() ) {
+				window.Width = WindowWidth();
+				SetGraphicsHeight();
+			}
+		}
+
+		function InitResizing( ) {
+			if( document.embeds.length > 0 ) {
+				if( isSVGControlInstalled() ) {
+					if( !window.Width ) {
+						window.onresize = Refresh;
+						window.Width = WindowWidth();
+						SetGraphicsHeight();
+					}
+				}
+				else {
+					for( var i = 0; i < document.embeds.length; i++ ) {
+						var nodeMessage = document.createElement("a");
+						nodeMessage.setAttribute("href", "http://www.adobe.com/svg/viewer/install/main.html");
+						nodeMessage.setAttribute("target", "_blank");
+						var dataMessage = document.createTextNode("You need the Adobe SVG Viewer to view the graphics!");
+						nodeMessage.appendChild(dataMessage);
+						document.embeds[i].parentNode.replaceChild(nodeMessage, document.embeds[i]);
+					}
+				}
+			}
+		}
+
+		function SetGraphicsHeight( strObjectId ) {
+			for( var i = 0; i < document.embeds.length; i++ ) {
+				var svgObject = document.embeds[i];
+				if(	   svgObject
+					&& svgObject.window.document.rootElement ) {
+
+					var strViewBox = svgObject.window.document.rootElement.getAttribute( "viewBox" );
+					var arrDimensions = strViewBox.split( " " );
+					if( arrDimensions.length == 4 ) {
+						svgObject.height = (arrDimensions[3] / arrDimensions[2]) * window.Width;
+					}
+				}
+			}
+		}
+
+	//-->
+	</script><script language="vbscript">
+	<!--
+	
+		Function isSVGControlInstalled()
+			on error resume next
+			isSVGControlInstalled = IsObject(CreateObject("Adobe.SVGCtl"))
+		end Function
+
+	'-->
+	</script></head><script>lfxmlBodyStart("onload=\"InitResizing();\"");</script><table width="100%">
+<tr>
+<td><img align="right" src="C:\Documents and Settings\All Users\Data aplikac&#237;\LEICA Geosystems\LGO\Report style sheets\Logo.gif"></td>
+</tr><tr>
+<td class="mhd"><h1>Results - Baseline</h1></td>
+</tr>
+<tr>
+<td class="mhd"><h1>STAM - 
+     1003</h1></td>
+</tr>
+</table><a name="00000"></a><h2 class="heading"><script>lfxmlInsertHr();</script><z a="*"></z>Project Information<script a="*">lfxmlInsertHr();</script></h2>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="30%">
+<col width="70%">
+</colgroup>
+<tr><td class="body">Project name:</td><td class="body">skupina_1-TRG</td></tr>
+<tr><td class="body">Date created:</td><td class="body">06/02/2011 19:40:33</td></tr>
+<tr><td class="body">Time zone:</td><td class="body">2h 00'</td></tr>
+<tr><td class="body">Coordinate system name:</td><td class="body">WGS 1984</td></tr>
+<tr>
+<td class="body">Application software:</td>
+<td class="body">LEICA Geo Office 7.0</td>
+</tr>
+<tr>
+<td class="body">Processing kernel:</td><td class="body">PSI-Pro 2.0</td>
+</tr>
+<tr><td class="body">Processed:</td><td class="body">06/02/2011 19:57:31</td></tr>
+</table><a name="00001"></a><h2 class="heading"><script>lfxmlInsertHr();</script><z a="*"></z>Point Information<script a="*">lfxmlInsertHr();</script></h2>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<colgroup>
+<col width="3%">
+<col width="27%">
+<col width="35%">
+<col width="35%">
+</colgroup>
+<tr bgcolor="#dfdfdf"><th colspan="2"> </th>
+<th>Reference:
+			STAM</th>
+<th>Rover:
+			1003</th>
+</tr>
+<tr><td colspan="2">Receiver type / S/N:</td><td>TPSGB1000
+			/
+			8QQPTNJZH1C</td><td>TPSHIPER
+			/
+			8QG4AWP4FEO</td>
+</tr>
+<tr><td colspan="2">Antenna type / S/N:</td><td>TPSCR3_GGD      CONE (2)
+				/
+				-</td><td>TPSPG_A1+GP     NONE
+				/
+				-</td>
+</tr>
+<tr><td colspan="2">Antenna height:</td><td>0.0000 m</td><td>1.3900 m</td>
+</tr>
+<tr><td colspan="4"><font size="0.5%"> </font></td></tr>
+<tr><td colspan="2">Initial coordinates:</td><td> </td><td> </td></tr>
+<tr><td> </td><td>Latitude:</td><td>50° 09' 44.39907" N</td><td>50° 10' 23.76293" N</td></tr>
+<tr><td> </td><td>Longitude:</td><td>16° 56' 51.94054" E</td><td>16° 58' 02.90755" E</td></tr>
+<tr><td> </td><td>Ellip. Hgt:</td><td>603.5355 m</td><td>781.8091 m</td></tr>
+<tr><td colspan="4"><font size="0.5%"> </font></td></tr>
+<tr>
+<td colspan="2" valign="top">Time span:</td>
+<td colspan="2">05/30/2011 14:27:35 - 
+						05/30/2011 14:58:10</td>
+</tr>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="30%">
+<col width="70%">
+</colgroup>
+<tr><td valign="top">Duration:</td>
+<td>30' 35"</td></tr>
+</table>
+</table><br><a name="00002"></a><h2 class="heading"><script>lfxmlInsertHr();</script><z a="*"></z>Processing Parameters<script a="*">lfxmlInsertHr();</script></h2>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="30%">
+<col width="20%">
+<col width="15%">
+<col width="35%">
+</colgroup>
+<tr bgcolor="#dfdfdf"><th>Parameters</th>
+<th>Selected</th>
+<th>Used</th>
+<th>Comment</th>
+</tr>
+<tr><td>Cut-off angle:</td>
+<td>15°</td>
+<td>15°</td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Ephemeris type (GPS):</td>
+<td valign="top">Broadcast</td><td valign="top">Broadcast</td>
+<td valign="top"> </td>
+</tr>
+<tr>
+<td valign="top">Ephemeris type (GLONASS):</td>
+<td valign="top">Broadcast</td><td valign="top">Broadcast</td>
+<td valign="top">No Glonass orbits available. </td>
+</tr>
+<tr>
+<td valign="top">Solution type:</td><td valign="top">Automatic</td>
+<td valign="top">Phase: all fix</td>
+<td valign="top"> </td>
+</tr>
+<tr>
+<td valign="top">GNSS type:</td>
+<td valign="top">Automatic</td>
+<td valign="top">GPS</td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Frequency:</td>
+<td valign="top">Automatic</td>
+<td valign="top">Automatic</td>
+<td valign="top"> </td>
+</tr>
+<tr><td>Fix ambiguities up to:</td>
+<td>80 km</td>
+<td>80 km</td>
+<td> </td>
+</tr>
+<tr><td>Min. duration for float solution (static):</td>
+<td>5' 00"</td>
+<td>5' 00"</td>
+<td> </td>
+</tr>
+<tr><td>Sampling rate:</td><td>Use all</td><td>5</td>
+<td> </td>
+</tr>
+<tr><td>Tropospheric model:</td><td>Hopfield</td><td>Hopfield</td>
+<td> </td>
+</tr>
+<tr><td valign="top">Ionospheric model:</td><td valign="top">Automatic</td><td valign="top">Computed</td>
+<td valign="top">
+							 </td>
+</tr>
+<tr><td>Use stochastic modelling:</td><td>Yes</td><td>Yes</td>
+<td> </td>
+</tr>
+<tr><td>Min. distance:</td><td>8 km
+					</td><td>8 km
+					</td>
+<td> </td></tr>
+<tr><td>Ionospheric activity:</td><td>Automatic</td><td>Automatic</td>
+<td> </td></tr>
+</table><a name="00003"></a><h2 class="heading"><script>lfxmlInsertHr();</script><z a="*"></z>Satellite Selection<script a="*">lfxmlInsertHr();</script></h2>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="30%">
+<col width="70%">
+</colgroup>
+<tr>
+<td class="body">Manually disabled GPS satellites (PRNs):</td>
+<td class="body">None</td>
+</tr>
+<tr>
+<td class="body">Manually disabled GLONASS satellites (Slot Id):</td>
+<td class="body">None</td>
+</tr>
+</table><a name="00004"></a><h2 class="heading"><script>lfxmlInsertHr();</script><z a="*"></z>Computed Iono Model<script a="*">lfxmlInsertHr();</script></h2>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="30%">
+<col width="70%">
+</colgroup>
+<tr><td class="body">Number of computed models:</td><td class="body">2</td></tr>
+<tr><td class="body">Sampling rate of iono model:</td><td class="body">30 sec</td>
+</tr>
+<tr><td class="body">Height of single layer:</td><td class="body">350 km</td></tr>
+</table>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="30%">
+<col width="30%">
+<col width="40%">
+</colgroup>
+<tr><td colspan="3"><font size="0.5%"> </font></td></tr>
+<tr bgcolor="#dfdfdf"><th colspan="3">Model 1:</th>
+</tr>
+<tr><td rowspan="3" valign="top">Origin of development:</td>
+<td>Latitude:</td>
+<td>50° 09' 44.39907" N</td>
+</tr>
+<tr>
+<td>Longitude:</td>
+<td>16° 56' 51.94054" E</td>
+</tr>
+<tr>
+<td>Time (UT):</td>
+<td>05/30/2011 06:43:00</td>
+</tr>
+<tr><td colspan="3"><font size="0.5%"> </font></td></tr>
+<tr><td rowspan="2" valign="top">Validity:</td><td>From epoch:</td><td>05/30/2011 08:43:00</td></tr>
+<tr><td>To epoch:</td><td>05/30/2011 14:52:35</td></tr>
+</table>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="30%">
+<col width="15%">
+<col width="15%">
+<col width="20%">
+<col width="20%">
+</colgroup>
+<tr><td colspan="5"><font size="0.5%"> </font></td></tr>
+<tr><td>Coefficients:</td><td>Deg. Lat</td><td>Deg. time</td><td>Value</td><td>rms</td></tr>
+<tr>
+<td> </td>
+<td>0</td>
+<td>0</td>
+<td>1.04287828</td>
+<td>0.00435099</td>
+</tr>
+<tr>
+<td> </td>
+<td>0</td>
+<td>1</td>
+<td>0.28194565</td>
+<td>0.00319249</td>
+</tr>
+<tr>
+<td> </td>
+<td>0</td>
+<td>2</td>
+<td>-0.05434994</td>
+<td>0.00087539</td>
+</tr>
+<tr>
+<td> </td>
+<td>1</td>
+<td>0</td>
+<td>0.02747618</td>
+<td>0.00267221</td>
+</tr>
+<tr>
+<td> </td>
+<td>1</td>
+<td>1</td>
+<td>-0.08606848</td>
+<td>0.00139673</td>
+</tr>
+</table>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="30%">
+<col width="30%">
+<col width="40%">
+</colgroup>
+<tr><td colspan="3"><font size="0.5%"> </font></td></tr>
+<tr bgcolor="#dfdfdf"><th colspan="3">Model 2:</th>
+</tr>
+<tr><td rowspan="3" valign="top">Origin of development:</td>
+<td>Latitude:</td>
+<td>50° 09' 44.39907" N</td>
+</tr>
+<tr>
+<td>Longitude:</td>
+<td>16° 56' 51.94054" E</td>
+</tr>
+<tr>
+<td>Time (UT):</td>
+<td>05/30/2011 12:52:35</td>
+</tr>
+<tr><td colspan="3"><font size="0.5%"> </font></td></tr>
+<tr><td rowspan="2" valign="top">Validity:</td><td>From epoch:</td><td>05/30/2011 14:52:35</td></tr>
+<tr><td>To epoch:</td><td>05/30/2011 21:02:10</td></tr>
+</table>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="30%">
+<col width="15%">
+<col width="15%">
+<col width="20%">
+<col width="20%">
+</colgroup>
+<tr><td colspan="5"><font size="0.5%"> </font></td></tr>
+<tr><td>Coefficients:</td><td>Deg. Lat</td><td>Deg. time</td><td>Value</td><td>rms</td></tr>
+<tr>
+<td> </td>
+<td>0</td>
+<td>0</td>
+<td>1.50332605</td>
+<td>0.00464607</td>
+</tr>
+<tr>
+<td> </td>
+<td>0</td>
+<td>1</td>
+<td>-0.05175358</td>
+<td>0.00419552</td>
+</tr>
+<tr>
+<td> </td>
+<td>0</td>
+<td>2</td>
+<td>0.02066703</td>
+<td>0.00127367</td>
+</tr>
+<tr>
+<td> </td>
+<td>1</td>
+<td>0</td>
+<td>-0.26456456</td>
+<td>0.00335542</td>
+</tr>
+<tr>
+<td> </td>
+<td>1</td>
+<td>1</td>
+<td>-0.00156422</td>
+<td>0.00173463</td>
+</tr>
+</table>
+<tr><td><font size="0.5%"> </font></td></tr>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="20%">
+<col width="80%">
+</colgroup>
+</table><a name="00005"></a><h2 class="heading"><script>lfxmlInsertHr();</script><z a="*"></z>Antenna Information<script a="*">lfxmlInsertHr();</script></h2>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="30%">
+<col width="35%">
+<col width="35%">
+</colgroup>
+<tr><th> </th>
+<th>Reference: STAM</th>
+<th>Rover: 1003</th>
+</tr>
+<tr><td>Antenna type:</td>
+<td>TPSCR3_GGD      CONE (2)</td>
+<td>TPSPG_A1+GP     NONE</td>
+</tr>
+<tr><td>Horizontal offset:</td>
+<td>0.0000 m</td>
+<td>0.0000 m</td>
+</tr>
+<tr><td>Vertical offset:</td>
+<td>0.0000 m</td>
+<td>0.0000 m</td>
+</tr>
+<tr><td>Additional corrections:</td>
+<td>Elevation and azimuth</td>
+<td>Elevation and azimuth</td>
+</tr>
+</table><br><table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="30%">
+<col width="18%">
+<col width="17%">
+<col width="18%">
+<col width="17%">
+</colgroup>
+<tr bgcolor="#dfdfdf"><th>Phase center offsets</th><th>L1 (Reference)</th><th>L2 (Reference)</th><th>L1 (Rover)</th><th>L2 (Rover)</th></tr>
+<tr><td>Vertical:</td>
+<td>0.0615 m</td>
+<td>0.0948 m</td>
+<td>0.0348 m</td>
+<td>0.0400 m</td>
+</tr>
+<tr><td>East:</td>
+<td>-0.0004 m</td>
+<td>0.0000 m</td>
+<td>0.0000 m</td>
+<td>-0.0003 m</td>
+</tr>
+<tr><td>North:</td>
+<td>0.0008 m</td>
+<td>0.0003 m</td>
+<td>-0.0001 m</td>
+<td>0.0000 m</td>
+</tr>
+</table><br><table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="2%">
+<col width="3%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+</colgroup>
+<tr><th colspan="21">Additional corrections (Reference):</th></tr>
+<tr bgcolor="#dfdfdf"><td><sub>A </sub>\<sup> Z</sup></td><td> </td>
+<td class="AntCorr">0°</td>
+<td class="AntCorr">5°</td>
+<td class="AntCorr">10°</td>
+<td class="AntCorr">15°</td>
+<td class="AntCorr">20°</td>
+<td class="AntCorr">25°</td>
+<td class="AntCorr">30°</td>
+<td class="AntCorr">35°</td>
+<td class="AntCorr">40°</td>
+<td class="AntCorr">45°</td>
+<td class="AntCorr">50°</td>
+<td class="AntCorr">55°</td>
+<td class="AntCorr">60°</td>
+<td class="AntCorr">65°</td>
+<td class="AntCorr">70°</td>
+<td class="AntCorr">75°</td>
+<td class="AntCorr">80°</td>
+<td class="AntCorr">85°</td>
+<td class="AntCorr">90°</td>
+</tr>
+<tr><td class="AntCorr">0°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">1.0</td>
+<td class="AntCorr">1.0</td>
+<td class="AntCorr">0.4</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-3.5</td>
+<td class="AntCorr">-4.7</td>
+<td class="AntCorr">-5.5</td>
+<td class="AntCorr">-5.9</td>
+<td class="AntCorr">-5.7</td>
+<td class="AntCorr">-5.1</td>
+<td class="AntCorr">-3.9</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">0.1</td>
+<td class="AntCorr">3.0</td>
+<td class="AntCorr">6.4</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">0.0</td>
+</tr>
+<tr><td class="AntCorr">0°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-2.5</td>
+<td class="AntCorr">-2.9</td>
+<td class="AntCorr">-3.1</td>
+<td class="AntCorr">-3.4</td>
+<td class="AntCorr">-3.2</td>
+<td class="AntCorr">-2.9</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">0.2</td>
+<td class="AntCorr">2.4</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">0.0</td>
+</tr>
+<tr><td colspan="21"><font size="0.5%"> </font></td></tr>
+<tr><th colspan="21">Additional corrections (Rover):</th></tr>
+<tr bgcolor="#dfdfdf"><td><sub>A </sub>\<sup> Z</sup></td><td> </td>
+<td class="AntCorr">0°</td>
+<td class="AntCorr">5°</td>
+<td class="AntCorr">10°</td>
+<td class="AntCorr">15°</td>
+<td class="AntCorr">20°</td>
+<td class="AntCorr">25°</td>
+<td class="AntCorr">30°</td>
+<td class="AntCorr">35°</td>
+<td class="AntCorr">40°</td>
+<td class="AntCorr">45°</td>
+<td class="AntCorr">50°</td>
+<td class="AntCorr">55°</td>
+<td class="AntCorr">60°</td>
+<td class="AntCorr">65°</td>
+<td class="AntCorr">70°</td>
+<td class="AntCorr">75°</td>
+<td class="AntCorr">80°</td>
+<td class="AntCorr">85°</td>
+<td class="AntCorr">90°</td>
+</tr>
+<tr><td class="AntCorr">0°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-2.6</td>
+<td class="AntCorr">-2.7</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">1.2</td>
+<td class="AntCorr">3.6</td>
+<td class="AntCorr">5.3</td>
+</tr>
+<tr><td class="AntCorr">0°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">0.6</td>
+<td class="AntCorr">1.1</td>
+<td class="AntCorr">0.9</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">1.2</td>
+</tr>
+<tr><td class="AntCorr">10°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-2.4</td>
+<td class="AntCorr">-2.4</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-0.6</td>
+<td class="AntCorr">1.5</td>
+<td class="AntCorr">3.8</td>
+<td class="AntCorr">5.3</td>
+</tr>
+<tr><td class="AntCorr">10°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">0.6</td>
+<td class="AntCorr">1.1</td>
+<td class="AntCorr">0.8</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">1.2</td>
+</tr>
+<tr><td class="AntCorr">20°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.8</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">2.1</td>
+<td class="AntCorr">4.3</td>
+<td class="AntCorr">5.6</td>
+</tr>
+<tr><td class="AntCorr">20°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">0.7</td>
+<td class="AntCorr">1.1</td>
+<td class="AntCorr">0.8</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">1.1</td>
+</tr>
+<tr><td class="AntCorr">30°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.8</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">0.5</td>
+<td class="AntCorr">2.8</td>
+<td class="AntCorr">5.0</td>
+<td class="AntCorr">6.1</td>
+</tr>
+<tr><td class="AntCorr">30°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">0.9</td>
+<td class="AntCorr">1.4</td>
+<td class="AntCorr">1.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">1.0</td>
+</tr>
+<tr><td class="AntCorr">40°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">0.8</td>
+<td class="AntCorr">3.3</td>
+<td class="AntCorr">5.6</td>
+<td class="AntCorr">6.7</td>
+</tr>
+<tr><td class="AntCorr">40°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-0.8</td>
+<td class="AntCorr">0.2</td>
+<td class="AntCorr">1.2</td>
+<td class="AntCorr">1.7</td>
+<td class="AntCorr">1.4</td>
+<td class="AntCorr">0.2</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">1.1</td>
+</tr>
+<tr><td class="AntCorr">50°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">0.7</td>
+<td class="AntCorr">3.3</td>
+<td class="AntCorr">5.8</td>
+<td class="AntCorr">7.0</td>
+</tr>
+<tr><td class="AntCorr">50°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-0.8</td>
+<td class="AntCorr">0.3</td>
+<td class="AntCorr">1.5</td>
+<td class="AntCorr">2.1</td>
+<td class="AntCorr">1.8</td>
+<td class="AntCorr">0.7</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">1.6</td>
+</tr>
+<tr><td class="AntCorr">60°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.6</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">0.3</td>
+<td class="AntCorr">2.9</td>
+<td class="AntCorr">5.5</td>
+<td class="AntCorr">7.0</td>
+</tr>
+<tr><td class="AntCorr">60°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">0.4</td>
+<td class="AntCorr">1.6</td>
+<td class="AntCorr">2.3</td>
+<td class="AntCorr">2.2</td>
+<td class="AntCorr">1.2</td>
+<td class="AntCorr">0.1</td>
+<td class="AntCorr">0.1</td>
+<td class="AntCorr">2.3</td>
+</tr>
+<tr><td class="AntCorr">70°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.6</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-2.4</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">2.2</td>
+<td class="AntCorr">4.8</td>
+<td class="AntCorr">6.5</td>
+</tr>
+<tr><td class="AntCorr">70°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">0.2</td>
+<td class="AntCorr">1.5</td>
+<td class="AntCorr">2.3</td>
+<td class="AntCorr">2.3</td>
+<td class="AntCorr">1.5</td>
+<td class="AntCorr">0.6</td>
+<td class="AntCorr">0.7</td>
+<td class="AntCorr">3.0</td>
+</tr>
+<tr><td class="AntCorr">80°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.6</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-2.5</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">1.6</td>
+<td class="AntCorr">4.0</td>
+<td class="AntCorr">5.6</td>
+</tr>
+<tr><td class="AntCorr">80°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">1.2</td>
+<td class="AntCorr">2.1</td>
+<td class="AntCorr">2.2</td>
+<td class="AntCorr">1.6</td>
+<td class="AntCorr">0.8</td>
+<td class="AntCorr">1.1</td>
+<td class="AntCorr">3.6</td>
+</tr>
+<tr><td class="AntCorr">90°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-2.6</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">1.1</td>
+<td class="AntCorr">3.2</td>
+<td class="AntCorr">4.7</td>
+</tr>
+<tr><td class="AntCorr">90°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">0.9</td>
+<td class="AntCorr">1.7</td>
+<td class="AntCorr">1.9</td>
+<td class="AntCorr">1.3</td>
+<td class="AntCorr">0.7</td>
+<td class="AntCorr">1.1</td>
+<td class="AntCorr">3.8</td>
+</tr>
+<tr><td class="AntCorr">100°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.6</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-2.5</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">0.9</td>
+<td class="AntCorr">2.8</td>
+<td class="AntCorr">4.0</td>
+</tr>
+<tr><td class="AntCorr">100°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.6</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">0.6</td>
+<td class="AntCorr">1.4</td>
+<td class="AntCorr">1.5</td>
+<td class="AntCorr">0.9</td>
+<td class="AntCorr">0.3</td>
+<td class="AntCorr">0.7</td>
+<td class="AntCorr">3.5</td>
+</tr>
+<tr><td class="AntCorr">110°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.6</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-2.5</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">0.9</td>
+<td class="AntCorr">2.7</td>
+<td class="AntCorr">3.6</td>
+</tr>
+<tr><td class="AntCorr">110°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.6</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-0.6</td>
+<td class="AntCorr">0.5</td>
+<td class="AntCorr">1.2</td>
+<td class="AntCorr">1.3</td>
+<td class="AntCorr">0.6</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">0.2</td>
+<td class="AntCorr">3.0</td>
+</tr>
+<tr><td class="AntCorr">120°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.6</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-2.4</td>
+<td class="AntCorr">-2.6</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">1.0</td>
+<td class="AntCorr">2.8</td>
+<td class="AntCorr">3.6</td>
+</tr>
+<tr><td class="AntCorr">120°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">0.5</td>
+<td class="AntCorr">1.2</td>
+<td class="AntCorr">1.2</td>
+<td class="AntCorr">0.4</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">2.4</td>
+</tr>
+<tr><td class="AntCorr">130°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-2.5</td>
+<td class="AntCorr">-2.7</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">1.0</td>
+<td class="AntCorr">2.9</td>
+<td class="AntCorr">3.8</td>
+</tr>
+<tr><td class="AntCorr">130°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">-0.8</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">0.6</td>
+<td class="AntCorr">1.3</td>
+<td class="AntCorr">1.2</td>
+<td class="AntCorr">0.4</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">2.0</td>
+</tr>
+<tr><td class="AntCorr">140°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-2.5</td>
+<td class="AntCorr">-2.8</td>
+<td class="AntCorr">-2.4</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">0.8</td>
+<td class="AntCorr">2.9</td>
+<td class="AntCorr">4.0</td>
+</tr>
+<tr><td class="AntCorr">140°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">-0.8</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">0.7</td>
+<td class="AntCorr">1.4</td>
+<td class="AntCorr">1.3</td>
+<td class="AntCorr">0.4</td>
+<td class="AntCorr">-0.8</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">1.6</td>
+</tr>
+<tr><td class="AntCorr">150°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-2.6</td>
+<td class="AntCorr">-2.8</td>
+<td class="AntCorr">-2.5</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">0.7</td>
+<td class="AntCorr">2.8</td>
+<td class="AntCorr">4.0</td>
+</tr>
+<tr><td class="AntCorr">150°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">-0.8</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">0.7</td>
+<td class="AntCorr">1.4</td>
+<td class="AntCorr">1.3</td>
+<td class="AntCorr">0.4</td>
+<td class="AntCorr">-0.8</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">1.5</td>
+</tr>
+<tr><td class="AntCorr">160°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-2.5</td>
+<td class="AntCorr">-2.8</td>
+<td class="AntCorr">-2.5</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">0.6</td>
+<td class="AntCorr">2.7</td>
+<td class="AntCorr">4.0</td>
+</tr>
+<tr><td class="AntCorr">160°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">-0.8</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">0.7</td>
+<td class="AntCorr">1.3</td>
+<td class="AntCorr">1.2</td>
+<td class="AntCorr">0.3</td>
+<td class="AntCorr">-0.8</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">1.4</td>
+</tr>
+<tr><td class="AntCorr">170°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-2.4</td>
+<td class="AntCorr">-2.7</td>
+<td class="AntCorr">-2.4</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">0.5</td>
+<td class="AntCorr">2.6</td>
+<td class="AntCorr">3.9</td>
+</tr>
+<tr><td class="AntCorr">170°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">-0.8</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">0.6</td>
+<td class="AntCorr">1.2</td>
+<td class="AntCorr">1.1</td>
+<td class="AntCorr">0.2</td>
+<td class="AntCorr">-0.8</td>
+<td class="AntCorr">-0.8</td>
+<td class="AntCorr">1.5</td>
+</tr>
+<tr><td class="AntCorr">180°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-2.5</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">0.6</td>
+<td class="AntCorr">2.6</td>
+<td class="AntCorr">3.9</td>
+</tr>
+<tr><td class="AntCorr">180°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">-0.8</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">0.5</td>
+<td class="AntCorr">1.1</td>
+<td class="AntCorr">1.0</td>
+<td class="AntCorr">0.1</td>
+<td class="AntCorr">-0.8</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">1.7</td>
+</tr>
+<tr><td class="AntCorr">190°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">0.8</td>
+<td class="AntCorr">2.8</td>
+<td class="AntCorr">4.1</td>
+</tr>
+<tr><td class="AntCorr">190°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">-0.8</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">0.5</td>
+<td class="AntCorr">1.1</td>
+<td class="AntCorr">1.0</td>
+<td class="AntCorr">0.2</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">2.0</td>
+</tr>
+<tr><td class="AntCorr">200°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-0.8</td>
+<td class="AntCorr">1.0</td>
+<td class="AntCorr">3.0</td>
+<td class="AntCorr">4.4</td>
+</tr>
+<tr><td class="AntCorr">200°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.6</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">0.6</td>
+<td class="AntCorr">1.3</td>
+<td class="AntCorr">1.2</td>
+<td class="AntCorr">0.4</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">2.4</td>
+</tr>
+<tr><td class="AntCorr">210°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-0.6</td>
+<td class="AntCorr">1.3</td>
+<td class="AntCorr">3.4</td>
+<td class="AntCorr">4.7</td>
+</tr>
+<tr><td class="AntCorr">210°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.6</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">0.7</td>
+<td class="AntCorr">1.4</td>
+<td class="AntCorr">1.4</td>
+<td class="AntCorr">0.6</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">0.1</td>
+<td class="AntCorr">2.7</td>
+</tr>
+<tr><td class="AntCorr">220°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">1.6</td>
+<td class="AntCorr">3.8</td>
+<td class="AntCorr">5.1</td>
+</tr>
+<tr><td class="AntCorr">220°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.6</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">0.8</td>
+<td class="AntCorr">1.6</td>
+<td class="AntCorr">1.6</td>
+<td class="AntCorr">0.8</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">0.2</td>
+<td class="AntCorr">2.8</td>
+</tr>
+<tr><td class="AntCorr">230°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">2.0</td>
+<td class="AntCorr">4.2</td>
+<td class="AntCorr">5.4</td>
+</tr>
+<tr><td class="AntCorr">230°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">1.0</td>
+<td class="AntCorr">1.7</td>
+<td class="AntCorr">1.7</td>
+<td class="AntCorr">0.9</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">0.1</td>
+<td class="AntCorr">2.6</td>
+</tr>
+<tr><td class="AntCorr">240°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">0.1</td>
+<td class="AntCorr">2.3</td>
+<td class="AntCorr">4.5</td>
+<td class="AntCorr">5.5</td>
+</tr>
+<tr><td class="AntCorr">240°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">0.1</td>
+<td class="AntCorr">1.2</td>
+<td class="AntCorr">1.9</td>
+<td class="AntCorr">1.7</td>
+<td class="AntCorr">0.8</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">2.1</td>
+</tr>
+<tr><td class="AntCorr">250°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">0.3</td>
+<td class="AntCorr">2.5</td>
+<td class="AntCorr">4.7</td>
+<td class="AntCorr">5.6</td>
+</tr>
+<tr><td class="AntCorr">250°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">0.3</td>
+<td class="AntCorr">1.4</td>
+<td class="AntCorr">2.0</td>
+<td class="AntCorr">1.7</td>
+<td class="AntCorr">0.7</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">1.5</td>
+</tr>
+<tr><td class="AntCorr">260°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">0.3</td>
+<td class="AntCorr">2.6</td>
+<td class="AntCorr">4.6</td>
+<td class="AntCorr">5.4</td>
+</tr>
+<tr><td class="AntCorr">260°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">0.6</td>
+<td class="AntCorr">1.6</td>
+<td class="AntCorr">2.1</td>
+<td class="AntCorr">1.7</td>
+<td class="AntCorr">0.5</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">0.9</td>
+</tr>
+<tr><td class="AntCorr">270°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.8</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">0.2</td>
+<td class="AntCorr">2.4</td>
+<td class="AntCorr">4.4</td>
+<td class="AntCorr">5.2</td>
+</tr>
+<tr><td class="AntCorr">270°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">0.8</td>
+<td class="AntCorr">1.7</td>
+<td class="AntCorr">2.1</td>
+<td class="AntCorr">1.6</td>
+<td class="AntCorr">0.2</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">0.4</td>
+</tr>
+<tr><td class="AntCorr">280°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.8</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-2.4</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">0.1</td>
+<td class="AntCorr">2.3</td>
+<td class="AntCorr">4.2</td>
+<td class="AntCorr">4.9</td>
+</tr>
+<tr><td class="AntCorr">280°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">0.8</td>
+<td class="AntCorr">1.7</td>
+<td class="AntCorr">2.0</td>
+<td class="AntCorr">1.4</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">0.1</td>
+</tr>
+<tr><td class="AntCorr">290°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-2.5</td>
+<td class="AntCorr">-2.4</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">2.1</td>
+<td class="AntCorr">4.0</td>
+<td class="AntCorr">4.7</td>
+</tr>
+<tr><td class="AntCorr">290°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">0.8</td>
+<td class="AntCorr">1.6</td>
+<td class="AntCorr">1.9</td>
+<td class="AntCorr">1.3</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-0.1</td>
+</tr>
+<tr><td class="AntCorr">300°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-2.4</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-2.4</td>
+<td class="AntCorr">-2.6</td>
+<td class="AntCorr">-2.4</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">2.1</td>
+<td class="AntCorr">3.9</td>
+<td class="AntCorr">4.6</td>
+</tr>
+<tr><td class="AntCorr">300°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.6</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">0.7</td>
+<td class="AntCorr">1.5</td>
+<td class="AntCorr">1.7</td>
+<td class="AntCorr">1.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-1.8</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-0.2</td>
+</tr>
+<tr><td class="AntCorr">310°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-2.4</td>
+<td class="AntCorr">-2.4</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-2.5</td>
+<td class="AntCorr">-2.7</td>
+<td class="AntCorr">-2.5</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">2.1</td>
+<td class="AntCorr">4.0</td>
+<td class="AntCorr">4.7</td>
+</tr>
+<tr><td class="AntCorr">310°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.6</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">0.5</td>
+<td class="AntCorr">1.3</td>
+<td class="AntCorr">1.5</td>
+<td class="AntCorr">1.0</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-1.7</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-0.2</td>
+</tr>
+<tr><td class="AntCorr">320°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-2.4</td>
+<td class="AntCorr">-2.4</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-2.5</td>
+<td class="AntCorr">-2.8</td>
+<td class="AntCorr">-2.6</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">2.0</td>
+<td class="AntCorr">4.1</td>
+<td class="AntCorr">4.9</td>
+</tr>
+<tr><td class="AntCorr">320°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.6</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">0.3</td>
+<td class="AntCorr">1.1</td>
+<td class="AntCorr">1.4</td>
+<td class="AntCorr">1.0</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">0.0</td>
+</tr>
+<tr><td class="AntCorr">330°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-2.4</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-2.5</td>
+<td class="AntCorr">-2.8</td>
+<td class="AntCorr">-2.8</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">1.8</td>
+<td class="AntCorr">4.1</td>
+<td class="AntCorr">5.2</td>
+</tr>
+<tr><td class="AntCorr">330°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.6</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-0.6</td>
+<td class="AntCorr">0.1</td>
+<td class="AntCorr">0.9</td>
+<td class="AntCorr">1.4</td>
+<td class="AntCorr">1.0</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.6</td>
+<td class="AntCorr">0.3</td>
+</tr>
+<tr><td class="AntCorr">340°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-2.5</td>
+<td class="AntCorr">-2.9</td>
+<td class="AntCorr">-2.9</td>
+<td class="AntCorr">-2.3</td>
+<td class="AntCorr">-0.8</td>
+<td class="AntCorr">1.5</td>
+<td class="AntCorr">3.9</td>
+<td class="AntCorr">5.3</td>
+</tr>
+<tr><td class="AntCorr">340°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">-0.4</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">-0.8</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">0.8</td>
+<td class="AntCorr">1.3</td>
+<td class="AntCorr">1.1</td>
+<td class="AntCorr">0.1</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">-1.3</td>
+<td class="AntCorr">0.6</td>
+</tr>
+<tr><td class="AntCorr">350°</td>
+<td class="AntCorr">L1</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.9</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-2.2</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-2.0</td>
+<td class="AntCorr">-2.1</td>
+<td class="AntCorr">-2.4</td>
+<td class="AntCorr">-2.8</td>
+<td class="AntCorr">-2.9</td>
+<td class="AntCorr">-2.4</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">1.3</td>
+<td class="AntCorr">3.7</td>
+<td class="AntCorr">5.3</td>
+</tr>
+<tr><td class="AntCorr">350°</td>
+<td class="AntCorr">L2</td>
+<td class="AntCorr">0.0</td>
+<td class="AntCorr">-0.1</td>
+<td class="AntCorr">-0.3</td>
+<td class="AntCorr">-0.5</td>
+<td class="AntCorr">-0.7</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-1.2</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-1.5</td>
+<td class="AntCorr">-1.4</td>
+<td class="AntCorr">-0.9</td>
+<td class="AntCorr">-0.2</td>
+<td class="AntCorr">0.7</td>
+<td class="AntCorr">1.2</td>
+<td class="AntCorr">1.0</td>
+<td class="AntCorr">0.1</td>
+<td class="AntCorr">-1.0</td>
+<td class="AntCorr">-1.1</td>
+<td class="AntCorr">1.0</td>
+</tr>
+</table><a name="00006"></a><h2 class="heading"><script>lfxmlInsertHr();</script><z a="*"></z>Observation Statistics<script a="*">lfxmlInsertHr();</script></h2>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="40%">
+<col width="60%">
+</colgroup>
+<tr>
+<td class="body">Number of common epochs:</td>
+<td class="body">368</td>
+</tr>
+<tr><td colspan="2"><font size="0.5%"> </font></td></tr>
+<tr>
+<td class="body">Number of used observations (L1):</td>
+<td class="body">2801</td>
+</tr>
+<tr>
+<td class="body">Number of rejected observations (L1):</td>
+<td class="body">0</td>
+</tr>
+<tr>
+<td class="body">Number of used observations (L2):</td>
+<td class="body">2801</td>
+</tr>
+<tr>
+<td class="body">Number of rejected observations (L2):</td>
+<td class="body">0</td>
+</tr>
+</table>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="13%">
+<col width="7%">
+<col width="30%">
+<col width="30%">
+<col width="20%">
+</colgroup>
+<tr><th colspan="4">Tracking Status L1:</th></tr><br><tr bgcolor="#dfdfdf">
+<th colspan="2">Satellite</th>
+<th>From</th>
+<th>To</th>
+<th>Status</th>
+</tr>
+<tr>
+<td>G05</td>
+<td><script>lfxmlInsertImage("Checked.gif","Used");</script></td>
+<td>05/30/2011 14:27:35</td>
+<td>05/30/2011 14:41:00</td>
+<td>Tracked / Used</td>
+</tr>
+<tr>
+<td> </td>
+<td><script>lfxmlInsertImage("Cross.gif","not used");</script></td>
+<td>05/30/2011 14:41:00</td>
+<td>05/30/2011 14:58:10</td>
+<td>No data</td>
+</tr>
+<tr>
+<td>G08</td>
+<td><script>lfxmlInsertImage("Checked.gif","Used");</script></td>
+<td>05/30/2011 14:27:35</td>
+<td>05/30/2011 14:58:10</td>
+<td>Tracked / Used</td>
+</tr>
+<tr>
+<td>G09</td>
+<td><script>lfxmlInsertImage("Cross.gif","not used");</script></td>
+<td>05/30/2011 14:27:35</td>
+<td>05/30/2011 14:37:55</td>
+<td>No data</td>
+</tr>
+<tr>
+<td> </td>
+<td><script>lfxmlInsertImage("Checked.gif","Used");</script></td>
+<td>05/30/2011 14:37:55</td>
+<td>05/30/2011 14:58:10</td>
+<td>Tracked / Used</td>
+</tr>
+<tr>
+<td>G15</td>
+<td><script>lfxmlInsertImage("Checked.gif","Used");</script></td>
+<td>05/30/2011 14:27:35</td>
+<td>05/30/2011 14:58:10</td>
+<td>Tracked / Used</td>
+</tr>
+<tr>
+<td>G17</td>
+<td><script>lfxmlInsertImage("Cross.gif","not used");</script></td>
+<td>05/30/2011 14:27:35</td>
+<td>05/30/2011 14:28:45</td>
+<td>No data</td>
+</tr>
+<tr>
+<td> </td>
+<td><script>lfxmlInsertImage("Checked.gif","Used");</script></td>
+<td>05/30/2011 14:28:45</td>
+<td>05/30/2011 14:58:10</td>
+<td>Tracked / Used</td>
+</tr>
+<tr>
+<td>G18</td>
+<td><script>lfxmlInsertImage("Cross.gif","not used");</script></td>
+<td>05/30/2011 14:27:35</td>
+<td>05/30/2011 14:41:25</td>
+<td>No data</td>
+</tr>
+<tr>
+<td> </td>
+<td><script>lfxmlInsertImage("Checked.gif","Used");</script></td>
+<td>05/30/2011 14:41:25</td>
+<td>05/30/2011 14:58:10</td>
+<td>Tracked / Used</td>
+</tr>
+<tr>
+<td>G26</td>
+<td><script>lfxmlInsertImage("Checked.gif","Used");</script></td>
+<td>05/30/2011 14:27:35</td>
+<td>05/30/2011 14:58:10</td>
+<td>Tracked / Used</td>
+</tr>
+<tr>
+<td>G27</td>
+<td><script>lfxmlInsertImage("Checked.gif","Used");</script></td>
+<td>05/30/2011 14:27:35</td>
+<td>05/30/2011 14:58:10</td>
+<td>Tracked / Used</td>
+</tr>
+<tr>
+<td>G28</td>
+<td><script>lfxmlInsertImage("Checked.gif","Used");</script></td>
+<td>05/30/2011 14:27:35</td>
+<td>05/30/2011 14:58:10</td>
+<td>Tracked / Used</td>
+</tr>
+</table><br><table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="13%">
+<col width="7%">
+<col width="30%">
+<col width="30%">
+<col width="20%">
+</colgroup>
+<tr><th colspan="4">Tracking Status L2:</th></tr>
+<tr bgcolor="#dfdfdf">
+<th colspan="2">Satellite</th>
+<th>From</th>
+<th>To</th>
+<th>Status</th>
+</tr>
+<tr>
+<td>G05</td>
+<td><script>lfxmlInsertImage("Checked.gif","Used");</script></td>
+<td>05/30/2011 14:27:35</td>
+<td>05/30/2011 14:41:00</td>
+<td>Tracked / Used</td>
+</tr>
+<tr>
+<td> </td>
+<td><script>lfxmlInsertImage("Cross.gif","not used");</script></td>
+<td>05/30/2011 14:41:00</td>
+<td>05/30/2011 14:58:10</td>
+<td>No data</td>
+</tr>
+<tr>
+<td>G08</td>
+<td><script>lfxmlInsertImage("Checked.gif","Used");</script></td>
+<td>05/30/2011 14:27:35</td>
+<td>05/30/2011 14:58:10</td>
+<td>Tracked / Used</td>
+</tr>
+<tr>
+<td>G09</td>
+<td><script>lfxmlInsertImage("Cross.gif","not used");</script></td>
+<td>05/30/2011 14:27:35</td>
+<td>05/30/2011 14:37:55</td>
+<td>No data</td>
+</tr>
+<tr>
+<td> </td>
+<td><script>lfxmlInsertImage("Checked.gif","Used");</script></td>
+<td>05/30/2011 14:37:55</td>
+<td>05/30/2011 14:58:10</td>
+<td>Tracked / Used</td>
+</tr>
+<tr>
+<td>G15</td>
+<td><script>lfxmlInsertImage("Checked.gif","Used");</script></td>
+<td>05/30/2011 14:27:35</td>
+<td>05/30/2011 14:58:10</td>
+<td>Tracked / Used</td>
+</tr>
+<tr>
+<td>G17</td>
+<td><script>lfxmlInsertImage("Cross.gif","not used");</script></td>
+<td>05/30/2011 14:27:35</td>
+<td>05/30/2011 14:28:45</td>
+<td>No data</td>
+</tr>
+<tr>
+<td> </td>
+<td><script>lfxmlInsertImage("Checked.gif","Used");</script></td>
+<td>05/30/2011 14:28:45</td>
+<td>05/30/2011 14:58:10</td>
+<td>Tracked / Used</td>
+</tr>
+<tr>
+<td>G18</td>
+<td><script>lfxmlInsertImage("Cross.gif","not used");</script></td>
+<td>05/30/2011 14:27:35</td>
+<td>05/30/2011 14:41:25</td>
+<td>No data</td>
+</tr>
+<tr>
+<td> </td>
+<td><script>lfxmlInsertImage("Checked.gif","Used");</script></td>
+<td>05/30/2011 14:41:25</td>
+<td>05/30/2011 14:58:10</td>
+<td>Tracked / Used</td>
+</tr>
+<tr>
+<td>G26</td>
+<td><script>lfxmlInsertImage("Checked.gif","Used");</script></td>
+<td>05/30/2011 14:27:35</td>
+<td>05/30/2011 14:58:10</td>
+<td>Tracked / Used</td>
+</tr>
+<tr>
+<td>G27</td>
+<td><script>lfxmlInsertImage("Checked.gif","Used");</script></td>
+<td>05/30/2011 14:27:35</td>
+<td>05/30/2011 14:58:10</td>
+<td>Tracked / Used</td>
+</tr>
+<tr>
+<td>G28</td>
+<td><script>lfxmlInsertImage("Checked.gif","Used");</script></td>
+<td>05/30/2011 14:27:35</td>
+<td>05/30/2011 14:58:10</td>
+<td>Tracked / Used</td>
+</tr>
+</table><br><table border="0" width="100%" cellspacing="0">
+<tr><th>Tracking Summary:</th></tr>
+<tr>
+<td align="center"><embed width="100%" height="0" type="image/svg+xml" src="stam_1003_files\stam_1003_ResultsTrackingSummary.svg"></embed></td>
+</tr>
+</table><a name="00007"></a><h2 class="heading"><script>lfxmlInsertHr();</script><z a="*"></z>Ambiguity Statistics<script a="*">lfxmlInsertHr();</script></h2>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="40%">
+<col width="60%">
+</colgroup>
+<tr>
+<td class="body">Total number of GPS ambiguities:</td>
+<td class="body">18</td>
+</tr>
+<tr>
+<td class="body">Number of fixed GPS ambiguities:</td>
+<td class="body">18</td>
+</tr>
+<tr>
+<td class="body">Total number of GLONASS ambiguities:</td>
+<td class="body">0</td>
+</tr>
+<tr>
+<td class="body">Number of fixed GLONASS ambiguities:</td>
+<td class="body">0</td>
+</tr>
+<tr>
+<td class="body">Number of independent fixes:</td>
+<td class="body">183</td>
+</tr>
+<tr>
+<td valign="top" class="body">Avg. time between independent fixes:</td>
+<td class="body">10"</td>
+</tr>
+<tr><th colspan="2"> </th></tr>
+<tr>
+<td class="body">Percentage of fixed epochs (L1):</td>
+<td class="body">100%</td>
+</tr>
+<tr>
+<td class="body">Percentage of fixed epochs (L2):</td>
+<td class="body">100%</td>
+</tr>
+<tr>
+<td class="body">Percentage of fixed epochs (overall):</td>
+<td class="body">100%</td>
+</tr>
+</table><br><table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="20%">
+<col width="30%">
+<col width="30%">
+<col width="20%">
+</colgroup>
+<tr>
+<th colspan="4">Overall Statistic:</th>
+</tr>
+<tr bgcolor="#dfdfdf">
+<th>Status</th>
+<th>From</th>
+<th>To</th>
+<th>Duration</th>
+</tr>
+<tr>
+<td>Fixed</td>
+<td>05/30/2011 14:27:35</td>
+<td>05/30/2011 14:58:10</td>
+<td>30' 35"</td>
+</tr>
+</table><a name="00008"></a><h2 class="heading"><script>lfxmlInsertHr();</script><z a="*"></z>Cycle Slip Statistics<script a="*">lfxmlInsertHr();</script></h2>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="30%">
+<col width="70%">
+</colgroup>
+<tr>
+<td class="body">Total number of cycle slips:</td>
+<td class="body">0</td>
+</tr>
+</table><br><a name="00009"></a><h2 class="heading"><script>lfxmlInsertHr();</script><z a="*"></z>Final Coordinates<script a="*">lfxmlInsertHr();</script></h2>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="3%">
+<col width="27%">
+<col width="35%">
+<col width="35%">
+</colgroup>
+<tr bgcolor="#dfdfdf">
+<th colspan="2"> </th>
+<th>Reference:STAM</th>
+<th>Rover:1003</th>
+</tr>
+<tr>
+<td colspan="2">Coordinates:</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>Latitude:</td>
+<td>50° 09' 44.39907" N</td>
+<td>50° 10' 23.73487" N</td>
+</tr>
+<tr>
+<td> </td>
+<td>Longitude:</td>
+<td>16° 56' 51.94054" E</td>
+<td>16° 58' 02.82949" E</td>
+</tr>
+<tr>
+<td> </td>
+<td>Ellip. Hgt:</td>
+<td>603.5355 m</td>
+<td>776.1244 m</td>
+</tr>
+<tr><td colspan="4"><font size="0.5%"> </font></td></tr>
+<tr>
+<td colspan="2">Solution type:</td>
+<td colspan="2">Phase: all fix</td>
+</tr>
+<td colspan="2">GNSS type:</td>
+<td colspan="2">GPS</td>
+<tr>
+<td colspan="2">Frequency:</td>
+<td colspan="2">L1 and L2</td>
+</tr>
+<tr><td colspan="2">Ambiguity:</td><td colspan="2">Yes</td></tr>
+</table>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="30%">
+<col width="23%">
+<col width="23%">
+<col width="24%">
+</colgroup>
+<tr><td colspan="4"><font size="0.5%"> </font></td></tr>
+<tr><td rowspan="2" valign="top">Quality:</td>
+<td>Sd. Lat: 0.0004 m</td>
+<td>Sd. Lon: 0.0002 m</td>
+<td>Sd. Hgt: 0.0005 m</td>
+</tr><tr>
+<td>Posn. Qlty: 0.0004 m</td>
+<td colspan="2">Sd. Slope: 0.0003 m</td>
+</tr>
+<tr><td colspan="4"><font size="0.5%"> </font></td></tr>
+<tr><td>M0:</td><td colspan="3">0.5591 m</td></tr>
+<tr>
+<td>Cofactor matrix Qxx:</td>
+<td>0.00000048</td>
+<td>0.00000004</td>
+<td>-0.00000001</td>
+</tr>
+<tr><td> </td><td> </td>
+<td>0.00000011</td>
+<td>-0.00000002</td>
+</tr>
+<tr><td> </td><td> </td><td> </td>
+<td>0.00000074</td>
+</tr>
+<tr><td colspan="4"><font size="0.5%"> </font></td></tr>
+<tr><td rowspan="2" valign="top">Baseline vector:</td>
+<td>dLat: 0° 00' 39.33580"</td>
+<td>dLon: 0° 01' 10.88895"</td>
+<td>dHgt: 172.5889 m</td>
+</tr>
+<tr>
+<td colspan="3">Slope: 1867.3484 m</td>
+</tr>
+<tr><td colspan="4"><font size="0.5%"> </font></td></tr>
+<tr><td rowspan="2" valign="top">DOPs (min-max):</td>
+<td colspan="3">GDOP: 2.0 - 3.0</td></tr>
+<tr>
+<td>PDOP: 1.8 - 2.6</td>
+<td>HDOP: 1.2 - 1.6</td>
+<td>VDOP: 1.4 - 2.1</td>
+</tr>
+<tr><td colspan="4"><font size="0.5%"> </font></td></tr>
+<tr><td rowspan="2" valign="top">Number of used satellites:</td>
+<td colspan="3">GPS: 
+            9</td>
+</tr>
+<tr>
+<td colspan="3">GLONASS: 
+            -</td>
+</tr>
+</table><br><a name="0000A"></a><h2 class="heading"><script>lfxmlInsertHr();</script><z a="*"></z>Processing Errors and Warnings<script a="*">lfxmlInsertHr();</script></h2>
+<table border="0" width="100%" cellspacing="0">
+<colgroup>
+<col width="20%">
+<col width="80%">
+</colgroup>
+<tr>
+<td valign="top" class="body">Warning Orbit:</td>
+<td valign="top" class="body">No Glonass orbits available.</td>
+</tr>
+</table><script>lfxmlBodyEnd();</script></html>
+</table><script>lfxmlBodyEnd();</script></html>

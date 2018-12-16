@@ -1,0 +1,85 @@
+# 1002 Dvorsky vrch
+# 31.5.2011
+# Mericka ceta: Ludvika Fialova
+#               Katerina Jirova
+                Petr Stepancic
+
+# Prvni radek souboru (s vyjimkou komentaru a prazdnych radku) obsahuje pouze cislo stanoviska.
+1002                           
+
+# Radky zacinajici pismenem 'O' obsahuji mereni centracni osnovy
+# Radka centracni osnovy obsahuje 2 nebo 3 udaje: oznaceni ciloveho bodu, mereny smer, (vodorovna excentricita) 
+# Smery jsou udavany v gradech.
+O 1001        82.7598            # orientacni osnova
+O 1003       142.9140            # orientacni osnova
+O 1004       158.0145            # orientacni osnova 
+O EXCIL      186.5701  8.012     # orientacni osnova (posledni udaj: vod. delka)
+O CENTER     249.3484  4.918     # orientacni osnova (posledni udaj: vod. delka)
+
+# Na radcich zacinajici pismenem 'U' jsou uvedeny merene uhly. Kazdy uhel byl meren ve trech (kdyz to bylo mozne)
+# laboratornich jednotkach, na radek postupne uvedte hodnoty z jednotlivych lab. jednotek
+# (leve rameno, prave rameno, 1. jednotka, 2. jednotka, ...)
+U 1001 1003   60.1528   60.1536   60.1533
+U 1003 1004   15.0980   15.0992   15.0986 
+U 1001 1004   75.2516   75.2523   75.2514              
+
+# Na radcich zacinajici pismenem 'D' jsou udavany merene sikme delky (a hodnoty pro fyz. korekci)
+# Neplatna hodnota (nebyl meren tlak apod.) je nahrazena hodnotou 0.
+# dopoledne
+# C.b1  C.b2    hT[m]   hc[m]    t1[°C]      t2[°C]   p1[]  p2[]     h1[%]  h2[%]   d[m]
+D 1002  1001    1.535   1.610   17.5/21.0  14.5/17.5  705   694      71      72    5916.799
+D 1002  1003    1.535   1.497   18.5/23.0  19.5/24.2  705   701.5    65      70    3221.358
+D 1002  1004    1.535   1.480   17.5/21.0  16.0/19.0  705   916      71      74    5580.719
+
+# Na radcich zacinajici pismenem 'D' jsou udavany merene sikme delky (a hodnoty pro fyz. korekci)
+# Neplatna hodnota (nebyl meren tlak apod.) je nahrazena hodnotou 0.
+# odpoledne
+# C.b1  C.b2    hT[m]   hc[m]    t1[°C]     t2[°C]    p1[]  p2[]     h1[%]  h2[%]   d[m]
+D 1002  1001    1.535   1.610   18.5/24.0  17.0/20.0  705   694      70      74    5916.787
+D 1002  1003    1.535   1.500   19.0/24.3  19.2/24.3  705   701.1    65      65    3221.354
+D 1002  1004    1.535   1.480   18.5/24.0  16.0/21.5  705   916      70      65    5580.707
+
+# Na radcich zacinajici pismenem 'A' jsou udavany merene uhly na Slunce. V ramci jedne modifikovane
+# jednotky je na Slunce mereno ctyrikrat: v prvni poloze L/P okraj, v druhe poloze P/L okraj. Na jeden radek uvedte:
+#  1. cislo bodu, na ktery je urcovan azimut
+#  2. mereny uhel jako prumer z mereni na levy a pravy okraj v I. poloze
+#  3. prumerny cas mereni na Slunce v I. poloze
+#  4. mereny uhel jako prumer z mereni na pravy a levy okraj v II. poloze
+#  5. prumerny cas mereni na Slunce v II. poloze
+#
+# Poznamka: v pripade, ze bylo mozne provest mereni na Slunce podle zadani, mel by byt
+#           pocet radku roven "pocet_mericu * 2"
+#
+A 1003    289.8452 16:02:30   290.4650 16:04:45 
+A 1003    291.6314 16:09:15   292.0352 16:10:45 
+A 1003    292.9194 16:14:15   293.3487 16:15:52.5 
+A 1003    294.4465 16:20:15   294.8399 16:21:45 
+A 1003    295.6973 16:25:15   296.0822 16:26:45 
+A 1003    297.4173 16:32:15   297.9127 16:34:15 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

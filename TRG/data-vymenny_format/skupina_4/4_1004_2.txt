@@ -1,0 +1,28 @@
+# 1004 Vetrov
+# 2.6.2011
+# Mericka ceta: Jan Doubal
+#               Vera Peterova
+
+1004                           
+
+# Mereni centracni osnovy
+# oznaceni ciloveho bodu, mereny smer, vodorovna excentricita jiz opravena o hranolovou konstantu
+O 1002         0.0000           
+O 1003        19.2244            
+O EXCIL       39.4546  5.9735 
+O 1001        65.1987            
+O CENTR       83.8980  9.3095  
+
+# Uhly
+# leve rameno, prave rameno, 1. LJ, 2. LJ, 3. LJ
+U 1002 1003   19.2137   19.2139   19.2138
+U 1003 1001   45.9759   45.9762   45.9754 
+U 1002 1001   65.1883   65.1886   65.1896
+
+# Merene sikme delky jiz opravene o hranolovou konstantu (a hodnoty pro fyz. korekci)
+# C.b1  C.b2    hT[m]   hc[m]   t1[°C]   t2[°C]      p1[]  p2[]     h1[%]  h2[%]   d[m]
+D 1004  1002    1.500   1.407   12/14    14.5/17.5   694   712.3    79    72      5580.730
+D 1004  1002    1.500   1.407   12/13.5  15/18       694   712.5    84    73      5580.724
+
+
+# Kvuli nepriznivym atmosferickym podminkam nebylo mereno na Slunce.

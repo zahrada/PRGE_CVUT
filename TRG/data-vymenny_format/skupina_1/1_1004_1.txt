@@ -1,0 +1,25 @@
+# Komentar zacina znakem '#'. Soubor muze obsahovat libolne mnozstvi komentaru a prazdnych radek.
+# V uvodnim komentari je uvedeno oznaceni bodu, datum mereni a slozeni mericke cety
+
+# 1004 Vetrov
+# 30.5.2011
+# Mericka ceta: Miroslav Soul
+#               Zuzana Bartonova
+#               Katerina Kafkova
+
+
+# Prvni radek souboru (s vyjimkou komentaru a prazdnych radku) obsahuje pouze cislo stanoviska.
+1004                           
+
+# Radky zacinajici pismenem 'O' obsahuji mereni centracni osnovy
+# Radka centracni osnovy obsahuje 2 nebo 3 udaje: oznaceni ciloveho bodu, mereny smer, (vodorovna excentricita) 
+# Smery jsou udavany v gradech.
+O 1002        47.8194   
+O 1003        66.9922   
+O EXCIL       84.5570 4.320
+O 1001       112.9863 
+O CENTR      138.9063 7.966
+ 
+
+
+
