@@ -8,6 +8,7 @@ souradnice = [
     1003	1055295.5	560932.6	732.23
     1004	1053013.0	559764.8	913.90
     1005	1055720.5	562455.4	558.36
+
 ];
 cil = ['E' 'E' 'E' 'E' 'C']'; % 1001,...,1005
 
@@ -18,25 +19,25 @@ o = [
 % den1_7_1001_2.txt
 1001 0          20.5617  6.867    %# orientacni osnova (posledni udaj: vod. delka opravena o souctovou konstantu minihranolu) 
 1001 1          0.0000   4.806    %# orientacni osnova (posledni udaj: vod. delka opravena o souctovou konstantu minihranolu)
-1001 1002       89.8642  0       %   # orientacni osnova 
+1001 1002       89.8642  0       %   # orientacni osnova !!!!!!!!!!!
 1001 1003       53.2671  0        %  # orientacni osnova 
 1001 1004       30.2735  0        %  # orientacni osnova 
 
 % den1_7_1002_2.txt % dve stanoviska na jendom bode to nedava
-1002 0          16.3576   4.737    % # orientacni osnova (posledni udaj: vod. delka)
-1002 1          127.2205  6.180    % # orientacni osnova (posledni udaj: vod. delka)
+1002 1          16.3576   4.737    % # orientacni osnova (posledni udaj: vod. delka)
+1002 0          127.2205  6.180    % # orientacni osnova (posledni udaj: vod. delka)
 1002 1001       0.0000    0        %# orientacni osnova 
-1002 1003       60.1813   0       %  # orientacni osnova
+1002 1003       60.1813   0       % # orientacni osnova
 1002 1004       75.2950   0        % # orientacni osnova
-% % % den1_6_1002_1.txt.txt
-% % 1002 0          95.6767  3.572  %   # orientacni osnova (posledni udaj: vod. delka)
-% % 1002 1          393.2087 7.102   %  # orientacni osnova (posledni udaj: vod. delka)
-% % 1002 1001        0.0000  0     %     # orientacni osnova
-% % 1002 1003       60.1333	 0	 %# orientacni osnova
-% % 1002 1004       75.2738  0     %     # orientacni osnova
+% % den1_6_1002_1.txt.txt
+% 1002 0          95.6767  3.572  %   # orientacni osnova (posledni udaj: vod. delka)
+% 1002 1          393.2087 7.102   %  # orientacni osnova (posledni udaj: vod. delka)
+% 1002 1001        0.0000  0     %     # orientacni osnova
+% 1002 1003       60.1333	 0	 %# orientacni osnova
+% 1002 1004       75.2738  0     %     # orientacni osnova
 %den1_1_1003_2.txt
-1003 0          391.5348  4.545     %# orientacni osnova (posledni udaj: vod. delka - mìøeno pásmem)
-1003 1          26.0180   6.299     %# orientacni osnova (posledni udaj: vod. delka - mìøeno na miniHRANOL Leica)
+1003 1          391.5348  4.545     %# orientacni osnova (posledni udaj: vod. delka - mìøeno pásmem)
+1003 0          26.0180   6.299     %# orientacni osnova (posledni udaj: vod. delka - mìøeno na miniHRANOL Leica)
 1003 1001       103.0592  0          %# orientacni osnova
 1003 1002       0.0000    0         %# orientacni osnova
 1003 1004       234.2683  0          %# orientacni osnova
@@ -49,10 +50,11 @@ o = [
 
 % %den2_45_1001_1.txt
 % 1001 0        317.3774   6.472  % # orientacni osnova (posledni udaj: vod. delka)24.0498 
-% 1001 1        293.3276    7.448  % # orientacni osnova (posledni udaj: vod. delka)0.0000
+% 1001 1        293.3276   7.448  % # orientacni osnova (posledni udaj: vod. delka)0.0000
 % 1001 1002      59.6514   0   %      # orientacni osnova 166.3238 
 % 1001 1003      23.0018   0    %     # orientacni osnova 129.6742 
 % 1001 1004      0.00000   0     %    # orientacni osnova 106.6724
+% 
 % %den2_45_1002_2.txt
 % 1002 0          32.8682   6.703   %  # orientacni osnova (posledni udaj: vod. delka)
 % 1002 1          0.0000    13.534   % # orientacni osnova (posledni udaj: vod. delka)
@@ -106,10 +108,10 @@ u = [
 1001 1004 1003   22.9911   22.9915   22.9919
 1001 1003 1002   36.5960   36.5970   36.5970
 1001 1004 1002   59.5894   59.5880   58.5886
-% den1_6_1002_1.txt.txt
-1002 1001 1003   60.1334   60.1337   60.1327
-1002 1003 1004   15.1405   15.1399   15.1405 
-1002 1001 1004   75.2734   75.2734   75.2737 
+% % den1_6_1002_1.txt.txt
+% 1002 1001 1003   60.1334   60.1337   60.1327
+% 1002 1003 1004   15.1405   15.1399   15.1405 
+% 1002 1001 1004   75.2734   75.2734   75.2737 
    % den1_1_1003_2.txt
 1003 1002 1001   103.0587  103.0596  103.0590
 1003 1001 1004   131.2120  131.2118  131.2117 
@@ -119,10 +121,10 @@ u = [
 1004 1003 1001   45.9636   45.9644   45.9645 
 1004 1002 1003   19.0298   19.0298	 19.0288
 
-% % den1_7_1002_2.txt % dve stanoviska na jendom bode to nedava
-% 1002 1001 1003   60.1798   60.1792   60.1791
-% 1002 1003 1004   15.1107   15.1095   15.1103 
-% 1002 1001 1004   75.2893   75.2893   75.2893
+% den1_7_1002_2.txt % dve stanoviska na jendom bode to nedava
+1002 1001 1003   60.1798   60.1792   60.1791
+1002 1003 1004   15.1107   15.1095   15.1103 
+1002 1001 1004   75.2893   75.2893   75.2893
 
 % %den2_45_1001_1.txt
 % 1001 1002 1003   36.6502   36.6495   36.6493
